@@ -248,7 +248,7 @@ export const SECTOR_IDS: SectorIds = {
 // =============================================================================
 
 export const EXCHANGES: Exchanges = {
-  'HOSE': 'Sở giao dịch Hà Nội (HOSE)',
-  'HNX': 'Sở giao dịch Hà Nội (HNX)',
-  'UPCOM': 'Sở giao dịch Hà Nội (UPCOM)',
+  'HOSE': 'Sở giao dịch chứng khoán thành phố Hồ Chí Minh (HOSE)',
+  'HNX': 'Sở giao dịch chứng khoán Hà Nội (HNX)',
+  'UPCOM': 'Sở giao dịch chứng khoán Hà Nội (UPCOM)',
 };

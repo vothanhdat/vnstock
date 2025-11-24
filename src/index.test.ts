@@ -2,8 +2,8 @@
  * Basic tests for vnstock core functionality
  */
 
-import { Vnstock, DataSource, TimeFrame } from '../src/index';
-import { ProviderRegistry } from '../src/core/registry';
+import { Vnstock, DataSource, TimeFrame } from './index';
+import { ProviderRegistry } from './core/registry';
 
 describe('Vnstock Core', () => {
   describe('Vnstock Client', () => {

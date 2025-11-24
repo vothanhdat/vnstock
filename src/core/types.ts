@@ -74,7 +74,7 @@ export enum DataSource {
 
 export namespace DataSource {
   export function allSources(): string[] {
-    return Object.values(DataSource).filter(v => typeof v === 'string') as string[];
+    return Object.values(DataSource).filter(v => typeof v === 'string');
   }
 }
 
