@@ -69,7 +69,14 @@ export { BaseAdapter } from './core/base';
 
 // Connectors and explorers
 export { VCIQuoteProvider } from './explorer/vci';
-export { TCBSQuoteProvider } from './explorer/tcbs';
+export { 
+  TCBSQuoteProvider, 
+  TCBSCompanyProvider, 
+  TCBSFinancialProvider, 
+  TCBSScreenerProvider, 
+  TCBSTradingProvider,
+  TCBSListingProvider 
+} from './explorer/tcbs';
 export { FMPQuoteProvider } from './connector/fmp';
 export { DNSETradingProvider } from './connector/dnse';
 
