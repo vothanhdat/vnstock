@@ -113,13 +113,53 @@ export class TCBSQuoteProvider {
         throw new Error(`Invalid interval: ${resolution}. Valid values: ${Object.keys(INTERVAL_MAP).join(', ')}`);
       }
 
+      // Calculate countBack and to timestamp
+      const start = new Date(startDate);
+      const end = new Date(endDate);
+      // TCBS API expects 'to' as unix timestamp (seconds)
+      const toTimestamp = Math.floor(end.getTime() / 1000);
+      
+      // Estimate countBack
+      let countBack = 365;
+      const diffTime = Math.abs(end.getTime() - start.getTime());
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+      
+      if (resolution === '1D' || resolution === '1D') {
+        countBack = diffDays + 20; // Add buffer
+      } else if (resolution === '1W') {
+        countBack = Math.ceil(diffDays / 7) + 5;
+      } else if (resolution === '1M') {
+        countBack = Math.ceil(diffDays / 30) + 2;
+      } else {
+        // Intraday
+        // resolution is in minutes e.g. '1', '5'
+        const minutes = parseInt(intervalKey);
+        if (!isNaN(minutes)) {
+             const diffMinutes = Math.ceil(diffTime / (1000 * 60));
+             countBack = Math.ceil(diffMinutes / minutes) + 100;
+        }
+      }
+
+      // Map asset type
+      let type = 'stock';
+      if (this.assetType === 'FUTURE') type = 'derivative';
+      else if (this.assetType === 'INDEX') type = 'index';
+
+      // Determine endpoint
+      let endPoint = 'bars';
+      if (['D', 'W', 'M'].includes(intervalKey)) {
+        endPoint = 'bars-long-term';
+      }
+
       // Build request URL
-      const url = `${BASE_URL}/${STOCKS_URL}/v1/stock-insight/stock-bars/${symbol}/period`;
+      const url = `${BASE_URL}/${STOCKS_URL}/v2/stock/${endPoint}`;
       
       const params = {
-        from: startDate,
-        to: endDate,
+        ticker: symbol,
+        type: type,
         resolution: intervalKey,
+        to: toTimestamp,
+        countBack: countBack
       };
 
       const config = {
@@ -140,26 +180,29 @@ export class TCBSQuoteProvider {
         return [];
       }
 
-      // Transform to QuoteData format
-      const quoteData: QuoteData[] = data.map(item => ({
-        symbol,
-        time: new Date(item.tradingDate),
-        open: item.open,
-        high: item.high,
-        low: item.low,
-        close: item.close,
-        volume: item.volume,
-      }));
+      // Filter data by date range
+      const startTime = start.getTime();
+      const endTime = end.getTime() + (24 * 60 * 60 * 1000); // Include end date fully
 
+      // Transform to QuoteData format
+      const quoteData: QuoteData[] = data
+        .map(item => ({
+          symbol,
+          time: new Date(item.tradingDate),
+          open: item.open,
+          high: item.high,
+          low: item.low,
+          close: item.close,
+          volume: item.volume,
+        }))
+        .filter(item => {
+          const time = item.time.getTime();
+          return time >= startTime && time <= endTime;
+        });
+        
       return quoteData;
     } catch (error: any) {
-      if (error.response?.status === 404) {
-        logger.error(`Symbol not found: ${this.symbol}`);
-      } else if (error.response?.status === 429) {
-        logger.error('Rate limit exceeded. Try again later.');
-      } else {
-        logger.error(`Error fetching history for ${this.symbol}:`, error.message);
-      }
+      logger.error(`Error fetching history for ${this.symbol}:`, error.message);
       throw error;
     }
   }

@@ -42,6 +42,9 @@ export class TCBSListingProvider {
    * @returns Promise of symbol list data
    */
   async allSymbols(exchange: string = 'HOSE,HNX,UPCOM'): Promise<any> {
+    logger.warn('allSymbols is not fully implemented for TCBS provider yet.');
+    return [];
+    /*
     try {
       const url = `${BASE_URL}/${STOCKS_URL}/v1/market/top-mover`;
       
@@ -62,9 +65,10 @@ export class TCBSListingProvider {
       const response = await axios.get(url, config);
       return response.data;
     } catch (error: any) {
-      logger.error(`Error fetching symbols from ${exchange}:`, error.message);
+      logger.error(`Error fetching all symbols:`, error.message);
       throw error;
     }
+    */
   }
 
   /**
@@ -73,9 +77,12 @@ export class TCBSListingProvider {
    * @param industry - Industry name or ID
    * @returns Promise of industry symbols data
    */
-  async byIndustry(industry: string): Promise<any> {
+  async symbolsByIndustries(industry: string): Promise<any> {
+    logger.warn('symbolsByIndustries is not fully implemented for TCBS provider yet.');
+    return [];
+    /*
     try {
-      const url = `${BASE_URL}/${STOCKS_URL}/v1/market/sector`;
+      const url = `${BASE_URL}/${STOCKS_URL}/v1/market/top-mover`;
       
       const params = {
         sector: industry,
@@ -97,6 +104,7 @@ export class TCBSListingProvider {
       logger.error(`Error fetching symbols for industry ${industry}:`, error.message);
       throw error;
     }
+    */
   }
 
   /**

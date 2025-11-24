@@ -43,7 +43,7 @@ export class TCBSScreenerProvider {
    * @param id - Optional screener ID
    * @returns Promise of screened stock data
    */
-  async stock(params: Record<string, any> = { exchangeName: 'HOSE,HNX,UPCOM' }, limit: number = 50, id?: string): Promise<any> {
+  async screen(params: Record<string, any> = { exchangeName: 'HOSE,HNX,UPCOM' }, limit: number = 50, id?: string): Promise<any> {
     try {
       const url = `${BASE_URL}/ligo/v1/watchlist/preview`;
       
@@ -88,7 +88,13 @@ export class TCBSScreenerProvider {
       }
 
       const response = await axios.post(url, payload, config);
-      return response.data;
+      const data = response.data as any;
+      
+      if (data && data.searchData && data.searchData.pageContent) {
+        return data.searchData.pageContent;
+      }
+      
+      return [];
     } catch (error: any) {
       logger.error(`Error screening stocks:`, error.message);
       throw error;
@@ -102,7 +108,7 @@ export class TCBSScreenerProvider {
    * @returns Promise of top gainers data
    */
   async topGainers(limit: number = 20): Promise<any> {
-    return this.stock({ exchangeName: 'HOSE,HNX,UPCOM' }, limit);
+    return this.screen({ exchangeName: 'HOSE,HNX,UPCOM' }, limit);
   }
 
   /**
@@ -112,7 +118,7 @@ export class TCBSScreenerProvider {
    * @returns Promise of top losers data
    */
   async topLosers(limit: number = 20): Promise<any> {
-    return this.stock({ exchangeName: 'HOSE,HNX,UPCOM' }, limit);
+    return this.screen({ exchangeName: 'HOSE,HNX,UPCOM' }, limit);
   }
 
   /**
@@ -122,7 +128,7 @@ export class TCBSScreenerProvider {
    * @returns Promise of top volume data
    */
   async topVolume(limit: number = 20): Promise<any> {
-    return this.stock({ exchangeName: 'HOSE,HNX,UPCOM' }, limit);
+    return this.screen({ exchangeName: 'HOSE,HNX,UPCOM' }, limit);
   }
 
   /**
@@ -132,7 +138,7 @@ export class TCBSScreenerProvider {
    * @returns Promise of top value data
    */
   async topValue(limit: number = 20): Promise<any> {
-    return this.stock({ exchangeName: 'HOSE,HNX,UPCOM' }, limit);
+    return this.screen({ exchangeName: 'HOSE,HNX,UPCOM' }, limit);
   }
 
   /**
@@ -142,7 +148,7 @@ export class TCBSScreenerProvider {
    * @returns Promise of foreign trading data
    */
   async foreignTrading(limit: number = 20): Promise<any> {
-    return this.stock({ exchangeName: 'HOSE,HNX,UPCOM' }, limit);
+    return this.screen({ exchangeName: 'HOSE,HNX,UPCOM' }, limit);
   }
 
   /**
@@ -152,7 +158,7 @@ export class TCBSScreenerProvider {
    * @returns Promise of new highs data
    */
   async newHighs(limit: number = 20): Promise<any> {
-    return this.stock({ exchangeName: 'HOSE,HNX,UPCOM' }, limit);
+    return this.screen({ exchangeName: 'HOSE,HNX,UPCOM' }, limit);
   }
 
   /**
@@ -162,6 +168,6 @@ export class TCBSScreenerProvider {
    * @returns Promise of new lows data
    */
   async newLows(limit: number = 20): Promise<any> {
-    return this.stock({ exchangeName: 'HOSE,HNX,UPCOM' }, limit);
+    return this.screen({ exchangeName: 'HOSE,HNX,UPCOM' }, limit);
   }
 }

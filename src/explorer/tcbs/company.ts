@@ -50,6 +50,58 @@ export class TCBSCompanyProvider {
     return 'STOCK';
   }
 
+  private stripHtml(html: any): any {
+    if (typeof html !== 'string') return html;
+    
+    // Remove HTML tags
+    let text = html.replace(/<[^>]*>?/gm, '');
+    
+    // Replace common HTML entities
+    text = text
+      .replace(/&nbsp;/g, ' ')
+      .replace(/&amp;/g, '&')
+      .replace(/&quot;/g, '"')
+      .replace(/&lt;/g, '<')
+      .replace(/&gt;/g, '>')
+      .replace(/&acirc;/g, 'â')
+      .replace(/&agrave;/g, 'à')
+      .replace(/&aacute;/g, 'á')
+      .replace(/&atilde;/g, 'ã')
+      .replace(/&egrave;/g, 'è')
+      .replace(/&eacute;/g, 'é')
+      .replace(/&ecirc;/g, 'ê')
+      .replace(/&igrave;/g, 'ì')
+      .replace(/&iacute;/g, 'í')
+      .replace(/&ograve;/g, 'ò')
+      .replace(/&oacute;/g, 'ó')
+      .replace(/&ocirc;/g, 'ô')
+      .replace(/&otilde;/g, 'õ')
+      .replace(/&ugrave;/g, 'ù')
+      .replace(/&uacute;/g, 'ú')
+      .replace(/&yuml;/g, 'ÿ')
+      .replace(/&Acirc;/g, 'Â')
+      .replace(/&Agrave;/g, 'À')
+      .replace(/&Aacute;/g, 'Á')
+      .replace(/&Atilde;/g, 'Ã')
+      .replace(/&Egrave;/g, 'È')
+      .replace(/&Eacute;/g, 'É')
+      .replace(/&Ecirc;/g, 'Ê')
+      .replace(/&Igrave;/g, 'Ì')
+      .replace(/&Iacute;/g, 'Í')
+      .replace(/&Ograve;/g, 'Ò')
+      .replace(/&Oacute;/g, 'Ó')
+      .replace(/&Ocirc;/g, 'Ô')
+      .replace(/&Otilde;/g, 'Õ')
+      .replace(/&Ugrave;/g, 'Ù')
+      .replace(/&Uacute;/g, 'Ú')
+      .replace(/&Yuml;/g, 'Ÿ');
+      
+    // Normalize whitespace
+    text = text.replace(/\s+/g, ' ').trim();
+    
+    return text;
+  }
+
   /**
    * Get company overview information
    * 
@@ -83,7 +135,7 @@ export class TCBSCompanyProvider {
    */
   async profile(): Promise<any> {
     try {
-      const url = `${BASE_URL}/${ANALYSIS_URL}/v1/company/${this.symbol}/profile`;
+      const url = `${BASE_URL}/${ANALYSIS_URL}/v1/company/${this.symbol}/overview`;
       
       const config = {
         headers: this.headers,
@@ -95,7 +147,27 @@ export class TCBSCompanyProvider {
       }
 
       const response = await axios.get(url, config);
-      return response.data;
+      const data = response.data;
+      
+      // Clean HTML content in text fields
+      if (data) {
+        const textFields = [
+          'companyProfile', 
+          'historyDev', 
+          'companyPromise', 
+          'businessRisk', 
+          'keyDevelopments', 
+          'businessStrategies'
+        ];
+        
+        for (const field of textFields) {
+          if ((data as any)[field]) {
+            (data as any)[field] = this.stripHtml((data as any)[field]);
+          }
+        }
+      }
+      
+      return data;
     } catch (error: any) {
       logger.error(`Error fetching company profile for ${this.symbol}:`, error.message);
       throw error;

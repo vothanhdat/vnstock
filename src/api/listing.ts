@@ -19,10 +19,11 @@ export class Listing extends BaseAdapter {
   /**
    * Get list of all available symbols
    * 
+   * @param exchange - Optional exchange filter
    * @returns Promise of symbol array
    */
-  async allSymbols(): Promise<string[]> {
-    return this.callMethod('allSymbols');
+  async allSymbols(exchange?: string): Promise<string[]> {
+    return this.callMethod('allSymbols', exchange);
   }
 
   /**

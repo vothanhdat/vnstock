@@ -31,6 +31,9 @@ export {
   ExchangeType,
   TimeFrame,
   DataSource,
+} from './core/types';
+
+export type {
   QuoteData,
   CompanyProfile,
   FinancialData,
@@ -54,11 +57,11 @@ export {
   INDEX_GROUPS,
   SECTOR_IDS,
   EXCHANGES,
-  IndexInfo,
-  IndicesInfoMap,
-  IndexGroups,
-  SectorIds,
-  Exchanges,
+  type IndexInfo,
+  type IndicesInfoMap,
+  type IndexGroups,
+  type SectorIds,
+  type Exchanges,
 } from './constants';
 
 // Core utilities

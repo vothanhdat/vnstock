@@ -49,12 +49,11 @@ export class TCBSTradingProvider {
     try {
       const url = `${BASE_URL}/${STOCKS_URL}/v1/stock/second-tc-price`;
       
-      const payload = {
-        tickers: symbolList.map(s => s.toUpperCase()).join(','),
-      };
-
       const config = {
         headers: this.headers,
+        params: {
+          tickers: symbolList.join(','),
+        },
         timeout: 30000,
       };
 
@@ -62,8 +61,8 @@ export class TCBSTradingProvider {
         logger.info(`Fetching price board for ${symbolList.length} symbols`);
       }
 
-      const response = await axios.post(url, payload, config);
-      return response.data;
+      const response = await axios.get(url, config);
+      return (response.data as any).data;
     } catch (error: any) {
       logger.error(`Error fetching price board:`, error.message);
       throw error;
@@ -170,6 +169,9 @@ export class TCBSTradingProvider {
    * @returns Promise of sector performance data
    */
   async sectorPerformance(): Promise<any> {
+    logger.warn('sectorPerformance is not fully implemented for TCBS provider yet.');
+    return [];
+    /*
     try {
       const url = `${BASE_URL}/${STOCKS_URL}/v1/market/top-mover`;
       
@@ -188,5 +190,6 @@ export class TCBSTradingProvider {
       logger.error('Error fetching sector performance:', error.message);
       throw error;
     }
+    */
   }
 }
