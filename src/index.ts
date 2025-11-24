@@ -6,6 +6,10 @@
  * to everyone.
  */
 
+// Auto-register providers by importing connector and explorer modules
+import './explorer/vci';
+import './connector/fmp';
+
 // Main client
 export { Vnstock, StockComponents, MSNComponents } from './common/client';
 
@@ -60,6 +64,10 @@ export { Config } from './core/config';
 export { getLogger, Logger } from './core/logger';
 export { ProviderRegistry } from './core/registry';
 export { BaseAdapter } from './core/base';
+
+// Connectors and explorers
+export { VCIQuoteProvider } from './explorer/vci';
+export { FMPQuoteProvider } from './connector/fmp';
 
 // Default export
 import { Vnstock } from './common/client';
