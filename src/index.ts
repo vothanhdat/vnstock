@@ -8,7 +8,9 @@
 
 // Auto-register providers by importing connector and explorer modules
 import './explorer/vci';
+import './explorer/tcbs';
 import './connector/fmp';
+import './connector/dnse';
 
 // Main client
 export { Vnstock, StockComponents, MSNComponents } from './common/client';
@@ -67,7 +69,9 @@ export { BaseAdapter } from './core/base';
 
 // Connectors and explorers
 export { VCIQuoteProvider } from './explorer/vci';
+export { TCBSQuoteProvider } from './explorer/tcbs';
 export { FMPQuoteProvider } from './connector/fmp';
+export { DNSETradingProvider } from './connector/dnse';
 
 // Default export
 import { Vnstock } from './common/client';

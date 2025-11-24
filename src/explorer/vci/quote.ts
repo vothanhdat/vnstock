@@ -4,7 +4,8 @@
  * Provides historical and intraday stock price data from VCI Securities
  */
 
-import axios, { AxiosRequestConfig } from 'axios';
+import axios from 'axios';
+
 import { QuoteData } from '../../core/types';
 import { getLogger } from '../../core/logger';
 
@@ -104,7 +105,7 @@ export class VCIQuoteProvider {
         resolution: intervalKey,
       };
 
-      const config: AxiosRequestConfig = {
+      const config = {
         headers: this.headers,
         params,
         timeout: 30000,

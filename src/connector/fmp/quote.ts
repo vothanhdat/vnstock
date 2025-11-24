@@ -4,7 +4,7 @@
  * Provides stock price data from FMP API
  */
 
-import axios, { AxiosRequestConfig } from 'axios';
+import axios from 'axios';
 import { QuoteData } from '../../core/types';
 import { getLogger } from '../../core/logger';
 
@@ -90,7 +90,7 @@ Get your API key at: https://financialmodelingprep.com`;
         logger.info(`Fetching FMP history for ${symbol} from ${startDate} to ${endDate}`);
       }
 
-      const config: AxiosRequestConfig = {
+      const config = {
         timeout: DEFAULT_TIMEOUT,
       };
 
@@ -147,7 +147,7 @@ Get your API key at: https://financialmodelingprep.com`;
         logger.info(`Fetching FMP intraday data for ${symbol}`);
       }
 
-      const config: AxiosRequestConfig = {
+      const config = {
         timeout: DEFAULT_TIMEOUT,
       };
 
