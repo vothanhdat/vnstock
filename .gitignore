@@ -189,3 +189,14 @@ vnstock/.DS_Store
 vnstock/common/.DS_Store
 vnstock/explorer/.DS_Store
 vnstock/core/.DS_Store
+
+# TypeScript / Node.js
+node_modules/
+dist/
+*.js.map
+*.d.ts.map
+coverage/
+.nyc_output/
+package-lock.json
+yarn.lock
+.eslintcache

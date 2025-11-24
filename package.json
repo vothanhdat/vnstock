@@ -1,0 +1,56 @@
+{
+  "name": "vnstock",
+  "version": "3.3.0",
+  "description": "A beginner-friendly yet powerful TypeScript toolkit for financial analysis and automation — built to make modern investing accessible to everyone",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "vnstock",
+    "finance",
+    "vietnam",
+    "stock market",
+    "analysis",
+    "typescript",
+    "API"
+  ],
+  "authors": [
+    {
+      "name": "Thinh Vu",
+      "email": "support@vnstocks.com"
+    }
+  ],
+  "license": "SEE LICENSE IN LICENSE.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thinh-vu/vnstock.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thinh-vu/vnstock/issues"
+  },
+  "homepage": "https://github.com/thinh-vu/vnstock",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.19",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "cheerio": "^1.0.0-rc.12"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
