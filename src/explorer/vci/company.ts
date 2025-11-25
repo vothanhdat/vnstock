@@ -8,6 +8,7 @@ import axios from 'axios';
 import { getLogger } from '../../core/logger';
 import { camelToSnake, cleanHtml } from '../../core/utils';
 import { VCICompanyProfile, VCIShareholder } from './types';
+import { CompanyProfile } from '../../core/types';
 
 const logger = getLogger('VCI.Company');
 
@@ -46,12 +47,14 @@ export class VCICompanyProvider {
    * 
    * @returns Promise of company profile data
    */
-  async profile(): Promise<VCICompanyProfile> {
+  async profile(): Promise<CompanyProfile> {
     try {
       const query = `
         query Query($ticker: String!) {
           CompanyListingInfo(ticker: $ticker) {
             id
+            organName
+            enOrganName
             issueShare
             en_History
             history
@@ -106,7 +109,13 @@ export class VCICompanyProvider {
         }
       }
 
-      return result;
+      return {
+        symbol: result.ticker || this.symbol,
+        company_name: result.organ_name || result.icb_name3 || result.icb_name2 || result.icb_name4,
+        description: result.company_profile,
+        history: result.history,
+        ...result
+      };
     } catch (error: any) {
       logger.error(`Error fetching company profile for ${this.symbol}:`, error.message);
       throw error;

@@ -104,12 +104,13 @@ export interface QuoteData {
 export interface CompanyProfile {
   symbol: string;
   company_name: string;
-  exchange: string;
-  industry: string;
-  sector: string;
+  exchange?: string;
+  industry?: string;
+  sector?: string;
   website?: string;
   employees?: number;
   description?: string;
+  [key: string]: any;
 }
 
 export interface FinancialData {

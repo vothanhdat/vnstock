@@ -1,5 +1,7 @@
 export interface VCICompanyProfile {
   id: string;
+  organ_name?: string;
+  en_organ_name?: string;
   issue_share: number;
   en__history: string;
   history: string;

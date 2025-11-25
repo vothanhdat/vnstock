@@ -7,6 +7,7 @@
 import axios from 'axios';
 import { getLogger } from '../../core/logger';
 import { TCBSCompanyProfile } from './types';
+import { CompanyProfile } from '../../core/types';
 
 const logger = getLogger('TCBS.Company');
 
@@ -118,11 +119,23 @@ export class TCBSCompanyProvider {
       };
 
       if (this.showLog) {
-        logger.info(`Fetching company overview for ${this.symbol}`);
+        logger.info(`Fetching company profile for ${this.symbol}`);
       }
 
       const response = await axios.get(url, config);
-      return response.data;
+      const data = response.data as TCBSCompanyProfile;
+
+      return {
+        symbol: data.ticker || this.symbol,
+        company_name: data.companyName,
+        description: data.companyProfile,
+        history: data.historyDev,
+        promise: data.companyPromise,
+        risk: data.businessRisk,
+        strategies: data.businessStrategies,
+        key_developments: data.keyDevelopments,
+        ...data // Include original fields as well
+      };
     } catch (error: any) {
       logger.error(`Error fetching company overview for ${this.symbol}:`, error.message);
       throw error;
@@ -134,7 +147,7 @@ export class TCBSCompanyProvider {
    * 
    * @returns Promise of company profile data
    */
-  async profile(): Promise<TCBSCompanyProfile> {
+  async profile(): Promise<CompanyProfile> {
     try {
       const url = `${BASE_URL}/${ANALYSIS_URL}/v1/company/${this.symbol}/overview`;
       
@@ -148,7 +161,7 @@ export class TCBSCompanyProvider {
       }
 
       const response = await axios.get(url, config);
-      const data = response.data;
+      const data = response.data as TCBSCompanyProfile;
       
       // Clean HTML content in text fields
       if (data) {
@@ -168,7 +181,17 @@ export class TCBSCompanyProvider {
         }
       }
       
-      return data;
+      return {
+        symbol: data.ticker || this.symbol,
+        company_name: data.companyName,
+        description: data.companyProfile,
+        history: data.historyDev,
+        promise: data.companyPromise,
+        risk: data.businessRisk,
+        strategies: data.businessStrategies,
+        key_developments: data.keyDevelopments,
+        ...data // Include original fields as well
+      };
     } catch (error: any) {
       logger.error(`Error fetching company profile for ${this.symbol}:`, error.message);
       throw error;
