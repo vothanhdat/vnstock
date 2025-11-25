@@ -48,9 +48,21 @@ export class Listing extends BaseAdapter {
   /**
    * Get all listed companies data
    * 
-   * @returns Promise of company listing data
+   * @returns Promise of company data
    */
-  async allCompanies(): Promise<any[]> {
-    return this.callMethod('allCompanies');
+  async companiesInfo(): Promise<any[]> {
+    return this.callMethod('companiesInfo');
+  }
+
+  /**
+   * Search for symbols (MSN-specific)
+   * 
+   * @param query - Search query
+   * @param locale - Optional locale filter
+   * @param limit - Maximum results
+   * @returns Promise of search results
+   */
+  async searchSymbolId(query: string, locale?: string, limit?: number): Promise<any[]> {
+    return this.callMethod('searchSymbolId', query, locale, limit);
   }
 }

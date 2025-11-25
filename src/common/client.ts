@@ -107,7 +107,7 @@ export class Vnstock {
    * const profile = await acb.company.profile();
    * ```
    */
-  stock(symbol?: string, source?: string): StockComponents {
+  stock(symbol?: string, source?: string): StockComponents | MSNComponents {
     const targetSymbol = symbol || this.symbol || 'VN30F1M';
     const targetSource = source || this.source;
     
@@ -116,6 +116,11 @@ export class Vnstock {
     }
     
     this.symbol = targetSymbol;
+
+    if (targetSource.toUpperCase() === 'MSN') {
+      return new MSNComponents(targetSymbol, targetSource);
+    }
+
     return new StockComponents(targetSymbol, targetSource, this.showLog);
   }
 

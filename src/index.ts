@@ -9,6 +9,7 @@
 // Auto-register providers by importing connector and explorer modules
 import './explorer/vci';
 import './explorer/tcbs';
+import './explorer/msn';
 import './connector/fmp';
 import './connector/dnse';
 
