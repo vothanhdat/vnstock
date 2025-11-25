@@ -6,6 +6,8 @@
 
 import axios from 'axios';
 import { getLogger } from '../../core/logger';
+import { FinancialData } from '../../core/types';
+import { normalizeTCBSFinancial, normalizeTCBSFinancialList } from '../../core/financial';
 import { TCBSFinancialReport } from './types';
 
 const logger = getLogger('TCBS.Financial');
@@ -174,5 +176,40 @@ export class TCBSFinancialProvider {
       logger.error(`Error fetching financial ratios for ${this.symbol}:`, error.message);
       throw error;
     }
+  }
+
+  // ============= Normalized Methods (Return unified FinancialData) =============
+
+  /**
+   * Get normalized balance sheet data
+   * 
+   * @param period - Report period (year or quarter)
+   * @returns Promise of normalized FinancialData[]
+   */
+  async normalizedBalanceSheet(period?: string): Promise<FinancialData[]> {
+    const raw = await this.balanceSheet(period);
+    return normalizeTCBSFinancialList(raw, this.symbol);
+  }
+
+  /**
+   * Get normalized income statement data
+   * 
+   * @param period - Report period (year or quarter)
+   * @returns Promise of normalized FinancialData[]
+   */
+  async normalizedIncomeStatement(period?: string): Promise<FinancialData[]> {
+    const raw = await this.incomeStatement(period);
+    return normalizeTCBSFinancialList(raw, this.symbol);
+  }
+
+  /**
+   * Get normalized cash flow data
+   * 
+   * @param period - Report period (year or quarter)
+   * @returns Promise of normalized FinancialData[]
+   */
+  async normalizedCashFlow(period?: string): Promise<FinancialData[]> {
+    const raw = await this.cashFlow(period);
+    return normalizeTCBSFinancialList(raw, this.symbol);
   }
 }

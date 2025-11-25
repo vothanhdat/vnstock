@@ -9,7 +9,7 @@ export { TCBSCompanyProvider } from './company';
 export { TCBSFinancialProvider } from './financial';
 export { TCBSScreenerProvider } from './screener';
 export { TCBSTradingProvider } from './trading';
-export { TCBSListingProvider } from './listing';
+export { TCBSListingProvider, TCBSListingItem } from './listing';
 
 // Auto-register TCBS providers when this module is imported
 import { ProviderRegistry } from '../../core/registry';

@@ -6,6 +6,8 @@
 
 import axios from 'axios';
 import { getLogger } from '../../core/logger';
+import { FinancialData } from '../../core/types';
+import { normalizeVCIFinancial, normalizeVCIFinancialList } from '../../core/financial';
 import { camelToSnake } from '../../core/utils';
 import { VCIFinancialRatio } from './types';
 
@@ -157,6 +159,18 @@ export class VCIFinancialProvider {
       logger.error(`Error fetching financial ratios for ${this.symbol}:`, error.message);
       throw error;
     }
+  }
+
+  // ============= Normalized Methods (Return unified FinancialData) =============
+
+  /**
+   * Get normalized financial ratios
+   * 
+   * @returns Promise of normalized FinancialData[]
+   */
+  async normalizedRatios(): Promise<FinancialData[]> {
+    const raw = await this.ratios();
+    return normalizeVCIFinancialList(raw, this.symbol);
   }
   
   // Note: Implementing full financial reports (Balance Sheet, Income Statement, Cash Flow) 

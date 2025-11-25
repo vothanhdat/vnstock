@@ -38,6 +38,8 @@ export type {
   QuoteData,
   CompanyProfile,
   FinancialData,
+  BalanceSheetData,
+  CashFlowData,
   PriceDepthData,
   QuoteProvider,
   CompanyProvider,
@@ -50,6 +52,19 @@ export type {
   ParameterNames,
   MethodNames,
 } from './core/types';
+
+// Financial utilities
+export {
+  normalizeTCBSFinancial,
+  normalizeTCBSFinancialList,
+  normalizeTCBSRatio,
+  normalizeVCIFinancial,
+  normalizeVCIFinancialList,
+  isFinancialData,
+  filterByPeriod,
+  filterByYear,
+  getLatest,
+} from './core/financial';
 
 // Constants
 export {

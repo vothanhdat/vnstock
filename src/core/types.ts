@@ -113,15 +113,170 @@ export interface CompanyProfile {
   [key: string]: any;
 }
 
+/**
+ * Unified Financial Data interface
+ * 
+ * This interface standardizes financial data from different providers (TCBS, VCI, etc.)
+ * It covers three main categories:
+ * 1. Financial Statements (Income Statement, Balance Sheet, Cash Flow)
+ * 2. Financial Ratios (Valuation, Profitability, Liquidity, Leverage)
+ * 3. Growth Metrics
+ * 
+ * All monetary values are in the source currency (typically VND).
+ * Ratios and percentages are in decimal form (e.g., 0.15 for 15%).
+ */
 export interface FinancialData {
+  // ============= Identification =============
+  /** Stock ticker symbol */
   symbol: string;
-  period: string;
+  /** Reporting period: 'year' or 'quarter' */
+  period: 'year' | 'quarter';
+  /** Fiscal year */
   year: number;
+  /** Quarter number (1-4), only present when period is 'quarter' */
   quarter?: number;
+  /** Data update timestamp */
+  update_date?: number;
+
+  // ============= Income Statement =============
+  /** Total revenue */
   revenue?: number;
-  profit?: number;
+  /** Revenue growth rate (YoY or QoQ) */
+  revenue_growth?: number;
+  /** Cost of goods sold */
+  cost_of_goods_sold?: number;
+  /** Gross profit (revenue - COGS) */
+  gross_profit?: number;
+  /** Operating expenses */
+  operating_expenses?: number;
+  /** Operating profit (EBIT) */
+  operating_profit?: number;
+  /** Interest expense */
+  interest_expense?: number;
+  /** Profit before tax */
+  pre_tax_profit?: number;
+  /** Net profit after tax */
+  net_profit?: number;
+  /** Net profit growth rate (YoY or QoQ) */
+  net_profit_growth?: number;
+  /** Shareholder income (profit attributable to shareholders) */
+  shareholder_income?: number;
+  /** EBITDA (Earnings Before Interest, Taxes, Depreciation, Amortization) */
+  ebitda?: number;
+  /** EBIT (Earnings Before Interest and Taxes) */
+  ebit?: number;
+
+  // ============= Valuation Ratios =============
+  /** Earnings per share */
   eps?: number;
+  /** Trailing twelve months EPS */
+  eps_ttm?: number;
+  /** Book value per share */
+  bvps?: number;
+  /** Price to earnings ratio */
+  pe?: number;
+  /** Price to book ratio */
+  pb?: number;
+  /** Price to sales ratio */
+  ps?: number;
+  /** Price to cash flow ratio */
+  pcf?: number;
+  /** Enterprise value */
+  ev?: number;
+  /** EV to EBITDA ratio */
+  ev_per_ebitda?: number;
+  /** Dividend per share or dividend yield */
+  dividend?: number;
+
+  // ============= Profitability Ratios =============
+  /** Return on equity */
   roe?: number;
+  /** Return on assets */
+  roa?: number;
+  /** Return on invested capital */
+  roic?: number;
+  /** Gross margin (gross_profit / revenue) */
+  gross_margin?: number;
+  /** Net profit margin (net_profit / revenue) */
+  net_profit_margin?: number;
+  /** EBIT margin (ebit / revenue) */
+  ebit_margin?: number;
+
+  // ============= Liquidity Ratios =============
+  /** Current ratio (current_assets / current_liabilities) */
+  current_ratio?: number;
+  /** Quick ratio ((current_assets - inventory) / current_liabilities) */
+  quick_ratio?: number;
+  /** Cash ratio (cash / current_liabilities) */
+  cash_ratio?: number;
+  /** Interest coverage ratio (EBIT / interest_expense) */
+  interest_coverage?: number;
+
+  // ============= Leverage Ratios =============
+  /** Debt to equity ratio */
+  debt_to_equity?: number;
+  /** Leverage ratio */
+  leverage?: number;
+
+  // ============= Market Data =============
+  /** Number of issued shares */
+  issued_shares?: number;
+  /** Charter capital */
+  charter_capital?: number;
+
+  // ============= Provider-specific extra fields =============
+  /** Allow provider-specific additional fields */
+  [key: string]: any;
+}
+
+/**
+ * Balance Sheet specific data
+ */
+export interface BalanceSheetData extends FinancialData {
+  /** Total assets */
+  total_assets?: number;
+  /** Total liabilities */
+  total_liabilities?: number;
+  /** Total equity */
+  total_equity?: number;
+  /** Current assets */
+  current_assets?: number;
+  /** Non-current assets */
+  non_current_assets?: number;
+  /** Current liabilities */
+  current_liabilities?: number;
+  /** Non-current liabilities */
+  non_current_liabilities?: number;
+  /** Cash and cash equivalents */
+  cash?: number;
+  /** Inventory */
+  inventory?: number;
+  /** Accounts receivable */
+  accounts_receivable?: number;
+  /** Accounts payable */
+  accounts_payable?: number;
+  /** Long-term debt */
+  long_term_debt?: number;
+  /** Short-term debt */
+  short_term_debt?: number;
+}
+
+/**
+ * Cash Flow Statement specific data
+ */
+export interface CashFlowData extends FinancialData {
+  /** Cash flow from operating activities */
+  operating_cash_flow?: number;
+  /** Cash flow from investing activities */
+  investing_cash_flow?: number;
+  /** Cash flow from financing activities */
+  financing_cash_flow?: number;
+  /** Net change in cash */
+  net_cash_change?: number;
+  /** Free cash flow (operating - capex) */
+  free_cash_flow?: number;
+  /** Capital expenditure */
+  capex?: number;
 }
 
 export interface PriceDepthData {
