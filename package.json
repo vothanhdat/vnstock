@@ -1,5 +1,5 @@
 {
-  "name": "vnstock",
+  "name": "vnstock-ts",
   "version": "3.3.0",
   "description": "A beginner-friendly yet powerful TypeScript toolkit for financial analysis and automation — built to make modern investing accessible to everyone",
   "main": "dist/index.js",
@@ -25,17 +25,21 @@
     {
       "name": "Thinh Vu",
       "email": "support@vnstocks.com"
+    },
+    {
+      "name": "Dat Vo",
+      "email": "thanhdat1710@gmail.com"
     }
   ],
   "license": "SEE LICENSE IN LICENSE.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thinh-vu/vnstock.git"
+    "url": "https://github.com/vothanhdat/vnstock.git"
   },
   "bugs": {
-    "url": "https://github.com/thinh-vu/vnstock/issues"
+    "url": "https://github.com/vothanhdat/vnstock/issues"
   },
-  "homepage": "https://github.com/thinh-vu/vnstock",
+  "homepage": "https://github.com/vothanhdat/vnstock",
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "@types/node": "^20.19.25",
