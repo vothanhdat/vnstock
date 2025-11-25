@@ -36,7 +36,7 @@ const RESAMPLE_MAP: Record<string, string> = {
 };
 
 interface VCIOHLCResponse {
-  t: number[];  // timestamps
+  t: (number | string)[];  // timestamps
   o: number[];  // open
   h: number[];  // high
   l: number[];  // low
@@ -58,6 +58,8 @@ export class VCIQuoteProvider {
         ? this.getRandomUserAgent()
         : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
       'Accept': 'application/json',
+      'Referer': 'https://trading.vietcap.com.vn/',
+      'Origin': 'https://trading.vietcap.com.vn/',
     };
   }
 
@@ -98,37 +100,57 @@ export class VCIQuoteProvider {
 
       // Build request URL
       const url = `${TRADING_URL}${CHART_URL}`;
-      const params = {
-        ticker: symbol,
-        from: startTime,
-        to: endTime,
-        resolution: intervalKey,
-      };
+      
+      // Calculate countBack
+      const diffTime = Math.abs(endTime - startTime);
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+      
+      let countBack = diffDays;
+      if (intervalKey === 'ONE_MINUTE') {
+          countBack = diffDays * 390; // Approx trading minutes per day
+      } else if (intervalKey === 'ONE_HOUR') {
+          countBack = diffDays * 5; // Approx trading hours per day
+      }
+      // Add some buffer
+      countBack = Math.ceil(countBack * 1.5);
 
-      const config = {
-        headers: this.headers,
-        params,
-        timeout: 30000,
+      const payload = {
+        timeFrame: intervalKey,
+        symbols: [symbol],
+        to: Math.floor(endTime / 1000), // Seconds
+        countBack: countBack
       };
 
       if (this.showLog) {
         logger.info(`Fetching history for ${symbol} from ${startDate} to ${endDate} with resolution ${resolution}`);
       }
 
-      const response = await axios.get<VCIOHLCResponse>(url, config);
-      const data = response.data;
+      const response = await axios.post<VCIOHLCResponse[]>(url, payload, { 
+        headers: this.headers,
+        timeout: 30000
+      });
+      
+      const responseData = response.data;
+
+      if (!responseData || !Array.isArray(responseData) || responseData.length === 0) {
+        logger.warn(`No data returned for ${symbol}. Response: ${JSON.stringify(responseData)}`);
+        return [];
+      }
+
+      const data = responseData[0];
 
       if (!data || !data.t || data.t.length === 0) {
-        logger.warn(`No data returned for ${symbol}`);
+        logger.warn(`No data returned for ${symbol}. Response: ${JSON.stringify(data)}`);
         return [];
       }
 
       // Transform to QuoteData format
       const quoteData: QuoteData[] = [];
       for (let i = 0; i < data.t.length; i++) {
+        const timestamp = typeof data.t[i] === 'string' ? parseInt(data.t[i] as string) : data.t[i] as number;
         quoteData.push({
           symbol,
-          time: new Date(data.t[i]),
+          time: new Date(timestamp * 1000),
           open: data.o[i],
           high: data.h[i],
           low: data.l[i],
@@ -153,57 +175,14 @@ export class VCIQuoteProvider {
   }
 
   /**
-   * Fetch intraday trading data
-   * 
-   * @param pageSize - Number of records to fetch
-   * @returns Promise of intraday quote data
+   * Fetch intraday price data (not implemented yet)
    */
-  async intraday(pageSize: number = 100): Promise<QuoteData[]> {
-    try {
-      // For now, return mock data as the actual implementation would require
-      // GraphQL queries which are more complex
-      logger.warn('Intraday data not yet fully implemented - returning sample data');
-      
-      const now = new Date();
-      return [
-        {
-          symbol: this.symbol,
-          time: now,
-          open: 100,
-          high: 102,
-          low: 99,
-          close: 101,
-          volume: pageSize * 100,
-        },
-      ];
-    } catch (error) {
-      logger.error(`Error fetching intraday data for ${this.symbol}:`, error);
-      throw error;
-    }
-  }
-
-  /**
-   * Fetch price depth / order book data
-   * 
-   * @returns Promise of price depth data
-   */
-  async priceDepth(): Promise<any> {
-    try {
-      logger.warn('Price depth not yet fully implemented - returning sample data');
-      
-      return {
-        bids: [
-          { price: 100, volume: 1000 },
-          { price: 99.5, volume: 2000 },
-        ],
-        asks: [
-          { price: 100.5, volume: 1500 },
-          { price: 101, volume: 2500 },
-        ],
-      };
-    } catch (error) {
-      logger.error(`Error fetching price depth for ${this.symbol}:`, error);
-      throw error;
-    }
+  async intraday(
+    startDate: string,
+    endDate: string,
+    resolution: string = '1m'
+  ): Promise<QuoteData[]> {
+    // VCI uses the same endpoint for intraday if resolution is small
+    return this.history(startDate, endDate, resolution);
   }
 }
