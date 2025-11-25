@@ -4,29 +4,30 @@ This document provides a detailed comparison of the features and fields supporte
 
 ## Feature Support Matrix
 
-| Feature Category | Feature | TCBS | VCI | MSN | FMarket | DNSE |
-| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Market Data** | Historical Quote (OHLCV) | ✅ | ✅ | ✅ | ❌ | ❌ |
-| | Intraday Quote | ✅ | ❌ | ❌ | ❌ | ❌ |
-| | Price Board (Real-time) | ✅ | ✅ | ❌ | ❌ | ❌ |
-| | Crypto / Forex Data | ❌ | ❌ | ✅ | ❌ | ❌ |
-| **Company Info** | Company Profile | ✅ | ✅ | ❌ | ❌ | ❌ |
-| | Shareholders | ✅ | ✅ | ❌ | ❌ | ❌ |
-| | Subsidiaries | ✅ | ❌ | ❌ | ❌ | ❌ |
-| | Officers / Key People | ❌ | ❌ | ❌ | ❌ | ❌ |
-| **Financials** | Income Statement | ✅ | ❌ | ❌ | ❌ | ❌ |
-| | Balance Sheet | ✅ | ❌ | ❌ | ❌ | ❌ |
-| | Cash Flow | ✅ | ❌ | ❌ | ❌ | ❌ |
-| | Financial Ratios | ✅ | ✅ | ❌ | ❌ | ❌ |
-| **Discovery** | Listing (All Symbols) | ⚠️ (Partial) | ✅ | ❌ | ❌ | ❌ |
-| | Search Symbol | ❌ | ❌ | ✅ | ❌ | ❌ |
-| | Screener | ✅ | ❌ | ❌ | ❌ | ❌ |
-| **Funds** | Fund Listing | ❌ | ❌ | ❌ | ✅ | ❌ |
-| | Fund Details (NAV, Holdings) | ❌ | ❌ | ❌ | ✅ | ❌ |
-| **Trading** | Authentication | ❌ | ❌ | ❌ | ❌ | ✅ |
-| | Place Order | ❌ | ❌ | ❌ | ❌ | ✅ |
-| | Account Balance | ❌ | ❌ | ❌ | ❌ | ✅ |
-| | Portfolio | ❌ | ❌ | ❌ | ❌ | ✅ |
+| Feature Category | Feature | TCBS | VCI | MSN | FMarket | DNSE | XNO | Misc |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Market Data** | Historical Quote (OHLCV) | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| | Intraday Quote | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ |
+| | Price Board (Real-time) | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| | Crypto / Forex Data | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ |
+| | Gold Price | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
+| **Company Info** | Company Profile | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| | Shareholders | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| | Subsidiaries | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| | Officers / Key People | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| **Financials** | Income Statement | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| | Balance Sheet | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| | Cash Flow | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| | Financial Ratios | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| **Discovery** | Listing (All Symbols) | ⚠️ (Partial) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| | Search Symbol | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ |
+| | Screener | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| **Funds** | Fund Listing | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
+| | Fund Details (NAV, Holdings) | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
+| **Trading** | Authentication | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ |
+| | Place Order | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ |
+| | Account Balance | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ |
+| | Portfolio | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ |
 
 > **Legend:**
 > - ✅: Supported
@@ -90,6 +91,13 @@ The `StockQuote` interface is standardized.
 | **NAV Report** | `date`, `nav_per_unit` |
 | **Asset Holding** | `asset_type`, `asset_percent` |
 
+### 5. Gold Price (Misc)
+
+| Provider | Function | Description |
+| :--- | :--- | :--- |
+| **SJC** | `sjcGoldPrice()` | SJC gold prices (requires date) |
+| **BTMC** | `btmcGoldPrice()` | Bao Tin Minh Chau gold prices |
+
 ---
 
 ## Provider Recommendations
@@ -99,3 +107,5 @@ The `StockQuote` interface is standardized.
 - **Best for Global Markets**: **MSN** is the go-to for Crypto, Forex, and searching for international symbols.
 - **Best for Mutual Funds**: **FMarket** is the dedicated provider for Vietnam mutual fund data.
 - **Best for Trading Integration**: **DNSE** is currently the only connector supporting authenticated trading actions.
+- **Best for Gold Prices**: **Misc** module provides SJC and BTMC gold prices.
+- **Alternative for Market Data**: **XNO** provides reliable OHLCV data (requires API key).
