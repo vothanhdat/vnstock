@@ -4,6 +4,7 @@
 
 import { Vnstock, DataSource, TimeFrame } from './index';
 import { ProviderRegistry } from './core/registry';
+import { StockComponents } from './common/client';
 
 describe('Vnstock Core', () => {
   describe('Vnstock Client', () => {
@@ -35,7 +36,7 @@ describe('Vnstock Core', () => {
       ProviderRegistry.register('screener', 'vci', MockProvider);
 
       const client = new Vnstock();
-      const stock = client.stock('ACB');
+      const stock = client.stock('ACB') as StockComponents;
       expect(stock).toBeDefined();
       expect(stock.quote).toBeDefined();
       expect(stock.company).toBeDefined();

@@ -24,10 +24,17 @@ const createMockResponse = (data: any, status = 200) => ({
 
 describe('XNO Connector Module', () => {
   const originalEnv = process.env;
+  let consoleErrorSpy: jest.SpyInstance;
 
   beforeEach(() => {
     jest.clearAllMocks();
     process.env = { ...originalEnv };
+    // Suppress expected console.error output during tests
+    consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
+  });
+
+  afterEach(() => {
+    consoleErrorSpy.mockRestore();
   });
 
   afterAll(() => {

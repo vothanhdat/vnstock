@@ -12,6 +12,20 @@ import { ProviderRegistry } from './core/registry';
 import { Quote } from './api/quote';
 
 describe('Connector Providers', () => {
+  let consoleErrorSpy: jest.SpyInstance;
+  let consoleLogSpy: jest.SpyInstance;
+
+  beforeEach(() => {
+    // Suppress expected console output during tests
+    consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
+    consoleLogSpy = jest.spyOn(console, 'log').mockImplementation(() => {});
+  });
+
+  afterEach(() => {
+    consoleErrorSpy.mockRestore();
+    consoleLogSpy.mockRestore();
+  });
+
   describe('VCI Quote Provider', () => {
     it('should create VCI provider instance', () => {
       const provider = new VCIQuoteProvider({ symbol: 'ACB', showLog: false });
