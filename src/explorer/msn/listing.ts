@@ -2,6 +2,7 @@ import { ProviderRegistry } from '../../core/registry';
 import { getLogger } from '../../core/logger';
 import { getHeaders, getMsnApiKey } from './helper';
 import { SYMBOL_INDEX_COLS_MAP } from './const';
+import { MSNSearchResult } from './types';
 
 const logger = getLogger('MSNListing');
 
@@ -19,7 +20,7 @@ export class MSNListingProvider {
         }
     }
 
-    async searchSymbolId(query: string, locale?: string, limit: number = 10): Promise<any[]> {
+    async searchSymbolId(query: string, locale?: string, limit: number = 10): Promise<MSNSearchResult[]> {
         const url = `https://services.bingapis.com/contentservices-finance.csautosuggest/api/v1/Query?query=${query}&market=${locale || ''}&count=${limit}`;
         
         const headers = getHeaders(this.source);

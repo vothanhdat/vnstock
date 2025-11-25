@@ -6,6 +6,7 @@
 
 import axios from 'axios';
 import { getLogger } from '../../core/logger';
+import { TCBSPriceBoard } from './types';
 
 const logger = getLogger('TCBS.Trading');
 
@@ -45,7 +46,7 @@ export class TCBSTradingProvider {
    * @param stdColumns - Use standard columns or extended columns
    * @returns Promise of price board data
    */
-  async priceBoard(symbolList: string[], stdColumns: boolean = true): Promise<any> {
+  async priceBoard(symbolList: string[], stdColumns: boolean = true): Promise<TCBSPriceBoard[]> {
     try {
       const url = `${BASE_URL}/${STOCKS_URL}/v1/stock/second-tc-price`;
       

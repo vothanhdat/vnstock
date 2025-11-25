@@ -12,15 +12,15 @@ const logger = getLogger('DNSE.Trade');
 
 const BASE_URL = 'https://api.dnse.com.vn';
 
-interface LoginResponse {
+export interface LoginResponse {
   token: string;
 }
 
-interface AccountResponse {
+export interface AccountResponse {
   [key: string]: any;
 }
 
-interface SubAccountsResponse {
+export interface SubAccountsResponse {
   accounts: Array<{
     accountNumber: string;
     accountType: string;
@@ -28,25 +28,25 @@ interface SubAccountsResponse {
   }>;
 }
 
-interface AccountBalanceResponse {
+export interface AccountBalanceResponse {
   [key: string]: any;
 }
 
-interface LoanPackage {
+export interface LoanPackage {
   id: number;
   name: string;
   [key: string]: any;
 }
 
-interface TradeCapacity {
+export interface TradeCapacity {
   [key: string]: any;
 }
 
-interface OrderResponse {
+export interface OrderResponse {
   [key: string]: any;
 }
 
-interface DealResponse {
+export interface DealResponse {
   [key: string]: any;
 }
 
@@ -294,7 +294,7 @@ export class DNSETradingProvider {
       const response = await axios.get(url, config);
 
       if (response.status === 200) {
-        return response.data.loanPackages || [];
+        return (response.data as any).loanPackages || [];
       } else {
         logger.error('Get loan packages failed');
         return null;
@@ -351,7 +351,7 @@ export class DNSETradingProvider {
       const response = await axios.get(url, config);
 
       if (response.status === 200) {
-        return response.data;
+        return response.data as TradeCapacity;
       } else {
         logger.error('Get trade capacities failed');
         return null;
@@ -420,7 +420,7 @@ export class DNSETradingProvider {
       const response = await axios.post(url, payload, config);
 
       if (response.status === 200) {
-        return response.data;
+        return response.data as OrderResponse;
       } else {
         logger.error('Place order failed');
         return null;
@@ -465,7 +465,7 @@ export class DNSETradingProvider {
 
       if (response.status === 200) {
         logger.info('Order list retrieved');
-        return response.data.orders || [];
+        return (response.data as any).orders || [];
       } else {
         logger.error('Get order list failed');
         return null;
@@ -510,7 +510,7 @@ export class DNSETradingProvider {
       const response = await axios.get(url, config);
 
       if (response.status === 200) {
-        return response.data;
+        return response.data as OrderResponse;
       } else {
         logger.error('Get order detail failed');
         return null;
@@ -602,7 +602,7 @@ export class DNSETradingProvider {
 
       if (response.status === 200) {
         logger.info('Deals list retrieved');
-        return response.data.data || [];
+        return (response.data as any).data || [];
       } else {
         logger.error('Get deals list failed');
         return null;

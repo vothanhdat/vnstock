@@ -6,6 +6,7 @@
 
 import axios from 'axios';
 import { getLogger } from '../../core/logger';
+import { TCBSFinancialReport } from './types';
 
 const logger = getLogger('TCBS.Financial');
 
@@ -119,7 +120,7 @@ export class TCBSFinancialProvider {
    * @param period - Report period (year or quarter)
    * @returns Promise of balance sheet data
    */
-  async balanceSheet(period?: string): Promise<any> {
+  async balanceSheet(period?: string): Promise<TCBSFinancialReport[]> {
     return this.report('balance_sheet', period);
   }
 
@@ -129,7 +130,7 @@ export class TCBSFinancialProvider {
    * @param period - Report period (year or quarter)
    * @returns Promise of income statement data
    */
-  async incomeStatement(period?: string): Promise<any> {
+  async incomeStatement(period?: string): Promise<TCBSFinancialReport[]> {
     return this.report('income_statement', period);
   }
 
@@ -139,7 +140,7 @@ export class TCBSFinancialProvider {
    * @param period - Report period (year or quarter)
    * @returns Promise of cash flow data
    */
-  async cashFlow(period?: string): Promise<any> {
+  async cashFlow(period?: string): Promise<TCBSFinancialReport[]> {
     return this.report('cash_flow', period);
   }
 

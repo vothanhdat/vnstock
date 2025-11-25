@@ -7,6 +7,7 @@
 import axios from 'axios';
 import { getLogger } from '../../core/logger';
 import { camelToSnake } from '../../core/utils';
+import { VCIListing } from './types';
 
 const logger = getLogger('VCI.Listing');
 
@@ -43,7 +44,7 @@ export class VCIListingProvider {
    * 
    * @returns Promise of symbol list data
    */
-  async allSymbols(): Promise<any[]> {
+  async allSymbols(): Promise<VCIListing[]> {
     try {
       const query = `
         query {

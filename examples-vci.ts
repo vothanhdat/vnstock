@@ -4,14 +4,14 @@
  * This file demonstrates how to use the vnstock library with VCI (Vietcap) data source.
  */
 
-import { Vnstock, DataSource, TimeFrame } from './src/index';
+import { Vnstock, DataSource, TimeFrame, StockComponents } from './src/index';
 
 async function main() {
   console.log('=== Vnstock VCI Examples ===\n');
 
   const vnstock = new Vnstock();
   const symbol = 'VNM';
-  const stock = vnstock.stock(symbol, DataSource.VCI);
+  const stock = vnstock.stock(symbol, DataSource.VCI) as StockComponents;
 
   // Example 1: Historical Quote
   console.log('Example 1: Historical Quote');

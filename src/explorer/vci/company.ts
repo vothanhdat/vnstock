@@ -7,6 +7,7 @@
 import axios from 'axios';
 import { getLogger } from '../../core/logger';
 import { camelToSnake, cleanHtml } from '../../core/utils';
+import { VCICompanyProfile, VCIShareholder } from './types';
 
 const logger = getLogger('VCI.Company');
 
@@ -45,7 +46,7 @@ export class VCICompanyProvider {
    * 
    * @returns Promise of company profile data
    */
-  async profile(): Promise<any> {
+  async profile(): Promise<VCICompanyProfile> {
     try {
       const query = `
         query Query($ticker: String!) {
@@ -113,11 +114,11 @@ export class VCICompanyProvider {
   }
 
   /**
-   * Fetch company shareholders
+   * Fetch major shareholders information
    * 
    * @returns Promise of shareholders data
    */
-  async shareholders(): Promise<any[]> {
+  async shareholders(): Promise<VCIShareholder[]> {
     try {
       const query = `
         query Query($ticker: String!) {

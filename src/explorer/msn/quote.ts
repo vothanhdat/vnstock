@@ -2,6 +2,7 @@ import { ProviderRegistry } from '../../core/registry';
 import { getLogger } from '../../core/logger';
 import { getMsnApiKey, getAssetType } from './helper';
 import { BASE_URL, RESAMPLE_MAP, OHLC_MAP } from './const';
+import { MSNQuoteData } from './types';
 
 const logger = getLogger('MSNQuote');
 
@@ -33,7 +34,7 @@ export class MSNQuoteProvider {
     startOrOptions: string | HistoryOptions,
     end?: string,
     interval: string = '1D'
-  ): Promise<any[]> {
+  ): Promise<MSNQuoteData[]> {
     await this.ensureApiKey();
 
     let start: string;

@@ -7,6 +7,7 @@
 import axios from 'axios';
 import { getLogger } from '../../core/logger';
 import { camelToSnake } from '../../core/utils';
+import { VCIFinancialRatio } from './types';
 
 const logger = getLogger('VCI.Financial');
 
@@ -45,7 +46,7 @@ export class VCIFinancialProvider {
    * 
    * @returns Promise of financial ratios data
    */
-  async ratios(): Promise<any[]> {
+  async ratios(): Promise<VCIFinancialRatio[]> {
     try {
       const query = `
         query Query($ticker: String!) {

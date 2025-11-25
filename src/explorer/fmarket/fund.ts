@@ -1,6 +1,7 @@
 import { ProviderRegistry } from '../../core/registry';
 import { getLogger } from '../../core/logger';
 import { BASE_URL, FUND_TYPE_MAPPING, FUND_LIST_COLUMNS, FUND_LIST_MAPPING } from './const';
+import { FMarketFundModel, FMarketTopHolding, FMarketIndustryHolding, FMarketNavReport, FMarketAssetHolding } from './types';
 
 const logger = getLogger('FMarketFund');
 
@@ -34,7 +35,7 @@ export class FMarketFundProvider {
    * Get list of all available mutual funds
    * @param fundType Filter by fund type: 'BALANCED', 'BOND', 'STOCK' or '' for all
    */
-  async listing(fundType: string = ""): Promise<any[]> {
+  async listing(fundType: string = ""): Promise<FMarketFundModel[]> {
     const type = fundType.toUpperCase();
     const fundAssetTypes = FUND_TYPE_MAPPING[type] || [];
 
@@ -102,7 +103,7 @@ export class FMarketFundProvider {
    * Search for funds by symbol
    * @param symbol Fund short name (e.g. 'SSISCA')
    */
-  async filter(symbol: string = ""): Promise<any[]> {
+  async filter(symbol: string = ""): Promise<FMarketFundModel[]> {
     const searchSymbol = symbol.toUpperCase();
     
     const payload = {
@@ -145,7 +146,7 @@ export class FMarketFundProvider {
    * Get top holdings for a fund
    * @param fundId Fund ID
    */
-  async topHolding(fundId: number): Promise<any[]> {
+  async topHolding(fundId: number): Promise<FMarketTopHolding[]> {
     try {
       const response = await fetch(`${BASE_URL}/${fundId}`, {
         method: 'GET',
@@ -198,7 +199,7 @@ export class FMarketFundProvider {
    * Get industry allocation for a fund
    * @param fundId Fund ID
    */
-  async industryHolding(fundId: number): Promise<any[]> {
+  async industryHolding(fundId: number): Promise<FMarketIndustryHolding[]> {
     try {
       const response = await fetch(`${BASE_URL}/${fundId}`, {
         method: 'GET',
@@ -227,7 +228,7 @@ export class FMarketFundProvider {
    * Get NAV history for a fund
    * @param fundId Fund ID
    */
-  async navReport(fundId: number): Promise<any[]> {
+  async navReport(fundId: number): Promise<FMarketNavReport[]> {
     const currentDate = new Date().toISOString().slice(0, 10).replace(/-/g, '');
     const url = `${BASE_URL.replace('/products', '/product')}/get-nav-history`;
     
@@ -267,7 +268,7 @@ export class FMarketFundProvider {
    * Get asset allocation for a fund
    * @param fundId Fund ID
    */
-  async assetHolding(fundId: number): Promise<any[]> {
+  async assetHolding(fundId: number): Promise<FMarketAssetHolding[]> {
     try {
       const response = await fetch(`${BASE_URL}/${fundId}`, {
         method: 'GET',
@@ -297,10 +298,10 @@ export class FMarketFundProvider {
    * @param symbol Fund symbol (e.g. 'SSISCA')
    */
   async getDetails(symbol: string): Promise<{
-    topHolding: any[],
-    industryHolding: any[],
-    navReport: any[],
-    assetHolding: any[]
+    topHolding: FMarketTopHolding[],
+    industryHolding: FMarketIndustryHolding[],
+    navReport: FMarketNavReport[],
+    assetHolding: FMarketAssetHolding[]
   }> {
     const funds = await this.filter(symbol);
     if (funds.length === 0) {

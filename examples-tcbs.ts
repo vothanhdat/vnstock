@@ -5,7 +5,7 @@
  * Note: This example makes real network requests to TCBS API.
  */
 
-import { Vnstock, Quote, DataSource, TimeFrame } from './src/index';
+import { Vnstock, Quote, DataSource, TimeFrame, StockComponents } from './src/index';
 
 async function main() {
   console.log('=== Vnstock TCBS Examples ===\n');
@@ -14,7 +14,7 @@ async function main() {
   console.log('Example 1: Basic Stock Data (TCBS)');
   // Note: Vnstock constructor defaults to VCI, but we can specify source in methods or use specific classes
   const vnstock = new Vnstock();
-  const acb = vnstock.stock('ACB', DataSource.TCBS);
+  const acb = vnstock.stock('ACB', DataSource.TCBS) as StockComponents;
   
   try {
     console.log('Fetching historical data for ACB...');

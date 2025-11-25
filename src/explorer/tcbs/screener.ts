@@ -6,6 +6,7 @@
 
 import axios from 'axios';
 import { getLogger } from '../../core/logger';
+import { TCBSScreenerResult } from './types';
 
 const logger = getLogger('TCBS.Screener');
 
@@ -43,7 +44,7 @@ export class TCBSScreenerProvider {
    * @param id - Optional screener ID
    * @returns Promise of screened stock data
    */
-  async screen(params: Record<string, any> = { exchangeName: 'HOSE,HNX,UPCOM' }, limit: number = 50, id?: string): Promise<any> {
+  async screen(params: Record<string, any> = { exchangeName: 'HOSE,HNX,UPCOM' }, limit: number = 50, id?: string): Promise<TCBSScreenerResult[]> {
     try {
       const url = `${BASE_URL}/ligo/v1/watchlist/preview`;
       

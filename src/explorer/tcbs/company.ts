@@ -6,6 +6,7 @@
 
 import axios from 'axios';
 import { getLogger } from '../../core/logger';
+import { TCBSCompanyProfile } from './types';
 
 const logger = getLogger('TCBS.Company');
 
@@ -133,7 +134,7 @@ export class TCBSCompanyProvider {
    * 
    * @returns Promise of company profile data
    */
-  async profile(): Promise<any> {
+  async profile(): Promise<TCBSCompanyProfile> {
     try {
       const url = `${BASE_URL}/${ANALYSIS_URL}/v1/company/${this.symbol}/overview`;
       

@@ -7,6 +7,7 @@
 import axios from 'axios';
 import { getLogger } from '../../core/logger';
 import { camelToSnake } from '../../core/utils';
+import { VCIPriceBoard } from './types';
 
 const logger = getLogger('VCI.Trading');
 
@@ -44,7 +45,7 @@ export class VCITradingProvider {
    * @param symbols - List of symbols
    * @returns Promise of price board data
    */
-  async priceBoard(symbols: string[]): Promise<any[]> {
+  async priceBoard(symbols: string[]): Promise<VCIPriceBoard[]> {
     try {
       const url = `${TRADING_URL}price/symbols/getList`;
       const payload = { symbols };
