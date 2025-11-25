@@ -17,6 +17,15 @@ vnstock/
 │   │   └── trading.ts           # Trading data
 │   ├── common/                   # Common utilities
 │   │   └── client.ts            # Main Vnstock client
+│   ├── connector/                # Broker connectors
+│   │   ├── dnse/                # DNSE connector
+│   │   └── xno/                 # XNO connector
+│   ├── explorer/                 # Data explorers
+│   │   ├── tcbs/                # TCBS explorer
+│   │   ├── vci/                 # VCI explorer
+│   │   ├── msn/                 # MSN explorer
+│   │   ├── fmarket/             # FMarket explorer
+│   │   └── misc/                # Miscellaneous (Gold, etc.)
 │   ├── core/                     # Core infrastructure
 │   │   ├── base.ts              # Base adapter class
 │   │   ├── config.ts            # Configuration
