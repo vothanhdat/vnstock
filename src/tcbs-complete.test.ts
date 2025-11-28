@@ -94,6 +94,15 @@ describe('Complete TCBS Providers', () => {
       const provider = new TCBSScreenerProvider({ showLog: false });
       expect(provider).toBeDefined();
     });
+
+    it('should return screener field metadata', () => {
+      const provider = new TCBSScreenerProvider({ showLog: false });
+      const metadata = provider.getScreenerFieldMetadata();
+      expect(metadata).toBeDefined();
+      expect(Object.keys(metadata).length).toBeGreaterThan(0);
+      expect(metadata['marketCap']).toBeDefined();
+      expect(metadata['marketCap'].label.en).toBe('Market Cap');
+    });
   });
 
   describe('TCBS Trading Provider', () => {
@@ -132,6 +141,13 @@ describe('Complete TCBS Providers', () => {
     it('should work with Screener adapter', () => {
       const screener = new Screener('tcbs', { showLog: false });
       expect(screener).toBeDefined();
+    });
+
+    it('should retrieve metadata via Screener adapter', async () => {
+      const screener = new Screener('tcbs', { showLog: false });
+      const metadata = await screener.getFieldMetadata();
+      expect(metadata).toBeDefined();
+      expect(metadata['marketCap']).toBeDefined();
     });
 
     it('should work with Trading adapter', () => {

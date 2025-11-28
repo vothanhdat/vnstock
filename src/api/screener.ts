@@ -3,7 +3,7 @@
  */
 
 import { BaseAdapter } from '../core/base';
-import { DataSource } from '../core/types';
+import { DataSource, ScreenerFieldInfo, LocalizedScreenerFieldInfo } from '../core/types';
 
 export class Screener extends BaseAdapter {
   constructor(
@@ -64,5 +64,37 @@ export class Screener extends BaseAdapter {
    */
   async topValue(limit: number = 10): Promise<any[]> {
     return this.callMethod('topValue', limit);
+  }
+
+  /**
+   * Get screener field metadata (if supported by provider)
+   * Returns definitions of fields including labels, tooltips, units, etc.
+   * 
+   * @param lang - Language for metadata (default: 'en')
+   */
+  async getFieldMetadata(lang: 'vi' | 'en' = 'en'): Promise<Record<string, LocalizedScreenerFieldInfo>> {
+    if (this._provider.getScreenerFieldMetadata) {
+      const raw = this._provider.getScreenerFieldMetadata() as Record<string, ScreenerFieldInfo>;
+      const result: Record<string, LocalizedScreenerFieldInfo> = {};
+      
+      for (const [key, field] of Object.entries(raw)) {
+        // Helper to get localized value with fallback
+        const getVal = (obj: any) => {
+          if (!obj) return undefined;
+          return obj[lang] || obj['en'] || obj['vi'];
+        };
+
+        result[key] = {
+          key: field.key,
+          label: getVal(field.label) || field.key,
+          tooltip: getVal(field.tooltip),
+          unit: (typeof field.unit === 'object' && field.unit !== null) ? getVal(field.unit) : field.unit,
+          type: field.type,
+          values: field.values
+        };
+      }
+      return result;
+    }
+    return {};
   }
 }

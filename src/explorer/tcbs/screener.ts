@@ -7,6 +7,7 @@
 import axios from 'axios';
 import { getLogger } from '../../core/logger';
 import { TCBSScreenerResult } from './types';
+import screenerMetadata from './info.json';
 
 const logger = getLogger('TCBS.Screener');
 
@@ -34,6 +35,74 @@ export class TCBSScreenerProvider {
       'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     ];
     return agents[Math.floor(Math.random() * agents.length)];
+  }
+
+  /**
+   * Get metadata for all available screener fields
+   * Useful for understanding field definitions, units, and tooltips
+   */
+  getScreenerFieldMetadata(): Record<string, any> {
+    const fields = new Map<string, any>();
+    
+    // Helper to extract field info
+    const extractField = (item: any) => {
+      if (item.key && item.key.data) {
+        // Rich definition from conditionsForSearch
+        return {
+          key: item.key.data,
+          label: item.key.lang,
+          tooltip: item.tooltip,
+          unit: item.unit?.lang || item.unit,
+          type: item.type,
+          values: item.value // Enum values if any
+        };
+      } else if (item.data) {
+        // Simple definition
+        return {
+          key: item.data,
+          label: item.lang
+        };
+      }
+      return null;
+    };
+
+    // 1. Process conditionsForSearch (Rich metadata)
+    if ((screenerMetadata as any).conditionsForSearch) {
+      for (const group of (screenerMetadata as any).conditionsForSearch) {
+        if (group.items) {
+          for (const item of group.items) {
+            const info = extractField(item);
+            if (info) fields.set(info.key, info);
+          }
+        }
+      }
+    }
+
+    // 2. Process other sections to catch any missing fields
+    const otherSections = ['conditionsForFilter', 'conditionsForOptions', 'keyDetails'];
+    for (const section of otherSections) {
+      if ((screenerMetadata as any)[section]) {
+        const data = (screenerMetadata as any)[section];
+        // Some sections are arrays of groups, some might be direct arrays (keyDetails)
+        if (Array.isArray(data)) {
+          for (const groupOrItem of data) {
+            if (groupOrItem.items) {
+              // It's a group
+              for (const item of groupOrItem.items) {
+                const info = extractField(item);
+                if (info && !fields.has(info.key)) fields.set(info.key, info);
+              }
+            } else {
+              // It's a direct item (like in keyDetails)
+              const info = extractField(groupOrItem);
+              if (info && !fields.has(info.key)) fields.set(info.key, info);
+            }
+          }
+        }
+      }
+    }
+
+    return Object.fromEntries(fields);
   }
 
   /**

@@ -284,6 +284,44 @@ export interface PriceDepthData {
   asks: Array<{ price: number; volume: number }>;
 }
 
+/**
+ * Screener Field Metadata
+ * Describes a field available for screening
+ */
+export interface ScreenerFieldInfo {
+  /** Field identifier */
+  key: string;
+  /** Localized label */
+  label: { vi: string; en: string };
+  /** Localized tooltip/description */
+  tooltip?: { vi: string; en: string };
+  /** Unit of measurement (e.g., %, billion) */
+  unit?: string | { vi: string; en: string };
+  /** Data type (e.g., fundamental, technical) */
+  type?: string;
+  /** Enum values for list-based fields */
+  values?: any[];
+}
+
+/**
+ * Localized Screener Field Metadata
+ * Describes a field available for screening with localized strings
+ */
+export interface LocalizedScreenerFieldInfo {
+  /** Field identifier */
+  key: string;
+  /** Localized label */
+  label: string;
+  /** Localized tooltip/description */
+  tooltip?: string;
+  /** Unit of measurement (e.g., %, billion) */
+  unit?: string;
+  /** Data type (e.g., fundamental, technical) */
+  type?: string;
+  /** Enum values for list-based fields */
+  values?: any[];
+}
+
 // ============================================================================
 // PROVIDER INTERFACES
 // ============================================================================

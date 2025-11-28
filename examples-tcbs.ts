@@ -14,7 +14,7 @@ async function main() {
   console.log('Example 1: Basic Stock Data (TCBS)');
   // Note: Vnstock constructor defaults to VCI, but we can specify source in methods or use specific classes
   const vnstock = new Vnstock();
-  const acb = vnstock.stock('ACB', DataSource.TCBS) as StockComponents;
+  const acb = vnstock.stock('VCB', DataSource.TCBS) as StockComponents;
   
   try {
     console.log('Fetching historical data for ACB...');
@@ -118,6 +118,32 @@ async function main() {
     if (screened.length > 0) {
         console.log('First record:', screened[0]);
     }
+
+    console.log('Fetching screener field metadata (English)...');
+    const metadataEn = await acb.screener.getFieldMetadata('en');
+    console.log(`Fetched metadata for ${Object.keys(metadataEn).length} fields`);
+    
+    console.log('Fetching screener field metadata (Vietnamese)...');
+    const metadataVi = await acb.screener.getFieldMetadata('vi');
+    
+    // Log some interesting fields
+    const fieldsToShow = ['marketCap', 'roe', 'pe'];
+    fieldsToShow.forEach(field => {
+      if (metadataEn[field] && metadataVi[field]) {
+        console.log(`Field: ${field}`);
+        console.log(`  Label (EN): ${metadataEn[field].label}`);
+        console.log(`  Label (VI): ${metadataVi[field].label}`);
+        
+        if (metadataEn[field].unit) {
+             console.log(`  Unit (EN): ${metadataEn[field].unit}`);
+        }
+        if (metadataVi[field].unit) {
+             console.log(`  Unit (VI): ${metadataVi[field].unit}`);
+        }
+        
+        console.log(`  Tooltip (EN): ${metadataEn[field].tooltip}`);
+      }
+    });
   } catch (error) {
     console.error('Error screening stocks:', error);
   }
