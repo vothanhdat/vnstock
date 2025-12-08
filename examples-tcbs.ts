@@ -15,13 +15,13 @@ async function main() {
   // Note: Vnstock constructor defaults to VCI, but we can specify source in methods or use specific classes
   const vnstock = new Vnstock();
   const acb = vnstock.stock('VCB', DataSource.TCBS) as StockComponents;
-  
+
   try {
     console.log('Fetching historical data for ACB...');
     const history = await acb.quote.history('2024-01-01', '2024-01-31', TimeFrame.DAILY);
     console.log(`Fetched ${history.length} historical records`);
     if (history.length > 0) {
-        console.log('First record:', history[0]);
+      console.log('First record:', history[0]);
     }
   } catch (error) {
     console.error('Error fetching history:', error);
@@ -31,13 +31,13 @@ async function main() {
   // Example 2: Using Quote class directly with TCBS
   console.log('Example 2: Using Quote Class directly');
   const quote = new Quote(DataSource.TCBS, 'VNM');
-  
+
   try {
     console.log('Fetching intraday data for VNM...');
     const intraday = await quote.intraday(20);
     console.log(`Fetched ${intraday.length} intraday records`);
     if (intraday.length > 0) {
-        console.log('Latest record:', intraday[0]);
+      console.log('Latest record:', intraday[0]);
     }
   } catch (error) {
     console.error('Error fetching intraday:', error);
@@ -63,7 +63,7 @@ async function main() {
     const incomeStatement = await acb.finance.incomeStatement();
     console.log(`Fetched ${incomeStatement.length} records`);
     if (incomeStatement.length > 0) {
-        console.log('Latest record:', incomeStatement[0]);
+      console.log('Latest record:', incomeStatement[0]);
     }
 
     console.log('Fetching balance sheet for ACB (Quarterly)...');
@@ -82,7 +82,7 @@ async function main() {
     const symbols = await acb.listing.allSymbols('HOSE');
     console.log(`Fetched ${symbols.length} symbols`);
     if (symbols.length > 0) {
-        console.log('First symbol:', symbols[0]);
+      console.log('First symbol:', symbols[0]);
     }
   } catch (error) {
     console.error('Error fetching listing data:', error);
@@ -96,7 +96,7 @@ async function main() {
     const priceBoard = await acb.trading.priceBoard(['ACB', 'VNM', 'TCB']);
     console.log(`Fetched ${priceBoard.length} records`);
     if (priceBoard.length > 0) {
-        console.log('First record:', priceBoard[0]);
+      console.log('First record:', priceBoard[0]);
     }
   } catch (error) {
     console.error('Error fetching price board:', error);
@@ -110,22 +110,22 @@ async function main() {
     // Note: The screener parameters depend on the provider. 
     // For TCBS, we can pass a simple filter object.
     const params = {
-        exchangeName: 'HOSE',
-        // marketCap: 1000 // Example: Filter by market cap > 1000 billion VND (if supported)
+      exchangeName: 'HOSE,HNX,UPCOM',
+      // marketCap: 1000 // Example: Filter by market cap > 1000 billion VND (if supported)
     };
-    const screened = await acb.screener.screen(params);
+    const screened = await acb.screener.screen(params, 2000);
     console.log(`Fetched ${screened.length} records`);
     if (screened.length > 0) {
-        console.log('First record:', screened[0]);
+      console.log('First record:', screened[0]);
     }
 
     console.log('Fetching screener field metadata (English)...');
     const metadataEn = await acb.screener.getFieldMetadata('en');
     console.log(`Fetched metadata for ${Object.keys(metadataEn).length} fields`);
-    
+
     console.log('Fetching screener field metadata (Vietnamese)...');
     const metadataVi = await acb.screener.getFieldMetadata('vi');
-    
+
     // Log some interesting fields
     const fieldsToShow = ['marketCap', 'roe', 'pe'];
     fieldsToShow.forEach(field => {
@@ -133,14 +133,14 @@ async function main() {
         console.log(`Field: ${field}`);
         console.log(`  Label (EN): ${metadataEn[field].label}`);
         console.log(`  Label (VI): ${metadataVi[field].label}`);
-        
+
         if (metadataEn[field].unit) {
-             console.log(`  Unit (EN): ${metadataEn[field].unit}`);
+          console.log(`  Unit (EN): ${metadataEn[field].unit}`);
         }
         if (metadataVi[field].unit) {
-             console.log(`  Unit (VI): ${metadataVi[field].unit}`);
+          console.log(`  Unit (VI): ${metadataVi[field].unit}`);
         }
-        
+
         console.log(`  Tooltip (EN): ${metadataEn[field].tooltip}`);
       }
     });

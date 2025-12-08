@@ -22,8 +22,8 @@ export class Screener extends BaseAdapter {
    * @param criteria - Dictionary of screening criteria
    * @returns Promise of filtered stocks
    */
-  async screen(criteria: Record<string, any>): Promise<any[]> {
-    return this.callMethod('screen', criteria);
+  async screen(criteria: Record<string, any>, ...args: any[]): Promise<any[]> {
+    return this.callMethod('screen', criteria, ...args);
   }
 
   /**
@@ -76,7 +76,7 @@ export class Screener extends BaseAdapter {
     if (this._provider.getScreenerFieldMetadata) {
       const raw = this._provider.getScreenerFieldMetadata() as Record<string, ScreenerFieldInfo>;
       const result: Record<string, LocalizedScreenerFieldInfo> = {};
-      
+
       for (const [key, field] of Object.entries(raw)) {
         // Helper to get localized value with fallback
         const getVal = (obj: any) => {
