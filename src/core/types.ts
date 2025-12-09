@@ -304,10 +304,10 @@ export interface ScreenerFieldInfo {
 }
 
 /**
- * Localized Screener Field Metadata
- * Describes a field available for screening with localized strings
+ * Localized Field Metadata
+ * Describes a field with localized strings
  */
-export interface LocalizedScreenerFieldInfo {
+export interface LocalizedFieldInfo {
   /** Field identifier */
   key: string;
   /** Localized label */
@@ -321,6 +321,11 @@ export interface LocalizedScreenerFieldInfo {
   /** Enum values for list-based fields */
   values?: any[];
 }
+
+/**
+ * @deprecated Use LocalizedFieldInfo instead
+ */
+export type LocalizedScreenerFieldInfo = LocalizedFieldInfo;
 
 // ============================================================================
 // PROVIDER INTERFACES

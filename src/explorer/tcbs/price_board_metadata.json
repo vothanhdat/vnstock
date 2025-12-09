@@ -1,0 +1,175 @@
+{
+  "t": {
+    "key": "t",
+    "label": { "vi": "Mã CP", "en": "Ticker" },
+    "type": "string"
+  },
+  "cp": {
+    "key": "cp",
+    "label": { "vi": "Giá hiện tại", "en": "Current Price" },
+    "unit": { "vi": "VND", "en": "VND" },
+    "type": "number"
+  },
+  "fv": {
+    "key": "fv",
+    "label": { "vi": "Giá sàn", "en": "Floor Price" },
+    "unit": { "vi": "VND", "en": "VND" },
+    "type": "number"
+  },
+  "mav": {
+    "key": "mav",
+    "label": { "vi": "Giá TB", "en": "Avg Price" },
+    "unit": { "vi": "VND", "en": "VND" },
+    "type": "number"
+  },
+  "rsi": {
+    "key": "rsi",
+    "label": { "vi": "RSI", "en": "RSI" },
+    "type": "number"
+  },
+  "macdv": {
+    "key": "macdv",
+    "label": { "vi": "MACD", "en": "MACD" },
+    "type": "number"
+  },
+  "macdsignal": {
+    "key": "macdsignal",
+    "label": { "vi": "Tín hiệu MACD", "en": "MACD Signal" },
+    "type": "string"
+  },
+  "tsignal": {
+    "key": "tsignal",
+    "label": { "vi": "Tín hiệu kỹ thuật", "en": "Technical Signal" },
+    "type": "string"
+  },
+  "avgsignal": {
+    "key": "avgsignal",
+    "label": { "vi": "Tín hiệu tổng hợp", "en": "Average Signal" },
+    "type": "string"
+  },
+  "ma20": {
+    "key": "ma20",
+    "label": { "vi": "MA20", "en": "MA20" },
+    "type": "number"
+  },
+  "ma50": {
+    "key": "ma50",
+    "label": { "vi": "MA50", "en": "MA50" },
+    "type": "number"
+  },
+  "ma100": {
+    "key": "ma100",
+    "label": { "vi": "MA100", "en": "MA100" },
+    "type": "number"
+  },
+  "pe": {
+    "key": "pe",
+    "label": { "vi": "P/E", "en": "P/E" },
+    "unit": { "vi": "lần", "en": "x" },
+    "type": "number"
+  },
+  "pb": {
+    "key": "pb",
+    "label": { "vi": "P/B", "en": "P/B" },
+    "unit": { "vi": "lần", "en": "x" },
+    "type": "number"
+  },
+  "roe": {
+    "key": "roe",
+    "label": { "vi": "ROE", "en": "ROE" },
+    "unit": "%",
+    "type": "number"
+  },
+  "roa": {
+    "key": "roa",
+    "label": { "vi": "ROA", "en": "ROA" },
+    "unit": "%",
+    "type": "number"
+  },
+  "dividend": {
+    "key": "dividend",
+    "label": { "vi": "Cổ tức", "en": "Dividend Yield" },
+    "unit": "%",
+    "type": "number"
+  },
+  "mw3d": {
+    "key": "mw3d",
+    "label": { "vi": "% Tăng 3 ngày", "en": "% Change 3D" },
+    "unit": "%",
+    "type": "number"
+  },
+  "mw1m": {
+    "key": "mw1m",
+    "label": { "vi": "% Tăng 1 tháng", "en": "% Change 1M" },
+    "unit": "%",
+    "type": "number"
+  },
+  "mw3m": {
+    "key": "mw3m",
+    "label": { "vi": "% Tăng 3 tháng", "en": "% Change 3M" },
+    "unit": "%",
+    "type": "number"
+  },
+  "mw1y": {
+    "key": "mw1y",
+    "label": { "vi": "% Tăng 1 năm", "en": "% Change 1Y" },
+    "unit": "%",
+    "type": "number"
+  },
+  "rs3d": {
+    "key": "rs3d",
+    "label": { "vi": "RS 3 ngày", "en": "RS 3D" },
+    "type": "number"
+  },
+  "rs1m": {
+    "key": "rs1m",
+    "label": { "vi": "RS 1 tháng", "en": "RS 1M" },
+    "type": "number"
+  },
+  "rs3m": {
+    "key": "rs3m",
+    "label": { "vi": "RS 3 tháng", "en": "RS 3M" },
+    "type": "number"
+  },
+  "rs1y": {
+    "key": "rs1y",
+    "label": { "vi": "RS 1 năm", "en": "RS 1Y" },
+    "type": "number"
+  },
+  "hp1m": {
+    "key": "hp1m",
+    "label": { "vi": "Đỉnh 1 tháng", "en": "High 1M" },
+    "unit": { "vi": "VND", "en": "VND" },
+    "type": "number"
+  },
+  "hp3m": {
+    "key": "hp3m",
+    "label": { "vi": "Đỉnh 3 tháng", "en": "High 3M" },
+    "unit": { "vi": "VND", "en": "VND" },
+    "type": "number"
+  },
+  "hp1y": {
+    "key": "hp1y",
+    "label": { "vi": "Đỉnh 1 năm", "en": "High 1Y" },
+    "unit": { "vi": "VND", "en": "VND" },
+    "type": "number"
+  },
+  "lp1m": {
+    "key": "lp1m",
+    "label": { "vi": "Đáy 1 tháng", "en": "Low 1M" },
+    "unit": { "vi": "VND", "en": "VND" },
+    "type": "number"
+  },
+  "lp3m": {
+    "key": "lp3m",
+    "label": { "vi": "Đáy 3 tháng", "en": "Low 3M" },
+    "unit": { "vi": "VND", "en": "VND" },
+    "type": "number"
+  },
+  "lp1y": {
+    "key": "lp1y",
+    "label": { "vi": "Đáy 1 năm", "en": "Low 1Y" },
+    "unit": { "vi": "VND", "en": "VND" },
+    "type": "number"
+  }
+}

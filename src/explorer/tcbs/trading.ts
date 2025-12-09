@@ -7,6 +7,8 @@
 import axios from 'axios';
 import { getLogger } from '../../core/logger';
 import { TCBSPriceBoard } from './types';
+import { ScreenerFieldInfo } from '../../core/types';
+import * as priceBoardMetadata from './price_board_metadata.json';
 
 const logger = getLogger('TCBS.Trading');
 
@@ -192,5 +194,13 @@ export class TCBSTradingProvider {
       throw error;
     }
     */
+  }
+
+  /**
+   * Get price board metadata
+   * Returns definitions of fields including labels, tooltips, units, etc.
+   */
+  getPriceBoardMetadata(): Record<string, ScreenerFieldInfo> {
+    return priceBoardMetadata as unknown as Record<string, ScreenerFieldInfo>;
   }
 }

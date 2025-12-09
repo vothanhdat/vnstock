@@ -96,14 +96,28 @@ async function main() {
     const priceBoard = await acb.trading.priceBoard(['ACB', 'VNM', 'TCB']);
     console.log(`Fetched ${priceBoard.length} records`);
     if (priceBoard.length > 0) {
-      console.log('First record:', priceBoard[0]);
+        console.log('First record:', priceBoard[0]);
     }
+
+    console.log('Fetching price board metadata...');
+    const pbMetadata = await acb.trading.getFieldMetadata('en');
+    console.log(`Fetched metadata for ${Object.keys(pbMetadata).length} fields`);
+    
+    // Log some interesting fields
+    const pbFields = ['t', 'cp', 'pe', 'roe'];
+    pbFields.forEach(field => {
+      if (pbMetadata[field]) {
+        console.log(`Field: ${field}`);
+        console.log(`  Label: ${pbMetadata[field].label}`);
+        if (pbMetadata[field].unit) {
+             console.log(`  Unit: ${pbMetadata[field].unit}`);
+        }
+      }
+    });
   } catch (error) {
     console.error('Error fetching price board:', error);
   }
-  console.log();
-
-  // Example 7: Screener
+  console.log();  // Example 7: Screener
   console.log('Example 7: Screener');
   try {
     console.log('Screening stocks (HOSE, Market Cap > 10000B)...');
