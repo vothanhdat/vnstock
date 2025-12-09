@@ -1,175 +1,598 @@
 {
   "t": {
     "key": "t",
-    "label": { "vi": "Mã CP", "en": "Ticker" },
+    "label": {
+      "vi": "Mã CP",
+      "en": "Ticker"
+    },
     "type": "string"
   },
   "cp": {
     "key": "cp",
-    "label": { "vi": "Giá hiện tại", "en": "Current Price" },
-    "unit": { "vi": "VND", "en": "VND" },
+    "label": {
+      "vi": "Giá",
+      "en": "Current Price"
+    },
+    "unit": {
+      "vi": "VND",
+      "en": "VND"
+    },
     "type": "number"
   },
   "fv": {
     "key": "fv",
-    "label": { "vi": "Giá sàn", "en": "Floor Price" },
-    "unit": { "vi": "VND", "en": "VND" },
-    "type": "number"
+    "label": {
+      "vi": "KLBD/TB5D",
+      "en": "Expected Vol/5D Avg"
+    },
+    "type": "number",
+    "tooltip": {
+      "vi": "\"Khối lượng dự báo của ngày/Trung bình của 5 ngày\". Chỉ tiêu này giúp phát hiện các mã cổ phiếu có giao dịch bùng nổ trong ngày, được tính toán bằng cách lấy khối lượng giao dịch dự kiến của ngày hiện tại chia cho khối lượng giao dịch trung bình 5 ngày gần nhất. Tỷ lệ này lớn hơn 3 cho thấy cổ phiếu đang thu hút được lượng lớn nhà đầu tư tham gia.",
+      "en": "The \"Expected Volume today/Average 5 day\" indicator evaluates a stock's increase in volume by dividing the anticipated trading volume of the current session by the mean trading volume over the preceding 5 days. A score above 3 signifies a notable expansion of attention towards the stock."
+    }
   },
   "mav": {
     "key": "mav",
-    "label": { "vi": "Giá TB", "en": "Avg Price" },
-    "unit": { "vi": "VND", "en": "VND" },
-    "type": "number"
+    "label": {
+      "vi": "T.độ GD",
+      "en": "Trade speed"
+    },
+    "type": "number",
+    "tooltip": {
+      "vi": "Chỉ tiêu này được tính bằng tốc độ khớp lệnh hiện tại chia cho tốc độ khớp lệnh trung bình 10 ngày gần nhất; trong đó, tốc độ khớp lệnh hiện tại được tính bằng tổng số lượng cổ phiếu khớp lệnh trong 15 phút gần nhất.<br>Tỷ lệ này cao (ví dụ: hơn 3 lần) cho thấy cổ phiếu đang thu hút được lượng lớn nhà đầu tư tham gia. Nếu giá tăng kết hợp với tốc độ khớp lệnh đột biến cho thấy nhà đầu tư đang mua mạnh cổ phiếu này. Ngược lại, tốc độ khớp lệnh đột biến đi kèm với sự giảm giá cho thấy nhà đầu tư đang bán mạnh cổ phiếu này.",
+      "en": "This indicator is calculated by dividing the current trading speed by the average trading speed of the last 10 days, in which the current trading speed is calculated by the total matched share volume in the last 15 minutes. A high ratio (e.g. 3 times higher) indicates that the stock is attracting a large number of investors. If the price increases along with a sudden increase in trading volume, it shows that investors are buying heavily. Conversely, a sudden decrease in trading volume accompanied by a price drop indicates that investors are selling heavily."
+    }
+  },
+  "nstv": {
+    "key": "nstv",
+    "label": {
+      "vi": "KLGD ròng(CM)",
+      "en": "Shark Vol"
+    },
+    "type": "number",
+    "tooltip": {
+      "vi": "Cá mập là những nhà đầu tư tay to, tổ chức, đầu tư lớn. Do đó, giao dịch của NĐT Cá mập đóng vai trò dẫn dắt thị trường. Chỉ số này tổng hợp khối lượng giao dịch ròng của nhà đầu tư Cá Mập trong 15 phút gần nhất. <br>Cá Mập mua ròng nhiều cùng với tỷ lệ mua chủ động cao, điều này hàm ý cổ phiếu đang thu hút được dòng tiền lớn tham gia. \r\n",
+      "en": "Sharks are major investors, organizations, and large-scale investors, thus making their trading activities influential in the market. This index synthesizes the net trading volume of Shark investors in the last 15 minutes. When sharks have a high net buying volume and a high percentage of active buying, it implies that the stock is attracting significant amounts of money."
+    }
+  },
+  "nstp": {
+    "key": "nstp",
+    "label": {
+      "vi": "%KLGD ròng (CM)",
+      "en": "Shark Vol%"
+    },
+    "unit": "%",
+    "type": "number",
+    "tooltip": {
+      "vi": "Là tỷ lệ giữa khối lượng giao dịch ròng của nhà đầu tư Cá mập chia cho Tổng khối lượng khớp lệnh trong vòng 15 phút gần nhất. Tỷ lệ này dương và càng cao thể hiện cổ phiếu đang được dẫn dắt bởi dòng tiền lớn. Ngược lại, tỷ lệ này âm và càng thấp thể hiện dòng tiền lớn đang có xu hướng rút ra khỏi cổ phiếu.",
+      "en": "The indicator calculates the ratio of Shark investors' net trading volume to the total matched volume in the previous 15 minutes. A high positive ratio suggests a significant inflow of money into a stock, while a low negative ratio reflects a substantial outflow of cash from the stock."
+    }
   },
   "rsi": {
     "key": "rsi",
-    "label": { "vi": "RSI", "en": "RSI" },
-    "type": "number"
+    "label": {
+      "vi": "RSI",
+      "en": "RSI"
+    },
+    "type": "number",
+    "tooltip": {
+      "vi": "RSI(14) là viết tắt của từ Relative Strength Index - Chỉ báo sức mạnh tương đối - cho 14 điểm thời gian (ví dụ: 14 ngày, 14 tuần,....).<br>RSI cho biết bên mua hay bên bán đang chiếm ưu thế trên thị trường. Giá trị của RSI dao động từ 0 đến 100. RSI tăng trên 70 cho thấy thị trường đang mua mạnh cổ phiếu này. Tương tự khi RSI giảm xuống dưới 30 cho thấy thị trường đang bán mạnh cổ phiếu này.",
+      "en": "The abbreviation RSI(14) stands for Relative Strength Index, an indicator of relative strength over a period of 14 time-points (e.g. 14 days, 14 weeks, etc.). RSI reveals whether buyers or sellers are dominating the market. Values of RSI range from 0 to 100. RSI values above 70 indicate strong buying activity while values below 30 indicate strong selling activity for the stock."
+    }
   },
   "macdv": {
     "key": "macdv",
-    "label": { "vi": "MACD", "en": "MACD" },
-    "type": "number"
+    "label": {
+      "vi": "MACD Hist",
+      "en": "MACD Hist"
+    },
+    "type": "number",
+    "tooltip": {
+      "vi": "MACD Histogram được tính bằng chênh lệch giữa đường MACD và đường Tín hiệu (Signal). Có 4 trạng thái của MACD Histogram:<br>- Giá trị MACD Histogram > 0 và tăng dần, cho thấy thị trường đang mua mạnh cổ phiếu này.<br>- Giá trị MACD Histogram > 0 và giảm dần, cho thấy cổ phiếu vẫn đang trong xu hướng tăng, tuy nhiên, đà tăng đã bị suy giảm.<br>- Giá trị MACD Histogram < 0 và giảm dần, cho thấy thị trường đang bán mạnh cổ phiếu này.<br>- Giá trị MACD Histogram < 0 và tăng dần, cho thấy  cổ phiếu vẫn đang trong xu hướng giảm, tuy nhiên, đà giảm đã có dấu hiệu chững lại.",
+      "en": "The MACD Histogram calculates the difference between the MACD line and the Signal line. Four states of MACD Histogram exist: <br>- MACD Histogram value > 0 and increasing signals the market is buying the stock<br>- MACD Histogram value > 0 and decreasing indicates the stock is in an uptrend, but with reduced power<br>- MACD Histogram value < 0 and decreasing suggests the market is selling the stock<br>- MACD Histogram value < 0 and increasing suggests the stock is in a downtrend, albeit with a slowing trend."
+    }
   },
   "macdsignal": {
     "key": "macdsignal",
-    "label": { "vi": "Tín hiệu MACD", "en": "MACD Signal" },
-    "type": "string"
+    "label": {
+      "vi": "MACD Signal",
+      "en": "MACD"
+    },
+    "type": "string",
+    "tooltip": {
+      "vi": "MACD Histogram được tính bằng chênh lệch giữa đường MACD và đường Tín hiệu (Signal). Có 4 trạng thái của MACD Histogram:<br>- Giá trị MACD Histogram > 0 và tăng dần, cho thấy thị trường đang mua mạnh cổ phiếu này.<br>- Giá trị MACD Histogram > 0 và giảm dần, cho thấy cổ phiếu vẫn đang trong xu hướng tăng, tuy nhiên, đà tăng đã bị suy giảm.<br>- Giá trị MACD Histogram < 0 và giảm dần, cho thấy thị trường đang bán mạnh cổ phiếu này.<br>- Giá trị MACD Histogram < 0 và tăng dần, cho thấy  cổ phiếu vẫn đang trong xu hướng giảm, tuy nhiên, đà giảm đã có dấu hiệu chững lại.",
+      "en": "The MACD Histogram calculates the difference between the MACD line and the Signal line. Four states of MACD Histogram exist: <br>- MACD Histogram value > 0 and increasing signals the market is buying the stock<br>- MACD Histogram value > 0 and decreasing indicates the stock is in an uptrend, but with reduced power<br>- MACD Histogram value < 0 and decreasing suggests the market is selling the stock<br>- MACD Histogram value < 0 and increasing suggests the stock is in a downtrend, albeit with a slowing trend."
+    }
   },
   "tsignal": {
     "key": "tsignal",
-    "label": { "vi": "Tín hiệu kỹ thuật", "en": "Technical Signal" },
-    "type": "string"
+    "label": {
+      "vi": "Tín hiệu KT",
+      "en": "TA Signal"
+    },
+    "type": "string",
+    "tooltip": {
+      "vi": "Tổng hợp các chỉ báo biến động như RSI, MACD, BBW,… giúp xác định trạng thái giao dịch của cổ phiếu. <br>Có 5 trạng thái:<br>- MUA MẠNH (MM): Thị trường đang mua rất mạnh cổ phiếu<br>- MUA (M): Thị trường đang mua mạnh cổ phiếu<br>- TR.TÍNH (TT): Thị trường đang có góc nhìn trung lập về cổ phiếu<br>- BÁN (B): Thị trường đang bán mạnh cổ phiếu<br>- BÁN MẠNH (BM): Thị trường đang bán rất mạnh cổ phiếu này",
+      "en": "Compiling various technical indicators such as RSI, MACD, BBW, etc. helps determine the trading status of a stock. There are five statuses: Strong Buy (SB): the market is buying this stock very aggressively; Buy (B): the market is buying this stock strongly; Neutral (N): the market has a neutral view on this stock; Sell (S): the market is selling this stock strongly; Strong Sell (SS): the market is selling this stock very aggressively. "
+    }
   },
   "avgsignal": {
     "key": "avgsignal",
-    "label": { "vi": "Tín hiệu tổng hợp", "en": "Average Signal" },
-    "type": "string"
+    "label": {
+      "vi": "Tín hiệu TB động",
+      "en": "MA Signal"
+    },
+    "type": "string",
+    "tooltip": {
+      "vi": "So sánh giá hiện tại của cổ phiếu với các giá trị trung bình hàm đơn (SMA) và hàm mũ (EMA) nhằm xác định trạng thái giao dịch của cổ phiếu: <br>- MUA MẠNH (MM): Thị trường đang mua rất mạnh cổ phiếu<br>- MUA (M): Thị trường đang mua mạnh cổ phiếu<br>- TR.TÍNH (TT): Thị trường đang có góc nhìn trung lập về cổ phiếu<br>- BÁN (B): Thị trường đang bán mạnh cổ phiếu<br>- BÁN MẠNH (BM): Thị trường đang bán rất mạnh cổ phiếu này",
+      "en": "Compare the current stock price with simple moving average (SMA) and exponential moving average (EMA) values to determine the trading status of the stock:<br>- STRONG BUY (SB): Market is buying stock very strongly<br>- BUY (B): Market is buying stock strongly<br>- NEUTRAL (N): Market has a neutral view on the stock<br>- SELL (S): Market is selling stock strongly<br>- STRONG SELL (SS): Market is selling this stock very strongly"
+    }
   },
   "ma20": {
     "key": "ma20",
-    "label": { "vi": "MA20", "en": "MA20" },
-    "type": "number"
+    "label": {
+      "vi": "MA20",
+      "en": "MA20"
+    },
+    "type": "number",
+    "tooltip": {
+      "vi": "Chỉ tiêu này xác định trạng thái giá cổ phiếu so với trung bình 20 ngày (MA20). Giá cổ phiếu lớn hơn giá trị hiện tại của đường MA20 (hay nói cách khác, giá nằm trên đường MA20) cho thấy giá đang cao hơn bình quân 20 ngày gần nhất, xác nhận xu hướng tăng giá trong ngắn hạn.<br>Ngược lại, giá cổ phiếu nhỏ hơn giá trị hiện tại của đường MA20 (hay nói cách khác, giá nằm dưới đường MA20) cho thấy giá đang thấp hơn bình quân 20 ngày gần nhất, xác nhận xu hướng giảm giá trong ngắn hạn. ",
+      "en": "This metric compares a stock's present price with its 20-day average price or MA20. If the stock's price is higher than MA20 or above the MA20 line, this means the price is greater than the 20-day average and confirms the short-term uptrend. Conversely, when the stock's price is below the current value of MA20 or below the MA20 line, it signifies that the price is lower than the recent 20-day average and confirms the short-term downtrend."
+    }
   },
   "ma50": {
     "key": "ma50",
-    "label": { "vi": "MA50", "en": "MA50" },
-    "type": "number"
+    "label": {
+      "vi": "MA50",
+      "en": "MA50"
+    },
+    "type": "number",
+    "tooltip": {
+      "vi": "Chỉ tiêu này xác định trạng thái giá cổ phiếu so với trung bình 50 ngày (MA50). Giá cổ phiếu lớn hơn giá trị hiện tại của đường MA50 (hay nói cách khác, giá nằm trên đường MA50) cho thấy giá đang cao hơn bình quân 50 ngày gần nhất, xác nhận xu hướng tăng giá trong ngắn hạn.<br>Ngược lại, giá cổ phiếu nhỏ hơn giá trị hiện tại của đường MA50 (hay nói cách khác, giá nằm dưới đường MA50) cho thấy giá đang thấp hơn bình quân 50 ngày gần nhất, xác nhận xu hướng giảm giá trong ngắn hạn. ",
+      "en": "This metric evaluates a stock's current price against its 50-day moving average (MA50). If the stock's price exceeds the MA50 (i.e. above the MA50 line), it implies that the price is higher than its 50-day average, affirming a medium-term uptrend. Conversely, if the stock's price falls below the MA50 (i.e. below the MA50 line), it indicates a lower price compared to the recent 50-day average, confirming a medium-term downtrend. "
+    }
   },
   "ma100": {
     "key": "ma100",
-    "label": { "vi": "MA100", "en": "MA100" },
-    "type": "number"
+    "label": {
+      "vi": "MA100",
+      "en": "MA100"
+    },
+    "type": "number",
+    "tooltip": {
+      "vi": "Chỉ tiêu này xác định trạng thái giá cổ phiếu so với trung bình 100 ngày (MA100). Giá cổ phiếu lớn hơn giá trị hiện tại của đường MA100 (hay nói cách khác, giá nằm trên đường MA100) cho thấy giá đang cao hơn bình quân 100 ngày gần nhất, xác nhận xu hướng tăng giá trong ngắn hạn.<br>Ngược lại, giá cổ phiếu nhỏ hơn giá trị hiện tại của đường MA100 (hay nói cách khác, giá nằm dưới đường MA100) cho thấy giá đang thấp hơn bình quân 100 ngày gần nhất, xác nhận xu hướng giảm giá trong ngắn hạn. ",
+      "en": "This indicator compares a stock's current price with its 100-day-average price (MA100). If the stock's price exceeds the MA100, it indicates that the price is higher than the 100-day-average and confirms the medium-term uptrend. In contrast, if the stock's price is below the MA100, it indicates that the price is lower than the recent 100-day average and confirms the medium-term downtrend."
+    }
   },
   "pe": {
     "key": "pe",
-    "label": { "vi": "P/E", "en": "P/E" },
-    "unit": { "vi": "lần", "en": "x" },
-    "type": "number"
+    "label": {
+      "vi": "P/E",
+      "en": "P/E"
+    },
+    "unit": {
+      "vi": "lần",
+      "en": "x"
+    },
+    "type": "number",
+    "tooltip": {
+      "vi": "Giá thị trường của một cổ phiếu (P hay Price)/EPS<br>Cho biết với một đồng Lợi nhuận ròng doanh nghiệp thu được (EPS), nhà đầu tư sẵn sàng bỏ ra bao nhiêu đồng cho Giá một cổ phiếu của doanh nghiệp. Cổ phiếu có P/E < 8-10 lần thường được xem là hợp lý nhưng với doanh nghiệp có EPS dự kiến tăng trưởng cao trong tương lai thì doanh nghiệp có thể được chấp nhận mức P/E cao hơn trung bình ngành.<br>Về màu sắc hiển thị:<br>- Màu xanh: Những cổ phiếu có P/E nhỏ hơn P/E của thị trường <br>- Màu đỏ: Những cổ phiếu có P/E lớn hơn P/E của thị trường",
+      "en": "Market price of a stock (P or Price)/EPS<br>Given the company's net profit per share (EPS), investors are willing to pay how much for a company's stock price. A stock with P/E < 8-10 times is usually considered reasonable, but for companies with high expected EPS growth in the future, a higher-than-average P/E may be acceptable. As for color display:<br>- Green: Stocks with P/E lower than the market's P/E<br>- Red: Stocks with P/E higher than the market's P/E."
+    }
   },
   "pb": {
     "key": "pb",
-    "label": { "vi": "P/B", "en": "P/B" },
-    "unit": { "vi": "lần", "en": "x" },
-    "type": "number"
+    "label": {
+      "vi": "P/B",
+      "en": "P/B"
+    },
+    "unit": {
+      "vi": "lần",
+      "en": "x"
+    },
+    "type": "number",
+    "tooltip": {
+      "vi": "Giá thị trường của một cổ phiếu (P)/Giá trị sổ sách một cổ phiếu (B hay BVPS) <br> Cho biết với một đồng Giá trị sổ sách của doanh nghiệp, nhà đầu tư sẵn sàng bỏ ra bao nhiêu đồng cho Giá một cổ phiếu của doanh nghiệp. Chỉ số này thường được áp dụng với các doanh nghiệp trong ngành tài chính, ngân hàng... P/B < 1 lần cho thấy giá cổ phiếu đang giao dịch dưới giá trị sổ sách của doanh nghiệp, có thể được xem là hấp dẫn để đầu tư, nhưng nếu doanh nghiệp có triển vọng tăng trưởng tốt thì P/B có thể cao hơn trung bình ngành. <br> Về màu sắc hiển thị: <br>- Màu xanh: Những cổ phiếu có P/B nhỏ hơn P/B của thị trường <br>- Màu đỏ: Những cổ phiếu có P/B lớn hơn P/B của thị trường",
+      "en": "Market price of a stock (P) / Book value of a stock (B or BVPS) <br>\r\nThis ratio indicates how much an investor is willing to pay for a company's stock for every dollar of book value. It is commonly used for finance and banking sectors. P/B < 1 indicates that the stock is trading below the company's book value, which may be considered attractive for investment, but if the company has good growth prospects, P/B may be higher than the industry average.\r\n\r\n<br>Regarding color display: <br>\r\n- Green: stocks with P/B less than the market's P/B  <br>\r\n- Red: stocks with P/B greater than the market's P/B"
+    }
   },
   "roe": {
     "key": "roe",
-    "label": { "vi": "ROE", "en": "ROE" },
+    "label": {
+      "vi": "ROE",
+      "en": "ROE"
+    },
     "unit": "%",
-    "type": "number"
+    "type": "number",
+    "tooltip": {
+      "vi": "ROE (Return on Equity) là tỷ suất lợi nhuận trên vốn (tính theo %) <br>ROE = Lợi nhuận sau thuế và sau lợi ích cổ đông thiểu số (R hay Return)/Vốn chủ sở hữu bình quân (E hay Equity). Trong đó: Vốn chủ sở hữu bình quân bằng trung bình cộng giá trị Vốn chủ sở hữu kỳ này và kỳ trước gần nhất. <br> Chỉ tiêu ROE cho biết hiệu quả sử dụng vốn chủ sở hữu của doanh nghiệp, thể hiện qua việc một đồng vốn chủ sở hữu tạo ra được bao nhiêu đồng lợi nhuận sau thuế. Chỉ tiêu này càng cao càng tốt. Con số này sẽ thay đổi tùy theo ngành và tỷ lệ đòn bảy tài chính (A/E) được doanh nghiệp sử dụng, nhưng mức 12-15% thường được tham chiếu: trên mức này được xem là cao, dưới mức này được xem là thấp. Nếu tìm kiếm cơ hội đầu tư nên quan tâm đến các doanh nghiệp có ROE cao hơn mức trung bình ngành.  <br>Lưu ý: Những cổ phiếu có tỷ lệ ROE > 15% được hiển thị màu xanh ",
+      "en": "ROE, or Return on Equity, is the percentage measure of profit on capital. <br>ROE equals (R or Return) net income after taxes and minority interest divided by (E or Equity) average shareholder equity. The average shareholder equity is calculated by averaging the equity value of the most recent and previous periods. <br> The ROE metric indicates how effectively a company utilizes its shareholder capital, as it shows how much profit after taxes one dollar of shareholder equity generates. The higher the ROE, the better. While the metric can vary depending on the industry and the company's leverage ratio (A/E), a range of 12-15% is typically used as a reference point, with higher figures considered good and lower ones deemed poor. Investors searching for investment opportunities should focus on companies with ROEs exceeding the industry average.  <br>Note that stocks with ROEs above 15% are displayed in blue."
+    }
   },
   "roa": {
     "key": "roa",
-    "label": { "vi": "ROA", "en": "ROA" },
+    "label": {
+      "vi": "ROA",
+      "en": "ROA"
+    },
     "unit": "%",
     "type": "number"
   },
   "dividend": {
     "key": "dividend",
-    "label": { "vi": "Cổ tức", "en": "Dividend Yield" },
+    "label": {
+      "vi": "Cổ tức",
+      "en": "Dividend Yield"
+    },
     "unit": "%",
     "type": "number"
   },
   "mw3d": {
     "key": "mw3d",
-    "label": { "vi": "% Tăng 3 ngày", "en": "% Change 3D" },
+    "label": {
+      "vi": "% thay đổi giá 3D",
+      "en": "% Price Change 3D"
+    },
     "unit": "%",
-    "type": "number"
+    "type": "number",
+    "tooltip": {
+      "vi": "So sánh giá hiện tại với giá đóng cửa 3 phiên trước đó. NĐT có thể chú ý tới những cổ phiếu có tỷ lệ tăng giá cao trong 3 phiên gần nhất hoặc tăng giá mạnh hơn tỷ lệ tăng của VN-Index. <br>Ngược lại, một cổ phiếu có % giảm giá lớn hơn % giảm của VN-Index hàm ý rằng cổ phiếu đó đang yếu hơn thị trường chung, nhà đầu tư cần lưu ý. <br>Về màu sắc hiển thị: <br>- Màu xanh lục: tăng giá <br> - Màu tím: tăng giá mạnh hơn % thay đổi của VN-Index <br>- Màu đỏ: giảm giá <br>- Màu xanh lam: giảm giá mạnh hơn % thay đổi của VN-Index",
+      "en": "Compare the current price with the closing price of the previous 3 sessions. Investors should pay attention to stocks with high price increases in the past 3 sessions or increases higher than the VN-Index. On the contrary, a stock with a larger price decrease than the decrease of the VN-Index implies that the stock is weaker than the market, and investors should be careful.\r\n\r\nRegarding the color display:\r\n- Green: price increase\r\n- Purple: price increase higher than the % change of the VN-Index\r\n- Red: price decrease\r\n- Blue: price decrease higher than the % change of the VN-Index"
+    }
   },
   "mw1m": {
     "key": "mw1m",
-    "label": { "vi": "% Tăng 1 tháng", "en": "% Change 1M" },
+    "label": {
+      "vi": "% thay đổi giá 1M",
+      "en": "% Price Change 1M"
+    },
     "unit": "%",
-    "type": "number"
+    "type": "number",
+    "tooltip": {
+      "vi": "So sánh giá hiện tại với giá đóng cửa 20 phiên trước đó. NĐT có thể chú ý tới những cổ phiếu có tỷ lệ tăng giá cao trong 20 phiên gần nhất hoặc tăng giá mạnh hơn tỷ lệ tăng của VN-Index. <br>\r\nNgược lại, một cổ phiếu có % giảm giá lớn hơn % giảm của VN-Index hàm ý rằng cổ phiếu đó đang yếu hơn thị trường chung, nhà đầu tư cần lưu ý.<br>\r\nVề màu sắc hiển thị:<br>- Màu xanh lục: tăng giá <br>- Màu tím: tăng giá mạnh hơn % thay đổi của VN-Index<br>- Màu đỏ: giảm giá<br>- Màu xanh lam: giảm giá mạnh hơn % thay đổi của VN-Index",
+      "en": "Compare current prices with the closing prices of 20 previous sessions. Investors should pay attention to stocks with high price increases in the last 20 sessions or outperform the VN-Index. Conversely, a stock with a larger percentage decrease than the VN-Index implies that the stock is weaker than the general market, and investors should take note. As for color display: green: increase, purple: increase more than % change of VN-Index, red: decrease, and navy blue: decrease more than % change of VN-Index. "
+    }
   },
   "mw3m": {
     "key": "mw3m",
-    "label": { "vi": "% Tăng 3 tháng", "en": "% Change 3M" },
+    "label": {
+      "vi": "% thay đổi giá 3M",
+      "en": "% Price Change 3M"
+    },
     "unit": "%",
-    "type": "number"
+    "type": "number",
+    "tooltip": {
+      "vi": "So sánh giá hiện tại với giá đóng cửa 60 phiên trước đó. NĐT có thể chú ý tới những cổ phiếu có tỷ lệ tăng giá cao trong 60 phiên gần nhất hoặc tăng giá mạnh hơn tỷ lệ tăng của VN-Index. <br>\r\nNgược lại, một cổ phiếu có % giảm giá lớn hơn % giảm của VN-Index hàm ý rằng cổ phiếu đó đang yếu hơn thị trường chung, nhà đầu tư cần lưu ý.<br>\r\nVề màu sắc hiển thị:<br>- Màu xanh lục: tăng giá <br>- Màu tím: tăng giá mạnh hơn % thay đổi của VN-Index<br>- Màu đỏ: giảm giá<br>- Màu xanh lam: giảm giá mạnh hơn % thay đổi của VN-Index",
+      "en": "Compare current prices with the closing price 60 sessions ago. Investors can pay attention to stocks with high price increases in the last 60 sessions or stronger increases than VN-Index. Conversely, a stock with a larger percentage of price decreases than VN-Index implies that the stock is weaker than the market as a whole, and investors should take note. In terms of display color: - Green: price increase - Purple: stronger price increase than the % change of VN-Index - Red: price decrease - Blue: stronger price decrease than the % change of VN-Index."
+    }
   },
   "mw1y": {
     "key": "mw1y",
-    "label": { "vi": "% Tăng 1 năm", "en": "% Change 1Y" },
+    "label": {
+      "vi": "% thay đổi giá 1Y",
+      "en": "% Price Change 1Y"
+    },
     "unit": "%",
-    "type": "number"
+    "type": "number",
+    "tooltip": {
+      "vi": "So sánh giá hiện tại với giá đóng cửa 52 tuần trước đó. NĐT có thể chú ý tới những cổ phiếu có tỷ lệ tăng giá cao trong 52 tuần gần đây hoặc tăng giá mạnh hơn tỷ lệ tăng của VN-Index. <br>Ngược lại, một cổ phiếu có % giảm giá lớn hơn % giảm của VN-Index hàm ý rằng cổ phiếu đó đang yếu hơn thị trường chung, nhà đầu tư cần lưu ý.<br>Về màu sắc hiển thị:<br>- Màu xanh lục: tăng giá <br>- Màu tím: tăng giá mạnh hơn % thay đổi của VN-Index<br>- Màu đỏ: giảm giá<br>- Màu xanh lam: giảm giá mạnh hơn % thay đổi của VN-Index",
+      "en": "Compare current prices with those of 52 weeks ago. Investors may pay attention to stocks that have a high price increase ratio in the past 52 weeks, or increase more than the rate of the VN-Index. Conversely, a stock with a larger percentage drop than the VN-Index implies that the stock is weaker than the overall market, which investors should note. Regarding the displayed color: - Green: price increase - Purple: price increase greater than the % change of the VN-Index - Red: price drop - Blue: price drop greater than the % change of the VN-Index. "
+    }
   },
   "rs3d": {
     "key": "rs3d",
-    "label": { "vi": "RS 3 ngày", "en": "RS 3D" },
-    "type": "number"
+    "label": {
+      "vi": "RS 3D",
+      "en": "RS 3D"
+    },
+    "type": "number",
+    "tooltip": {
+      "vi": "Chỉ số sức mạnh giá (RS) giúp nhà đầu tư sàng lọc ra các cổ phiếu đang có xu hướng tăng mạnh. Tại TCBS, chúng tôi đo lường sức mạnh giá của khoảng 500 cổ phiếu niêm yết có vốn hóa lớn nhất thị trường bằng cách so sánh sự thay đổi giá của một cổ phiếu với số cổ phiếu còn lại trong 3 ngày gần nhất. Kết quả sau đó được xếp hạng từ 1 đến 100. Ví dụ, một cổ phiếu có chỉ số Sức mạnh giá ở mức 90 nghĩa là trong 3 ngày gần nhất, cổ phiếu có mức độ tăng giá mạnh hơn 90% các cổ phiếu còn lại trên thị trường.\r\n<br>Về màu sắc hiển thị:\r\n<br>- Màu tím: RS ở mức 90 trở lên\r\n<br>- Màu xanh lục: RS ở mức 70 - 90\r\n<br>- Màu trắng: RS ở mức 30 - 70\r\n<br>- Màu đỏ: RS ở mức 10 - 30\r\n<br>- Màu xanh lam: RS ở mức 10 trở xuống",
+      "en": "The Relative Strength (RS) index helps investors filter out stocks that are trending strongly upward. At TCBS, we measure the price strength of about 500 listed stocks with the largest market capitalization by comparing the price change of a stock with the rest of the stocks in the last 3 days. The result is then ranked from 1 to 100. For example, a stock with an RS index of 90 means that in the last 3 days, the stock has increased more than 90% of the other stocks in the market. The display colors are as follows:\r\n- Purple: RS is above 90\r\n- Green: RS is between 70-90\r\n- White: RS is between 30-70\r\n- Red: RS is between 10-30\r\n- Blue: RS is below 10"
+    }
   },
   "rs1m": {
     "key": "rs1m",
-    "label": { "vi": "RS 1 tháng", "en": "RS 1M" },
-    "type": "number"
+    "label": {
+      "vi": "RS 1M",
+      "en": "RS 1M"
+    },
+    "type": "number",
+    "tooltip": {
+      "vi": "Chỉ số sức mạnh giá (RS) giúp nhà đầu tư sàng lọc ra các cổ phiếu đang có xu hướng tăng mạnh. Tại TCBS, chúng tôi đo lường sức mạnh giá của khoảng 500 cổ phiếu niêm yết có vốn hóa lớn nhất thị trường bằng cách so sánh sự thay đổi giá của một cổ phiếu với những cổ phiếu còn lại trong 1 tháng gần nhất. Kết quả sau đó được xếp hạng từ 1 đến 100. Ví dụ, một cổ phiếu có chỉ số Sức mạnh giá ở mức 90 nghĩa là trong 1 tháng gần nhất, cổ phiếu có mức độ tăng giá mạnh hơn 90% các cổ phiếu còn lại trên thị trường.\r\n<br>Về màu sắc hiển thị:\r\n<br>- Màu tím: RS ở mức 90 trở lên\r\n<br>- Màu xanh lục: RS ở mức 70 - 90\r\n<br>- Màu trắng: RS ở mức 30 - 70\r\n<br>- Màu đỏ: RS ở mức 10 - 30\r\n<br>- Màu xanh lam: RS ở mức 10 trở xuống",
+      "en": "Investors can use this method to identify stocks experiencing a strong uptrend. TCBS assesses the relative strength of around 500 of the biggest companies listed by market cap. This is done by comparing the price changes of each stock with the rest of the market over the last month, resulting in a ranking from 1 to 100. A RS score of 90 or above is identified by the color purple. Green represents a RS of 70-90, white for 30-70, red for 10-30, and blue for 10 or lower."
+    }
   },
   "rs3m": {
     "key": "rs3m",
-    "label": { "vi": "RS 3 tháng", "en": "RS 3M" },
-    "type": "number"
+    "label": {
+      "vi": "RS 3M",
+      "en": "RS 3M"
+    },
+    "type": "number",
+    "tooltip": {
+      "vi": "Chỉ số sức mạnh giá (RS) giúp nhà đầu tư sàng lọc ra các cổ phiếu đang có xu hướng tăng mạnh. Tại TCBS, chúng tôi đo lường sức mạnh giá của khoảng 500 cổ phiếu niêm yết có vốn hóa lớn nhất thị trường bằng cách so sánh sự thay đổi giá của một cổ phiếu với những cổ phiếu còn lại trong 3 tháng gần nhất. Kết quả sau đó được xếp hạng từ 1 đến 100. Ví dụ, một cổ phiếu có chỉ số Sức mạnh giá ở mức 90 nghĩa là trong 3 tháng gần nhất, cổ phiếu có mức độ tăng giá mạnh hơn 90% các cổ phiếu còn lại trên thị trường.\r\n<br>Về màu sắc hiển thị:\r\n<br>- Màu tím: RS ở mức 90 trở lên\r\n<br>- Màu xanh lục: RS ở mức 70 - 90\r\n<br>- Màu trắng: RS ở mức 30 - 70\r\n<br>- Màu đỏ: RS ở mức 10 - 30\r\n<br>- Màu xanh lam: RS ở mức 10 trở xuống",
+      "en": "This technique enables investors to identify stocks exhibiting strong uptrends. At TCBS, we assess the relative strength of the top 500 listed companies by market capitalization by comparing their price movements with those of their peers over the past three months. The outcome is classified on a scale of 1 to 100, with a RS of 90 indicating that the stock has outperformed 90% of the market during the preceding three-month period. A color-coded system assigns purple to RS scores of 90 or higher, green to RS values between 70 and 90, white to RS results between 30 and 70, red to RS outcomes of 10 to 30, and blue to RS scores of 10 or less."
+    }
   },
   "rs1y": {
     "key": "rs1y",
-    "label": { "vi": "RS 1 năm", "en": "RS 1Y" },
-    "type": "number"
+    "label": {
+      "vi": "RS 1Y",
+      "en": "RS 1Y"
+    },
+    "type": "number",
+    "tooltip": {
+      "vi": "Chỉ số sức mạnh giá (RS) giúp nhà đầu tư sàng lọc ra các cổ phiếu đang có xu hướng tăng mạnh. Tại TCBS, chúng tôi đo lường sức mạnh giá của khoảng 500 cổ phiếu niêm yết có vốn hóa lớn nhất thị trường bằng cách so sánh sự thay đổi giá của một cổ phiếu với những cổ phiếu còn lại trong 1 năm gần nhất. Kết quả sau đó được xếp hạng từ 1 đến 100. Ví dụ, một cổ phiếu có chỉ số Sức mạnh giá ở mức 90 nghĩa là trong 1 năm gần nhất, cổ phiếu có mức độ tăng giá mạnh hơn 90% các cổ phiếu còn lại trên thị trường.\r\n<br>Về màu sắc hiển thị:\r\n<br>- Màu tím: RS ở mức 90 trở lên\r\n<br>- Màu xanh lục: RS ở mức 70 - 90\r\n<br>- Màu trắng: RS ở mức 30 - 70\r\n<br>- Màu đỏ: RS ở mức 10 - 30\r\n<br>- Màu xanh lam: RS ở mức 10 trở xuống",
+      "en": "The Relative Strength Index (RS) helps investors identify stocks with strong upward trends. At TCBS, we measure the price strength of the top 500 listed stocks by comparing the price change of a stock with others in the past year. The result is then ranked on a scale of 1 to 100. For example, a stock with an RS rating of 90 means that it has increased in value more than 90% of other stocks in the market in the past year. The RS is displayed with different colors: purple for RS 90 and above, green for RS 70-90, white for RS 30-70, red for RS 10-30, and navy blue for RS 10 and below."
+    }
+  },
+  "rsavg": {
+    "key": "rsavg",
+    "label": {
+      "vi": "RS TB",
+      "en": "RS Avg."
+    },
+    "type": "number",
+    "tooltip": {
+      "vi": "Chỉ số sức mạnh giá (RS) giúp nhà đầu tư sàng lọc ra các cổ phiếu đang có xu hướng tăng mạnh. Tại TCBS, chúng tôi đo lường sức mạnh giá của khoảng 500 cổ phiếu niêm yết có vốn hóa lớn nhất thị trường bằng cách so sánh sự thay đổi giá của một cổ phiếu với những cổ phiếu còn lại (tính trung bình trong 4 khung thời gian: 3 ngày, 1 tháng, 3 tháng và 1 năm). Kết quả sau đó được xếp hạng từ 1 đến 100. Ví dụ, một cổ phiếu có chỉ số Sức mạnh giá ở mức 90 nghĩa là cổ phiếu có mức độ tăng giá mạnh hơn 90% các cổ phiếu còn lại trên thị trường.\r\n<br>Về màu sắc hiển thị:\r\n<br>- Màu tím: RS ở mức 90 trở lên\r\n<br>- Màu xanh lục: RS ở mức 70 - 90\r\n<br>- Màu trắng: RS ở mức 30 - 70\r\n<br>- Màu đỏ: RS ở mức 10 - 30\r\n<br>- Màu xanh lam: RS ở mức 10 trở xuống",
+      "en": "The Relative Strength (RS) index helps investors identify stocks with a strong upward trend. At TCBS, we measure the price strength of about 500 listed stocks with the largest market capitalization by comparing the price changes of a stock with others (averaged over four time frames: 3 days, 1 month, 3 months, and 1 year). The result is then ranked from 1 to 100. For example, a stock with an RS index of 90 means that it has a stronger price increase than 90% of other stocks in the market.\r\n<br>The display colors are:\r\n<br>- Purple: RS above 90\r\n<br>- Green: RS between 70 and 90\r\n<br>- White: RS between 30 and 70\r\n<br>- Red: RS between 10 and 30\r\n<br>- Dark blue: RS below 10"
+    }
   },
   "hp1m": {
     "key": "hp1m",
-    "label": { "vi": "Đỉnh 1 tháng", "en": "High 1M" },
-    "unit": { "vi": "VND", "en": "VND" },
-    "type": "number"
+    "label": {
+      "vi": "Đỉnh 1M",
+      "en": "High 1M"
+    },
+    "unit": {
+      "vi": "VND",
+      "en": "VND"
+    },
+    "type": "number",
+    "tooltip": {
+      "vi": "Đỉnh giá 1 tháng có thể đóng vai trò một ngưỡng kháng cự. Khi một cổ phiếu vượt đỉnh giá 1 tháng, đà tăng trong ngắn hạn của cổ phiếu có thể được tiếp diễn và cổ phiếu có xu hướng lập đỉnh cao hơn.",
+      "en": "A one-month high may act as a resistance level. When a stock surpasses its one-month high, its short-term upward momentum may continue and the stock tends to set higher highs."
+    }
   },
   "hp3m": {
     "key": "hp3m",
-    "label": { "vi": "Đỉnh 3 tháng", "en": "High 3M" },
-    "unit": { "vi": "VND", "en": "VND" },
-    "type": "number"
+    "label": {
+      "vi": "Đỉnh 3M",
+      "en": "High 3M"
+    },
+    "unit": {
+      "vi": "VND",
+      "en": "VND"
+    },
+    "type": "number",
+    "tooltip": {
+      "vi": "Đỉnh giá 3 tháng có thể đóng vai trò một ngưỡng kháng cự. Khi một cổ phiếu vượt đỉnh giá 3 tháng, đà tăng trong ngắn - trung hạn của cổ phiếu có thể được tiếp diễn và cổ phiếu có xu hướng lập đỉnh cao hơn.",
+      "en": "The 3-month peak may act as a resistance level. If a stock surpasses the 3-month peak, its short- to medium-term uptrend could continue and the stock may tend to reach a higher peak. "
+    }
   },
   "hp1y": {
     "key": "hp1y",
-    "label": { "vi": "Đỉnh 1 năm", "en": "High 1Y" },
-    "unit": { "vi": "VND", "en": "VND" },
-    "type": "number"
+    "label": {
+      "vi": "Đỉnh 1Y",
+      "en": "High 1Y"
+    },
+    "unit": {
+      "vi": "VND",
+      "en": "VND"
+    },
+    "type": "number",
+    "tooltip": {
+      "vi": "Đỉnh giá 52 tuần đóng vai trò một ngưỡng kháng cự mạnh và quan trọng. Khi một cổ phiếu vượt đỉnh 52 tuần, đà tăng của cổ phiếu được có thể được tiếp diễn và cổ phiếu có xu hướng lập đỉnh cao hơn.",
+      "en": "The 52-week high is a significant and robust resistance level. If a stock surpasses the 52-week high, the stock's upward momentum may continue, and it is likely to establish new highs. "
+    }
   },
   "lp1m": {
     "key": "lp1m",
-    "label": { "vi": "Đáy 1 tháng", "en": "Low 1M" },
-    "unit": { "vi": "VND", "en": "VND" },
-    "type": "number"
+    "label": {
+      "vi": "Đáy 1M",
+      "en": "Low 1M"
+    },
+    "unit": {
+      "vi": "VND",
+      "en": "VND"
+    },
+    "type": "number",
+    "tooltip": {
+      "vi": "Đáy 1 tháng có thể đóng vai trò một ngưỡng hỗ trợ. Khi một cổ phiếu phá vỡ đáy 1 tháng, nó có thể kích hoạt đà bán tháo trong ngắn hạn của nhà đầu tư, cổ phiếu có xu hướng tiếp tục giảm mạnh.",
+      "en": "The bottom of one month can act as a support level. When a stock breaks the bottom of one month, it can trigger short-term selling momentum for investors, and the stock tends to continue to decline sharply."
+    }
   },
   "lp3m": {
     "key": "lp3m",
-    "label": { "vi": "Đáy 3 tháng", "en": "Low 3M" },
-    "unit": { "vi": "VND", "en": "VND" },
-    "type": "number"
+    "label": {
+      "vi": "Đáy 3M",
+      "en": "Low 3M"
+    },
+    "unit": {
+      "vi": "VND",
+      "en": "VND"
+    },
+    "type": "number",
+    "tooltip": {
+      "vi": "Đáy 3 tháng có thể đóng vai trò một ngưỡng hỗ trợ. Khi một cổ phiếu phá vỡ đáy 3 tháng, nó có thể kích hoạt đà bán tháo trong ngắn và trung hạn của nhà đầu tư, cổ phiếu có xu hướng tiếp tục giảm mạnh.",
+      "en": "The 3-month bottom may serve as a support level. If a stock breaks through the 3-month bottom, it may trigger short-term and medium-term selling pressure for investors, and the stock is likely to continue to decline sharply."
+    }
   },
   "lp1y": {
     "key": "lp1y",
-    "label": { "vi": "Đáy 1 năm", "en": "Low 1Y" },
-    "unit": { "vi": "VND", "en": "VND" },
+    "label": {
+      "vi": "Đáy 1Y",
+      "en": "Low 1Y"
+    },
+    "unit": {
+      "vi": "VND",
+      "en": "VND"
+    },
+    "type": "number",
+    "tooltip": {
+      "vi": "Đáy 52 tuần đóng vai trò một ngưỡng hỗ trợ mạnh và quan trọng. Khi một cổ phiếu phá vỡ đáy 52 tuần, nó có thể kích hoạt đà bán tháo của nhà đầu tư, cổ phiếu có xu hướng tiếp tục giảm mạnh.",
+      "en": "The 52-week low plays a significant and vital role as a strong support threshold. Breaking the 52-week low can trigger investor selling momentum, causing the stock to continue its sharp decline. "
+    }
+  },
+  "hp1yp": {
+    "key": "hp1yp",
+    "label": {
+      "vi": "%Đỉnh 1Y",
+      "en": "% High 1Y"
+    },
+    "unit": "%",
+    "type": "number",
+    "tooltip": {
+      "vi": "Chỉ tiêu này cho biết giá cổ phiếu đang cách bao nhiêu % so với đỉnh 52 tuần (màu xanh) và đáy 52 tuần (màu đỏ). Dựa vào đó, nhà đầu tư có thể đánh giá tiềm năng tăng giá hoặc rủi ro giảm giá của cổ phiếu. \r\n<br>Cụ thể, đỉnh 52 tuần có thể đóng vai trò một ngưỡng kháng cự mạnh. Khi một cổ phiếu vượt đỉnh 52 tuần, đà tăng của cổ phiếu có thể được tiếp diễn và cổ phiếu có xu hướng lập đỉnh cao hơn nữa. \r\n<br>Tương tự, đáy 52 tuần đóng vai trò một ngưỡng hỗ trợ mạnh và quan trọng. Khi một cổ phiếu phá vỡ đáy 52 tuần, nó có thể kích hoạt đà bán tháo của nhà đầu tư, cổ phiếu có xu hướng tiếp tục giảm mạnh.",
+      "en": "This indicator displays the distance between a stock's price and its 52-week high (green) and 52-week low (red), allowing investors to assess the potential for upward or downward risk. The 52-week high functions as a significant resistance, and when surpassed, typically leads to continued upward momentum and the establishment of new highs. Conversely, the 52-week low functions as a crucial support, and when breached, can provoke a massive sell-off by investors, causing stocks to plummet. "
+    }
+  },
+  "lp1yp": {
+    "key": "lp1yp",
+    "label": {
+      "vi": "%Đáy 1Y",
+      "en": "% Low 1Y"
+    },
+    "unit": "%",
+    "type": "number",
+    "tooltip": {
+      "vi": "Chỉ tiêu này cho biết giá cổ phiếu đang cách bao nhiêu % so với đỉnh 52 tuần (màu xanh) và đáy 52 tuần (màu đỏ). Dựa vào đó, nhà đầu tư có thể đánh giá tiềm năng tăng giá hoặc rủi ro giảm giá của cổ phiếu. \r\n<br>Cụ thể, đỉnh 52 tuần có thể đóng vai trò một ngưỡng kháng cự mạnh. Khi một cổ phiếu vượt đỉnh 52 tuần, đà tăng của cổ phiếu có thể được tiếp diễn và cổ phiếu có xu hướng lập đỉnh cao hơn nữa. \r\n<br>Tương tự, đáy 52 tuần đóng vai trò một ngưỡng hỗ trợ mạnh và quan trọng. Khi một cổ phiếu phá vỡ đáy 52 tuần, nó có thể kích hoạt đà bán tháo của nhà đầu tư, cổ phiếu có xu hướng tiếp tục giảm mạnh.",
+      "en": "This indicator displays the distance between a stock's price and its 52-week high (green) and 52-week low (red), allowing investors to assess the potential for upward or downward risk. The 52-week high functions as a significant resistance, and when surpassed, typically leads to continued upward momentum and the establishment of new highs. Conversely, the 52-week low functions as a crucial support, and when breached, can provoke a massive sell-off by investors, causing stocks to plummet. "
+    }
+  },
+  "oscore": {
+    "key": "oscore",
+    "label": {
+      "vi": "TCRating",
+      "en": "TCRating"
+    },
+    "type": "number",
+    "tooltip": {
+      "vi": "Là chỉ tiêu đánh giá tổng thể về công ty, dựa trên 6 tiêu chí là: <br>(1) Mô hình kinh doanh; <br>(2) Hiệu quả hoạt động; <br>(3) Sức khỏe tài chính; <br>(4) Định giá: <br>(5) Điểm kỹ thuật; <br>(6) Sức mạnh giá. <br>Chỉ tiêu này được chấm với thang điểm từ 1 đến 5, tương ứng với các mức Rất kém, Kém, Trung Bình, Tốt, Rất tốt. <br>Theo đó, nhà đầu tư nên ưu tiên tham gia những cổ phiếu có chỉ số TCRating ở mức tốt (>.04) <br>Về màu sắc hiển thị: <br>- Màu xanh: TCRating lớn hơn 4.0<br>- Màu đỏ: TCRating nhỏ hơn 2.0",
+      "en": "This is an overall evaluation indicator of the company based on 6 criteria which are: 1) Business model, 2) Efficiency of operations, 3) Financial health, 4) Valuation, 5) Technical score, and 6) Price strength. This indicator is rated on a scale from 1 to 5, corresponding to Very poor, Poor, Average, Good, and Very good levels. Investors should prioritize stocks with TCRating score above 4.0. The display colors are: - Green: TCRating above 4.0 - Red: TCRating below 2.0."
+    }
+  },
+  "av": {
+    "key": "av",
+    "label": {
+      "vi": "Khối lượng Dư bán",
+      "en": "Ask Vol"
+    },
+    "type": "number",
+    "tooltip": {
+      "vi": "\"Là Tổng khối lượng dư mua của 3 bước giá đặt mua cao nhất và Tổng khối lượng dư bán của 3 bước giá đặt bán thấp nhất. Nhà đầu tư có thể xem xét tương quan giữa tổng khối lượng dư mua và tổng khối lượng dư bán của 3 bước giá gần nhất để đưa ra quyết định giao dịch.\r\n<br>Cụ thể, nếu tổng dư mua và tổng dư bán ở mức tương đương nhau, điều này cho thấy sự quan tâm ngang nhau giữa người mua và người bán. Nếu tổng khối lượng dư mua lớn hơn nhiều so với khối lượng dư bán, hàm ý rằng cổ phiếu đang thu hút lượng lớn nhà đầu tư và ngược lại.\r\n<br>Tuy nhiên, nhà đầu tư cũng cần lưu ý là trong nhiều trường hợp khối lượng dư mua hoặc dư bán đặt ở bước giá xa so với giá khớp cũng có thể chỉ là lệnh ảo.\"\r\n",
+      "en": "Investors can analyze the correlation between the total volume of buy orders and sell orders for the three highest buy prices and three lowest sell prices. Specifically, if the total buy and sell volumes are equal, it indicates equal interest from buyers and sellers. If the total buy volume is significantly larger than the sell volume, it implies a large number of investors are attracted to the stock and vice versa. However, investors should also note that in some cases, the buy or sell orders placed at prices far from the matching price may only be virtual orders."
+    }
+  },
+  "bv": {
+    "key": "bv",
+    "label": {
+      "vi": "Khối lượng Dư mua",
+      "en": "Bid Vol"
+    },
+    "type": "number",
+    "tooltip": {
+      "vi": "\"Là Tổng khối lượng dư mua của 3 bước giá đặt mua cao nhất và Tổng khối lượng dư bán của 3 bước giá đặt bán thấp nhất. Nhà đầu tư có thể xem xét tương quan giữa tổng khối lượng dư mua và tổng khối lượng dư bán của 3 bước giá gần nhất để đưa ra quyết định giao dịch.\r\n<br>Cụ thể, nếu tổng dư mua và tổng dư bán ở mức tương đương nhau, điều này cho thấy sự quan tâm ngang nhau giữa người mua và người bán. Nếu tổng khối lượng dư mua lớn hơn nhiều so với khối lượng dư bán, hàm ý rằng cổ phiếu đang thu hút lượng lớn nhà đầu tư và ngược lại.\r\n<br>Tuy nhiên, nhà đầu tư cũng cần lưu ý là trong nhiều trường hợp khối lượng dư mua hoặc dư bán đặt ở bước giá xa so với giá khớp cũng có thể chỉ là lệnh ảo.\"\r\n",
+      "en": "Investors can analyze the correlation between the total volume of buy orders and sell orders for the three highest buy prices and three lowest sell prices. Specifically, if the total buy and sell volumes are equal, it indicates equal interest from buyers and sellers. If the total buy volume is significantly larger than the sell volume, it implies a large number of investors are attracted to the stock and vice versa. However, investors should also note that in some cases, the buy or sell orders placed at prices far from the matching price may only be virtual orders."
+    }
+  },
+  "ev": {
+    "key": "ev",
+    "label": {
+      "vi": "TCBS định giá",
+      "en": "TCBS"
+    },
+    "unit": {
+      "vi": "VND",
+      "en": "VND"
+    },
+    "type": "number",
+    "tooltip": {
+      "vi": "Đây là mức định giá hợp lý để tham khảo theo quan điểm của TCBS. Theo đó, giá trị hợp lý được tính toán dựa vào 2 phương pháp:  Hệ số và Chiết khấu dòng tiền (DCF)<br>- Phương pháp Hệ số dựa trên ý tưởng rằng những công ty tương đồng về lĩnh vực kinh doanh và quy mô hoạt động sẽ có mức định giá tương đương nhau. Phương pháp Hệ số xác định giá trị hợp lý bằng cách nhân trung bình các hệ số định giá của các công ty tương đồng với chỉ tiêu tài chính tương ứng của công ty đang được định giá. Các hệ số định giá phổ biến nhất là P/E, P/B và EV/EBITDA.<br>- Phương pháp Chiết khấu dòng tiền (DCF) dựa trên ý tưởng rằng giá trị của 1 doanh nghiệp là giá trị hiện tại của các dòng tiền mà công ty đó có thể tạo ra trong tương lai. DCF giúp xác định giá trị doanh nghiệp bằng cách chiết khấu dự phóng dòng tiền trong 5 năm tiếp theo về giá trị hiện tại với một lãi suất phù hợp (WACC) và điều chỉnh cho giá trị các khoản nợ vay, lợi ích cổ đông thiểu số và tiền của doanh nghiệp<br><b>Lưu ý: Định giá của TCBS được sử dụng cho mục đích tham khảo, KHÔNG phản ánh giá mục tiêu của cổ phiếu. Định giá của TCBS được tính toán với trọng số chia đều 50% cho 2 phương pháp Hệ số và Chiết khấu dòng tiền và có thể thay đổi theo giá thị trường.<b/>",
+      "en": "TCBS considers this to be a fair valuation. The fair value is determined using two approaches: Multiples and Discounted Cash Flow (DCF)<br>- The Multiple method involves multiplying the financial metrics of the target company by the average multiples of similar companies in the same industry and scale. This determines the fair value of the company. Generally, Price-to-earnings ratio (P/E), Price-to-book ratio (P/B), and Enterprise value to earnings before interest, taxes, depreciation and amortization ratio (EV/EBITDA) are used in this method<br>- The DCF method is used to calculate the value of a business by discounting the forecasted cash flow by an appropriate discount rate (WACC) for the next 5 years and subtracting debt, minority interest, and cash balance to get the equity value of the company<br><b>It is important to note that TCBS's valuation is for reference purposes only and does not represent the stock's target price. The valuation is calculated using equal weights (50%) for both methods and may change according to the stock price.<b/>"
+    }
+  },
+  "hmp": {
+    "key": "hmp",
+    "label": {
+      "vi": "Khớp nhiều nhất",
+      "en": "Most Traded Price"
+    },
+    "unit": {
+      "vi": "VND",
+      "en": "VND"
+    },
+    "type": "number",
+    "tooltip": {
+      "vi": "Là bước giá mà tại đó tổng khối lượng khớp lệnh lũy kế đạt giá trị khớp cao nhất. Giá khớp nhiều nhất có thể giúp nhà đầu tư xác định giá mua hợp lý trong phiên. Ví dụ, nếu giá khớp ở thời điểm hiện tại đang cách xa giá khớp nhiều nhất (ví dụ: chênh lệch >3%), nhà đầu tư không nên vội vàng đặt mua ở vùng giá hiện tại do giá cổ phiếu thường có xu hướng điều chỉnh về vùng giá khớp nhiều nhất trong phiên.",
+      "en": "The price with the highest cumulative total matching volume is known as the most-matched price. This price assists investors in determining a reasonable price for each trading session. If the current matched price differs greatly from the most-matched price (e.g., by more than 3%), investors should not hastily place a bid in the current price range. This is because the stock price typically corrects itself towards the most-matched price during trading session."
+    }
+  },
+  "mscore": {
+    "key": "mscore",
+    "label": {
+      "vi": "Đ.góp VNINDEX",
+      "en": "VNI impact"
+    },
+    "type": "number",
+    "tooltip": {
+      "vi": "Nhà đầu tư có thể sử dụng chỉ tiêu này để nhận biết sự vận động của dòng tiền lớn. Giá trị đóng góp vào chỉ số càng lớn, càng thể hiện cổ phiếu đang thu hút dòng tiền. Nếu một nhóm ngành có nhiều cổ phiếu đóng góp đáng kể vào số điểm tăng/giảm của chỉ số, điều đó thể hiện rằng nhóm ngành đó đang dẫn dắt đà tăng/giảm của thị trường.",
+      "en": "Investors can use this indicator to identify large cash flows movements. The higher the contribution to the index, the more it reflects that the stock is attracting funds. If a sector contributed significantly to the increase/decrease of the index score, it shows that the sector is leading the market trend. "
+    }
+  },
+  "delta1m": {
+    "key": "delta1m",
+    "label": {
+      "vi": "%Giá - %VNI (1M)",
+      "en": "% vs VNI (1M)"
+    },
+    "unit": "%",
+    "type": "number",
+    "tooltip": {
+      "vi": "Chỉ tiêu này thể hiện chênh lệch giữa % biến động giá cổ phiếu so với % biến động chỉ số VN-Index trong khoảng thời gian 1 tháng (1M) và 1 năm (1Y). Chỉ số này dương (màu xanh) thể hiện diễn biến giá cổ phiếu đang tốt hơn thị trường (tăng mạnh hơn hoặc giảm ít hơn thị trường). Ngược lại, chỉ số này âm (màu đỏ) thể hiện diễn biến giá cổ phiếu đang kém hơn thị trường (giảm mạnh hơn hoặc tăng ít hơn thị trường).",
+      "en": "This indicator shows the difference between the % change in stock price and the % change in the VN-Index within a 1-month (1M) and 1-year (1Y) time frame. A positive value (in green) indicates that the stock is performing better than the market (increasing more or decreasing less than the market). Conversely, a negative value (in red) indicates that the stock is performing worse than the market (decreasing more or increasing less than the market)."
+    }
+  },
+  "delta1y": {
+    "key": "delta1y",
+    "label": {
+      "vi": "%Giá - %VNI (1Y)",
+      "en": "% vs VNI (1Y)"
+    },
+    "unit": "%",
+    "type": "number",
+    "tooltip": {
+      "vi": "Chỉ tiêu này thể hiện chênh lệch giữa % biến động giá cổ phiếu so với % biến động chỉ số VN-Index trong khoảng thời gian 1 tháng (1M) và 1 năm (1Y). Chỉ số này dương (màu xanh) thể hiện diễn biến giá cổ phiếu đang tốt hơn thị trường (tăng mạnh hơn hoặc giảm ít hơn thị trường). Ngược lại, chỉ số này âm (màu đỏ) thể hiện diễn biến giá cổ phiếu đang kém hơn thị trường (giảm mạnh hơn hoặc tăng ít hơn thị trường).",
+      "en": "This indicator shows the difference between the % change in stock price and the % change in the VN-Index within a 1-month (1M) and 1-year (1Y) time frame. A positive value (in green) indicates that the stock is performing better than the market (increasing more or decreasing less than the market). Conversely, a negative value (in red) indicates that the stock is performing worse than the market (decreasing more or increasing less than the market)."
+    }
+  },
+  "session": {
+    "key": "session",
+    "label": {
+      "vi": "Phiên +/- ",
+      "en": "+/- Days"
+    },
+    "type": "number",
+    "tooltip": {
+      "vi": "Xu hướng tăng giá của cổ phiếu có thể được xác nhận khi cổ phiếu có chuỗi nhiều phiên tăng giá liên tiếp. Đối với NĐT theo trường phái \"lướt sóng\" (ngắn hạn) có thể cân nhắc mua vào những cổ phiếu có chuỗi 3-5 phiên tăng liên tiếp, cùng tỷ lệ % tăng giá cao (ví dụ: >10%) trong 1 tuần trở lại đây.<br>Ngược lại, cổ phiếu có chuỗi giảm giá nhiều phiên liên tiếp hàm ý rằng xu hướng giảm của cổ phiếu đang tiếp diễn. Trong trường hợp này, nhà đầu tư có thể cân nhắc \"bắt đáy\" nếu cổ phiếu có chuỗi 3-5 phiên giảm giá liên tiếp cùng tỷ lệ giảm giá cao (>15%) trong 1 tuần trở lại đây. Tuy nhiên, việc \"bắt đáy\" cũng tiềm ẩn nhiều rủi ro, nhà đầu tư chỉ nên cân nhắc tham gia với vị thế nhỏ ở những cổ phiếu có nền tảng cơ bản tốt. ",
+      "en": "To confirm an uptrend, consecutive stock price rises indicate a positive trend. Investors interested in riding a short-term uptrend can purchase stocks that have increased for 3-5 consecutive sessions, with a high percentage increase of over 10% within the last week. Conversely, a downtrend can be suggested by a series of consecutive declining sessions. In this situation, investors can consider \"bottom fishing\" if a stock has declined for 3-5 straight sessions at a high price drop, like over 15%, within the past week. However, \"bottom fishing\" should only be considered for stocks with strong fundamentals and with smaller positions."
+    }
+  },
+  "vnipe": {
+    "key": "vnipe",
+    "label": {
+      "vi": "VNINDEX P/E",
+      "en": "VNINDEX P/E"
+    },
+    "type": "number"
+  },
+  "vnipb": {
+    "key": "vnipb",
+    "label": {
+      "vi": "VNINDEX P/B",
+      "en": "VNINDEX P/B"
+    },
     "type": "number"
   }
 }
