@@ -10,6 +10,7 @@
 import './explorer/vci';
 import './explorer/tcbs';
 import './explorer/msn';
+import './explorer/vndirect';
 import './connector/fmp';
 import './connector/dnse';
 
