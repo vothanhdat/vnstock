@@ -1,4 +1,8 @@
 import { VNDirectScreenerProvider } from './src/explorer/vndirect/screener';
+import { VNDirectPriceBoard } from './src/explorer/vndirect/priceboard';
+import './src/explorer/vndirect'; // Register VNDirect providers
+import { Trading } from './src/api/trading';
+import { DataSource } from './src/core/types';
 
 async function main() {
   console.log('=== VNDirect Screener Examples ===\n');
@@ -98,6 +102,57 @@ async function main() {
     } catch (e) {
         console.log('Failed to get VCB details');
         console.error(e);
+    }
+    console.log();
+
+    console.log('=== VNDirect Price Board Examples ===\n');
+    const priceBoard = new VNDirectPriceBoard();
+    
+    console.log('1. Fetching HOSE Price Board (Floor 10)...');
+    try {
+        const hoseData = await priceBoard.fetch('10');
+        console.log(`Fetched ${hoseData.length} records.`);
+        if (hoseData.length > 0) {
+            console.log('Sample Record (First):');
+            console.log(JSON.stringify(hoseData[0], null, 2));
+        }
+    } catch (e) {
+        console.error('Failed to fetch HOSE price board:', e);
+    }
+    console.log();
+
+    console.log('=== VNDirect Trading Adapter Examples ===\n');
+    const trading = new Trading(DataSource.VNDIRECT);
+
+    console.log('1. Fetching All Price Board Data (HOSE, HNX, UPCOM)...');
+    try {
+        const allData = await trading.priceBoard();
+        console.log(`Fetched ${allData.length} records from all markets.`);
+    } catch (e) {
+        console.error('Failed to fetch all price board data:', e);
+    }
+    console.log();
+
+    console.log('2. Fetching Specific Symbols (VNM, HPG, FPT)...');
+    try {
+        const symbols = ['VNM', 'HPG', 'FPT'];
+        const specificData = await trading.priceBoard(symbols);
+        console.log(`Fetched ${specificData.length} records.`);
+        specificData.forEach(d => {
+            console.log(`${d.code}: Price ${d.matchPrice}, Vol ${d.matchQtty}`);
+        });
+    } catch (e) {
+        console.error('Failed to fetch specific symbols:', e);
+    }
+    console.log();
+
+    console.log('3. Fetching Metadata...');
+    try {
+        const metadata = await trading.getFieldMetadata('vi');
+        console.log('Metadata (Vietnamese):');
+        console.log(JSON.stringify(metadata, null, 2));
+    } catch (e) {
+        console.error('Failed to fetch metadata:', e);
     }
     console.log();
 

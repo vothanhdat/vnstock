@@ -70,6 +70,7 @@ export enum DataSource {
   FMP = 'fmp',
   XNO = 'xno',
   FMARKET = 'fmarket', // Fund market
+  VNDIRECT = 'vndirect',
 }
 
 export namespace DataSource {

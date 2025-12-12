@@ -5,6 +5,8 @@
  */
 
 export { VNDirectScreenerProvider } from './screener';
+export { VNDirectPriceBoard, VNDirectPriceBoardData } from './priceboard';
+export { VNDirectTradingProvider } from './trading';
 export * from './types';
 
 // Auto-register VNDirect providers when this module is imported

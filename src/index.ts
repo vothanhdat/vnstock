@@ -99,6 +99,7 @@ export {
 } from './explorer/tcbs';
 export { FMPQuoteProvider } from './connector/fmp';
 export { DNSETradingProvider } from './connector/dnse';
+export { VNDirectScreenerProvider, VNDirectPriceBoard } from './explorer/vndirect';
 
 // Default export
 import { Vnstock } from './common/client';

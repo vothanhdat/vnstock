@@ -1,6 +1,6 @@
 {
   "name": "vnstock-ts",
-  "version": "3.3.2",
+  "version": "3.3.3",
   "description": "A beginner-friendly yet powerful TypeScript toolkit for financial analysis and automation — built to make modern investing accessible to everyone",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
