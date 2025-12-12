@@ -71,6 +71,7 @@ export enum DataSource {
   XNO = 'xno',
   FMARKET = 'fmarket', // Fund market
   VNDIRECT = 'vndirect',
+  SIMPLIZE = 'simplize',
 }
 
 export namespace DataSource {
