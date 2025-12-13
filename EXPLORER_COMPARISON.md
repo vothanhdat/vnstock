@@ -4,30 +4,30 @@ This document provides a detailed comparison of the features and fields supporte
 
 ## Feature Support Matrix
 
-| Feature Category | Feature | TCBS | VCI | MSN | FMarket | DNSE | XNO | Misc |
-| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Market Data** | Historical Quote (OHLCV) | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| | Intraday Quote | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ |
-| | Price Board (Real-time) | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| | Crypto / Forex Data | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ |
-| | Gold Price | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
-| **Company Info** | Company Profile | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| | Shareholders | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| | Subsidiaries | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| | Officers / Key People | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| **Financials** | Income Statement | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| | Balance Sheet | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| | Cash Flow | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| | Financial Ratios | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| **Discovery** | Listing (All Symbols) | ⚠️ (Partial) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| | Search Symbol | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ |
-| | Screener | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| **Funds** | Fund Listing | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
-| | Fund Details (NAV, Holdings) | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
-| **Trading** | Authentication | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ |
-| | Place Order | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ |
-| | Account Balance | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ |
-| | Portfolio | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ |
+| Feature Category | Feature | TCBS | VCI | MSN | FMarket | DNSE | XNO | VNDirect | Simplize | Misc |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Market Data** | Historical Quote (OHLCV) | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ |
+| | Intraday Quote | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ |
+| | Price Board (Real-time) | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ |
+| | Crypto / Forex Data | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| | Gold Price | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
+| **Company Info** | Company Profile | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ |
+| | Shareholders | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ |
+| | Subsidiaries | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ |
+| | Officers / Key People | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ |
+| **Financials** | Income Statement | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ |
+| | Balance Sheet | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ |
+| | Cash Flow | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ |
+| | Financial Ratios | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ |
+| **Discovery** | Listing (All Symbols) | ⚠️ (Partial) | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ |
+| | Search Symbol | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| | Screener | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ |
+| **Funds** | Fund Listing | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| | Fund Details (NAV, Holdings) | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| **Trading** | Authentication | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ |
+| | Place Order | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ |
+| | Account Balance | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ |
+| | Portfolio | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ |
 
 > **Legend:**
 > - ✅: Supported
@@ -97,6 +97,46 @@ The `StockQuote` interface is standardized.
 | :--- | :--- | :--- |
 | **SJC** | `sjcGoldPrice()` | SJC gold prices (requires date) |
 | **BTMC** | `btmcGoldPrice()` | Bao Tin Minh Chau gold prices |
+
+### 6. Screener Metadata (`screener.getScreenerFieldMetadata()`)
+
+The screener metadata format is standardized across TCBS, VNDirect, and Simplize to facilitate UI generation and cross-provider compatibility.
+
+**Standardized Field Structure:**
+
+```typescript
+interface ScreenerFieldMetadata {
+  key: string;              // Field identifier (e.g., "marketCap", "roe")
+  label: {
+    vi: string;             // Vietnamese label
+    en: string;             // English label
+  };
+  tooltip: {
+    vi: string;             // Vietnamese tooltip/description
+    en: string;             // English tooltip/description
+  } | null;
+  unit: string | null;      // Unit (e.g., "billion", "%")
+  type: string;             // Field type (e.g., "RANGE", "SELECT")
+  values?: {                // Options for select/enum types
+    value: string;
+    label: {
+      vi: string;
+      en: string;
+    };
+  }[];
+  group?: string;           // Group/Category name
+}
+```
+
+| Field | TCBS | VNDirect | Simplize | Notes |
+| :--- | :---: | :---: | :---: | :--- |
+| `key` | ✅ | ✅ | ✅ | |
+| `label` (vi/en) | ✅ | ✅ | ✅ | VNDirect/Simplize merged from separate fields or translated |
+| `tooltip` (vi/en) | ✅ | ✅ | ✅ | |
+| `unit` | ✅ | ❌ | ✅ | VNDirect metadata lacks unit info |
+| `type` | ✅ | ✅ | ✅ | |
+| `values` | ✅ | ❌ | ✅ | VNDirect mostly uses ranges, few enums |
+
 
 ---
 

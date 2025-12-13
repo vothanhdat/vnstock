@@ -6,8 +6,10 @@ The vnstock TypeScript library now includes implementations for **four connector
 
 1. **VCI (VietCap)** - Web scraping-based provider for Vietnamese stock data
 2. **TCBS (TCBS Securities)** - REST API provider for Vietnamese stock data  
-3. **FMP (Financial Modeling Prep)** - API-based provider for global stock data
-4. **DNSE (DNSE Securities)** - REST API provider for Vietnamese trading
+3. **VNDirect (VNDirect Securities)** - REST API provider for Vietnamese stock data
+4. **Simplize** - REST API provider for stock screening
+5. **FMP (Financial Modeling Prep)** - API-based provider for global stock data
+6. **DNSE (DNSE Securities)** - REST API provider for Vietnamese trading
 
 ## Implemented Connectors
 
@@ -97,6 +99,59 @@ const indexData = await vnindex.history('2024-01-01', '2024-12-31');
 - ✅ Historical data (fully functional)
 - ✅ Intraday data (fully functional)
 - ⚠️ Price depth (structure in place, needs full implementation)
+
+### VNDirect Quote Provider (`src/explorer/vndirect/quote.ts`)
+
+**Type**: REST API
+**Data Source**: VNDirect Securities
+**Markets**: Vietnamese stocks (HOSE, HNX, UPCOM)
+
+**Features**:
+- Historical OHLCV data
+- Intraday trading data
+- Price Board (Real-time)
+- Company Profile & Financials
+- Screener with standardized metadata
+
+**Usage**:
+```typescript
+import { Quote } from 'vnstock';
+
+// Using VNDirect provider
+const quote = new Quote('vndirect', 'VNM', { showLog: false });
+const history = await quote.history('2024-01-01', '2024-12-31', '1D');
+```
+
+**Implementation Status**:
+- ✅ Historical data
+- ✅ Intraday data
+- ✅ Price Board
+- ✅ Screener
+
+### Simplize Screener Provider (`src/explorer/simplize/screener.ts`)
+
+**Type**: REST API
+**Data Source**: Simplize
+**Markets**: Vietnamese stocks
+
+**Features**:
+- Advanced stock screening
+- Standardized metadata format (compatible with TCBS/VNDirect)
+- English translations for criteria
+
+**Usage**:
+```typescript
+import { SimplizeScreenerProvider } from './src/explorer/simplize/screener';
+
+const screener = new SimplizeScreenerProvider();
+const results = await screener.screen({
+  marketCapVnd: { min: 1000, max: 10000 }
+});
+```
+
+**Implementation Status**:
+- ✅ Screener
+- ✅ Metadata with translations
 
 ### DNSE Trading Provider (`src/connector/dnse/trading.ts`)
 

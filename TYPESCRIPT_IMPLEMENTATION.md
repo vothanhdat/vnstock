@@ -22,6 +22,8 @@ vnstock/
 │   │   └── xno/                 # XNO connector
 │   ├── explorer/                 # Data explorers
 │   │   ├── tcbs/                # TCBS explorer
+│   │   ├── vndirect/            # VNDirect explorer
+│   │   ├── simplize/            # Simplize explorer
 │   │   ├── vci/                 # VCI explorer
 │   │   ├── msn/                 # MSN explorer
 │   │   ├── fmarket/             # FMarket explorer
@@ -82,7 +84,7 @@ Each adapter provides a clean interface to a specific data category:
 - **Finance**: Balance sheets, income statements, cash flow, ratios
 - **Listing**: Symbol lists and market data
 - **Trading**: Real-time trading data, price boards
-- **Screener**: Stock screening and filtering
+- **Screener**: Stock screening and filtering (Standardized metadata across TCBS, VNDirect, Simplize)
 
 ### Client Interface
 

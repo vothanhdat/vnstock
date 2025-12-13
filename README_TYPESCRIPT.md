@@ -93,6 +93,8 @@ const indexHistory = await dji.quote.history('2023-01-01', '2023-12-31');
 
 - **VCI**: VCI Securities (default)
 - **TCBS**: TCBS Securities
+- **VNDirect**: VNDirect Securities
+- **Simplize**: Simplize (Screener only)
 - **MSN**: MSN Money (for forex, crypto, global indices)
 
 ### Time Frames
