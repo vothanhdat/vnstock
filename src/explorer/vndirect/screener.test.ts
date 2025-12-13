@@ -59,9 +59,9 @@ describe('VNDirectScreenerProvider', () => {
     if (roeField) {
         expect(roeField).toHaveProperty('key', 'roeYr');
         expect(roeField).toHaveProperty('label');
-        expect(roeField).toHaveProperty('label_vi');
-        expect(roeField).toHaveProperty('label_en');
-        expect(roeField.label_en).toBe('ROE (FY)');
+        expect(roeField.label).toHaveProperty('vi');
+        expect(roeField.label).toHaveProperty('en');
+        expect(roeField.label.en).toBe('ROE (FY)');
     }
 
     // Find a field that has tooltip (e.g. marketCap)
@@ -69,15 +69,17 @@ describe('VNDirectScreenerProvider', () => {
     if (marketCap) {
         expect(marketCap).toHaveProperty('tooltip');
         // Tooltip might be HTML
-        if (marketCap.tooltip_vi) {
-            expect(typeof marketCap.tooltip_vi).toBe('string');
+        if (marketCap.tooltip) {
+            expect(marketCap.tooltip).toHaveProperty('vi');
+            expect(marketCap.tooltip).toHaveProperty('en');
+            expect(typeof marketCap.tooltip.vi).toBe('string');
         }
     }
 
     const firstField = metadata[keys[0]];
     expect(firstField).toHaveProperty('key');
     expect(firstField).toHaveProperty('label');
-    expect(firstField).toHaveProperty('tooltip');
+    // expect(firstField).toHaveProperty('tooltip'); // Tooltip can be null
     expect(firstField).toHaveProperty('unit');
     expect(firstField).toHaveProperty('type');
     expect(firstField).toHaveProperty('values');

@@ -51,7 +51,8 @@ export class VNDirectScreenerProvider {
         if (item.refCode) {
           const existing = fields.get(item.refCode) || {
             key: item.refCode,
-            tooltip: null,
+            label: { vi: '', en: '' },
+            tooltip: { vi: '', en: '' },
             unit: null,
             type: null,
             values: null,
@@ -60,11 +61,9 @@ export class VNDirectScreenerProvider {
 
           if (item.refGroup === 'TOOLTIP') {
             if (item.locale === 'VN') {
-              existing.tooltip_vi = item.description;
-              existing.tooltip = item.description; // Default to VI
+              existing.tooltip.vi = item.description;
             } else if (item.locale === 'EN_GB') {
-              existing.tooltip_en = item.description;
-              if (!existing.tooltip) existing.tooltip = item.description; // Fallback to EN
+              existing.tooltip.en = item.description;
             }
           } else {
             // Label / Definition
@@ -72,17 +71,36 @@ export class VNDirectScreenerProvider {
             existing.type = item.refType;
 
             if (item.locale === 'VN') {
-              existing.label_vi = item.description;
-              existing.label = item.description; // Default to VI
+              existing.label.vi = item.description;
             } else if (item.locale === 'EN_GB') {
-              existing.label_en = item.description;
-              if (!existing.label) existing.label = item.description; // Fallback to EN
+              existing.label.en = item.description;
             }
           }
 
+          // If one language is missing, fallback to the other
+          if (!existing.label.vi && existing.label.en) existing.label.vi = existing.label.en;
+          if (!existing.label.en && existing.label.vi) existing.label.en = existing.label.vi;
+          
+          if (!existing.tooltip.vi && existing.tooltip.en) existing.tooltip.vi = existing.tooltip.en;
+          if (!existing.tooltip.en && existing.tooltip.vi) existing.tooltip.en = existing.tooltip.vi;
+
+          // If tooltip is empty object (no tooltip found), set to null to match TCBS style if they use null for missing
+          // But TCBS sample showed tooltip object. If completely missing, maybe null?
+          // Let's keep it as object but if both empty, maybe null? 
+          // TCBS sample: "tooltip": { "vi": "...", "en": "..." }
+          // If I have no tooltip data, I'll have { vi: '', en: '' } which is fine, or I can set to null.
+          // Let's check if I should set to null if empty.
+          
           fields.set(item.refCode, existing);
         }
       }
+    }
+    
+    // Cleanup empty tooltips
+    for (const [key, val] of fields) {
+        if (!val.tooltip.vi && !val.tooltip.en) {
+            val.tooltip = null;
+        }
     }
 
     return Object.fromEntries(fields);

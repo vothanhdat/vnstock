@@ -3,6 +3,13 @@ import { SimplizeScreenerProvider } from './src/explorer/simplize/screener';
 async function main() {
   const screener = new SimplizeScreenerProvider();
   console.log('Testing Simplize Screener...');
+
+  console.log('1. Testing Metadata...');
+  const metadata = screener.getScreenerFieldMetadata();
+  console.log(`Total fields: ${Object.keys(metadata).length}`);
+  console.log('Sample field (marketCapVnd):', JSON.stringify(metadata['marketCapVnd'], null, 2));
+  console.log('Sample field (stockExchange):', JSON.stringify(metadata['stockExchange'], null, 2));
+  console.log();
   
   const criteria = {
     marketCapVnd: { min: 1000, max: 10000 },
