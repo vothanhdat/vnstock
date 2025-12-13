@@ -5,7 +5,7 @@
  */
 
 export { VNDirectScreenerProvider } from './screener';
-export { VNDirectPriceBoard, VNDirectPriceBoardData } from './priceboard';
+export { VNDirectPriceBoard, type VNDirectPriceBoardData } from './priceboard';
 export { VNDirectTradingProvider } from './trading';
 export { VNDirectQuoteProvider } from './quote';
 export { VNDirectCompanyProvider } from './company';
