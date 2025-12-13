@@ -1,1 +1,3209 @@
-{"data":[{"id":"801","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"roeYr","description":"ROE (FY)","displayLevel":0.0,"locale":"EN_GB"},{"id":"802","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"totalDebtQr","description":"Total debt (MRQ)","displayLevel":0.0,"locale":"EN_GB"},{"id":"803","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"totalDebtYr","description":"Total debt (FY)","displayLevel":0.0,"locale":"EN_GB"},{"id":"804","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netSalesQrGrqoq","description":"Revenue growth (QoQ)","displayLevel":0.0,"locale":"EN_GB"},{"id":"805","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netSalesQrGryoy","description":"Revenue growth (Quarterly QoQ)","displayLevel":0.0,"locale":"EN_GB"},{"id":"806","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netSalesTrGryoy","description":"Revenue growth (TTM YoY)","displayLevel":0.0,"locale":"EN_GB"},{"id":"807","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netSalesYrGryoy","description":"Revenue growth (YoY)","displayLevel":0.0,"locale":"EN_GB"},{"id":"808","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netSalesYrGr2yr","description":"2-year average revenue growth ","displayLevel":0.0,"locale":"EN_GB"},{"id":"809","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netSalesYrGr3yr","description":"3-year average revenue growth ","displayLevel":0.0,"locale":"EN_GB"},{"id":"810","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"epsQrGrqoq","description":"EPS growth (QoQ)","displayLevel":0.0,"locale":"EN_GB"},{"id":"811","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"epsQrGryoy","description":"EPS growth (Quarterly QoQ)","displayLevel":0.0,"locale":"EN_GB"},{"id":"812","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"epsTrGryoy","description":"EPS growth (TTM YoY)","displayLevel":0.0,"locale":"EN_GB"},{"id":"813","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"epsYrGryoy","description":"EPS growth (YoY)","displayLevel":0.0,"locale":"EN_GB"},{"id":"814","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"epsYrGr2yr","description":"2-year average EPS growth ","displayLevel":0.0,"locale":"EN_GB"},{"id":"815","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"epsYrGr3yr","description":"3-year average EPS growth ","displayLevel":0.0,"locale":"EN_GB"},{"id":"816","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netProfitQrGrqoq","description":"Net profit growth (QoQ)","displayLevel":0.0,"locale":"EN_GB"},{"id":"817","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netProfitQrGryoy","description":"Net profit growth (Quarterly QoQ)","displayLevel":0.0,"locale":"EN_GB"},{"id":"818","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netProfitTrGryoy","description":"Net profit growth (TTM YoY)","displayLevel":0.0,"locale":"EN_GB"},{"id":"819","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netProfitYrGryoy","description":"Net profit growth (YoY)","displayLevel":0.0,"locale":"EN_GB"},{"id":"820","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netProfitYrGr2yr","description":"2-year average net profit growth","displayLevel":0.0,"locale":"EN_GB"},{"id":"821","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netProfitYrGr3yr","description":"3-year average net profit growth","displayLevel":0.0,"locale":"EN_GB"},{"id":"822","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"bvpsQr","description":"BVPS (MRQ)","displayLevel":0.0,"locale":"EN_GB"},{"id":"823","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"bvpsYr","description":"BVPS (FY)","displayLevel":0.0,"locale":"EN_GB"},{"id":"824","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"ebitQr","description":"EBIT (MRQ)","displayLevel":0.0,"locale":"EN_GB"},{"id":"825","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"ebitYr","description":"EBIT (FY)","displayLevel":0.0,"locale":"EN_GB"},{"id":"826","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"ebitdaQr","description":"EBITDA (MRQ)","displayLevel":0.0,"locale":"EN_GB"},{"id":"827","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"ebitdaYr","description":"EBITDA (FY)","displayLevel":0.0,"locale":"EN_GB"},{"id":"831","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"nmValCr","description":"Current Trading Value","displayLevel":0.0,"locale":"EN_GB"},{"id":"832","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceCr","description":"Price","displayLevel":0.0,"locale":"EN_GB"},{"id":"834","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceChgPctCr1m","description":"Price change (1 months)","displayLevel":0.0,"locale":"EN_GB"},{"id":"835","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceChgPctCr3m","description":"Price change (3 months)","displayLevel":0.0,"locale":"EN_GB"},{"id":"836","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceChgPctCr1y","description":"Price change (1 year)","displayLevel":0.0,"locale":"EN_GB"},{"id":"837","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceChgPctCrHC1y","description":"Price change compared to 1-year high","displayLevel":0.0,"locale":"EN_GB"},{"id":"838","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceChgPctCrLC1y","description":"Price change compared to 1-year low","displayLevel":0.0,"locale":"EN_GB"},{"id":"839","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceChgPctCrHC5y","description":"Price change compared to 5-year high","displayLevel":0.0,"locale":"EN_GB"},{"id":"840","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceChgPctCrLC5y","description":"Price change compared to 5-year low","displayLevel":0.0,"locale":"EN_GB"},{"id":"841","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"bbUpperBand","description":"Bollinger upper band (20)","displayLevel":0.0,"locale":"EN_GB"},{"id":"842","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"bbLowerBand","description":"Bollinger lower band (20)","displayLevel":0.0,"locale":"EN_GB"},{"id":"843","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"nmVolCrtoNmVolAvgCr20dCr","description":"Current volume vs. 20-day average","displayLevel":0.0,"locale":"EN_GB"},{"id":"844","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"nmVolCrtoNmVolAvgCr50dCr","description":"Current volume vs. 50-day average","displayLevel":0.0,"locale":"EN_GB"},{"id":"845","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"macdHistCr12n26d","description":"MACD Histogram","displayLevel":0.0,"locale":"EN_GB"},{"id":"846","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"rsiCr14d","description":"RSI (14)","displayLevel":0.0,"locale":"EN_GB"},{"id":"851","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netForBoughtValCr","description":"Net foreign bought value","displayLevel":0.0,"locale":"EN_GB"},{"id":"852","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netForSoldValCr","description":"Net foreign sold value","displayLevel":0.0,"locale":"EN_GB"},{"id":"853","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netForBoughtValAvgCr20d","description":"Net foreign bought value in 20 sessions","displayLevel":0.0,"locale":"EN_GB"},{"id":"854","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netForSoldValAvgCr20d","description":"Net foreign sold value in 20 sessions","displayLevel":0.0,"locale":"EN_GB"},{"id":"855","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"continuousAdvSesCr","description":"Continuous advance sessions","displayLevel":0.0,"locale":"EN_GB"},{"id":"856","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"continuousDeclineSesCr","description":"Continuous decline sessions","displayLevel":0.0,"locale":"EN_GB"},{"id":"1038","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"dividendYieldCr","description":"Tỷ suất cổ tức","displayLevel":0.0,"locale":"VN"},{"id":"1039","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"dividendYieldCr","description":"Dividend Yield","displayLevel":0.0,"locale":"EN_GB"},{"id":"1066","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"cashConversionCycleYr","description":"Vòng quay tiền mặt năm gần nhất","displayLevel":0.0,"locale":"VN"},{"id":"1067","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"cashConversionCycleTr","description":"Cash Conversion Cycle (TTM)","displayLevel":0.0,"locale":"EN_GB"},{"id":"1063","refGroup":"TOOLTIP","refType":"HTML","refCode":"cashConversionCycle","description":"<p>Dữ liệu được cập nhật hàng ngày.</p>","displayLevel":0.0,"locale":"VN"},{"id":"1064","refGroup":"TOOLTIP","refType":"HTML","refCode":"cashConversionCycle","description":"<p>The data is updated daily</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"1065","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"cashConversionCycleTr","description":"Vòng quay tiền mặt trượt 12 tháng","displayLevel":0.0,"locale":"VN"},{"id":"1068","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"cashConversionCycleYr","description":"Cash Conversion Cycle (FY)","displayLevel":0.0,"locale":"EN_GB"},{"id":"1093","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"totalScoreQr","description":"D-Rating","displayLevel":0.0,"locale":"VN"},{"id":"1094","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"growthScoreQr","description":"Tốc độ tăng trưởng","displayLevel":0.0,"locale":"VN"},{"id":"1095","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"profitabilityScoreQr","description":"Khả năng sinh lời","displayLevel":0.0,"locale":"VN"},{"id":"1096","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"bargainingScoreQr","description":"Vị thế doanh nghiệp","displayLevel":0.0,"locale":"VN"},{"id":"1097","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"financialHealthQr","description":"Sức khỏe tài chính","displayLevel":0.0,"locale":"VN"},{"id":"1098","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"commitmentScoreQr","description":"Cam kết với cổ đông","displayLevel":0.0,"locale":"VN"},{"id":"1099","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"governanceScoreQr","description":"Quản trị bền vững","displayLevel":0.0,"locale":"VN"},{"id":"1100","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"totalScoreQr","description":"D-Rating","displayLevel":0.0,"locale":"EN_GB"},{"id":"1101","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"growthScoreQr","description":"Growth","displayLevel":0.0,"locale":"EN_GB"},{"id":"1102","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"profitabilityScoreQr","description":"Profitability ","displayLevel":0.0,"locale":"EN_GB"},{"id":"1103","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"bargainingScoreQr","description":"Bargaining power","displayLevel":0.0,"locale":"EN_GB"},{"id":"1104","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"financialHealthQr","description":"Financial health ","displayLevel":0.0,"locale":"EN_GB"},{"id":"1105","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"commitmentScoreQr","description":"Commitment with shareholders","displayLevel":0.0,"locale":"EN_GB"},{"id":"1106","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"governanceScoreQr","description":"Corporate governance","displayLevel":0.0,"locale":"EN_GB"},{"id":"1040","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceCrBtwBBand","description":"Nằm trong biên Bollinger Band","displayLevel":0.0,"locale":"VN"},{"id":"1041","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceCrBtwBBand","description":"Between Bollinger Band","displayLevel":0.0,"locale":"EN_GB"},{"id":"1042","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceCrCrossupSmaCr5d","description":"Giá cắt lên đường SMA (5)","displayLevel":0.0,"locale":"VN"},{"id":"1043","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceCrCrossdownSmaCr5d","description":"Giá cắt xuống đường SMA (5)","displayLevel":0.0,"locale":"VN"},{"id":"1044","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceCrCrossupSmaCr20d","description":"Giá cắt lên đường SMA (20)","displayLevel":0.0,"locale":"VN"},{"id":"1045","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceCrCrossdownSmaCr20d","description":"Giá cắt xuống đường SMA (20)","displayLevel":0.0,"locale":"VN"},{"id":"1046","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceCrCrossupSmaCr50d","description":"Giá cắt lên đường SMA (50)","displayLevel":0.0,"locale":"VN"},{"id":"1047","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceCrCrossdownSmaCr50d","description":"Giá cắt xuống đường SMA (50)","displayLevel":0.0,"locale":"VN"},{"id":"1048","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceCrCrossupSmaCr200d","description":"Giá cắt lên đường SMA (200)","displayLevel":0.0,"locale":"VN"},{"id":"1049","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceCrCrossdownSmaCr200d","description":"Giá cắt xuống đường SMA (200)","displayLevel":0.0,"locale":"VN"},{"id":"1050","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceCrCrossupSmaCr5d","description":"Price cross up SMA (5)","displayLevel":0.0,"locale":"EN_GB"},{"id":"1051","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceCrCrossdownSmaCr5d","description":"Price cross down SMA (5)","displayLevel":0.0,"locale":"EN_GB"},{"id":"1052","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceCrCrossupSmaCr20d","description":"Price cross up SMA (20)","displayLevel":0.0,"locale":"EN_GB"},{"id":"1053","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceCrCrossdownSmaCr20d","description":"Price cross down SMA (20)","displayLevel":0.0,"locale":"EN_GB"},{"id":"1054","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceCrCrossupSmaCr50d","description":"Price cross up SMA (50)","displayLevel":0.0,"locale":"EN_GB"},{"id":"1055","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceCrCrossdownSmaCr50d","description":"Price cross down SMA (50)","displayLevel":0.0,"locale":"EN_GB"},{"id":"1056","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceCrCrossupSmaCr200d","description":"Price cross up SMA (200)","displayLevel":0.0,"locale":"EN_GB"},{"id":"1057","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceCrCrossdownSmaCr200d","description":"Price cross down SMA (200)","displayLevel":0.0,"locale":"EN_GB"},{"id":"1129","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"grossMarginTr","description":"Biên LN gộp trượt 12 tháng","displayLevel":0.0,"locale":"VN"},{"id":"1130","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"grossMarginTr","description":"Gross margin (TTM)","displayLevel":0.0,"locale":"EN_GB"},{"id":"1131","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netMarginTr","description":"Biên LN ròng trượt 12 tháng","displayLevel":0.0,"locale":"VN"},{"id":"1132","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netMarginTr","description":"Net profit (TTM)","displayLevel":0.0,"locale":"EN_GB"},{"id":"1133","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"ebitTr","description":"EBIT trượt 12 tháng","displayLevel":0.0,"locale":"VN"},{"id":"1134","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"ebitTr","description":"EBIT (TTM)","displayLevel":0.0,"locale":"EN_GB"},{"id":"1135","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"ebitdaTr","description":"EBITDA trượt 12 tháng","displayLevel":0.0,"locale":"VN"},{"id":"1136","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"ebitdaTr","description":"EBITDA (TTM)","displayLevel":0.0,"locale":"EN_GB"},{"id":"1119","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"epsTr","description":"EPS trượt 12 tháng","displayLevel":0.0,"locale":"VN"},{"id":"1120","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"epsTr","description":"EPS (TTM)","displayLevel":0.0,"locale":"EN_GB"},{"id":"1121","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"roaTr","description":"ROA trượt 12 tháng","displayLevel":0.0,"locale":"VN"},{"id":"1122","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"roeTr","description":"ROE trượt 12 tháng","displayLevel":0.0,"locale":"VN"},{"id":"1123","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"roaTr","description":"ROA (TTM)","displayLevel":0.0,"locale":"EN_GB"},{"id":"1124","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"roeTr","description":"ROE (TTM)","displayLevel":0.0,"locale":"EN_GB"},{"id":"586","refGroup":"TOOLTIP","refType":"HTML","refCode":"floor","description":"<p>Dữ liệu được cập nhật hàng ngày.</p>","displayLevel":0.0,"locale":"VN"},{"id":"587","refGroup":"TOOLTIP","refType":"HTML","refCode":"industrylv2","description":"<p>Dữ liệu được cập nhật hàng ngày.</p>","displayLevel":0.0,"locale":"VN"},{"id":"588","refGroup":"TOOLTIP","refType":"HTML","refCode":"marketCap","description":"<p>Dữ liệu được cập nhật realtime</p>","displayLevel":0.0,"locale":"VN"},{"id":"589","refGroup":"TOOLTIP","refType":"HTML","refCode":"beta","description":"<p>Dữ liệu được cập nhật realtime</p>","displayLevel":0.0,"locale":"VN"},{"id":"598","refGroup":"TOOLTIP","refType":"HTML","refCode":"grossMargin","description":"<p>Lợi nhuận gộp / Doanh thu thuần</p><p>Dữ liệu được cập nhật hàng ngày.</p>","displayLevel":0.0,"locale":"VN"},{"id":"599","refGroup":"TOOLTIP","refType":"HTML","refCode":"netMargin","description":"<p>Lợi nhuận ròng / Doanh thu thuần</p><p>Dữ liệu được cập nhật hàng ngày.</p>","displayLevel":0.0,"locale":"VN"},{"id":"600","refGroup":"TOOLTIP","refType":"HTML","refCode":"eps","description":"<p>Lợi nhuận sau thuế / Số lượng cổ phiếu lưu hành mới nhất</p><p>Dữ liệu được cập nhật hàng ngày.</p>","displayLevel":0.0,"locale":"VN"},{"id":"601","refGroup":"TOOLTIP","refType":"HTML","refCode":"liabilityStructure","description":"<p>Tổng nợ phải trả / Tổng vốn chủ sở hữu</p><p>Dữ liệu được cập nhật hàng ngày.</p>","displayLevel":0.0,"locale":"VN"},{"id":"602","refGroup":"TOOLTIP","refType":"HTML","refCode":"pe","description":"<p>Vốn hóa / Tổng Lợi nhuận sau thuế</p><p>Dữ liệu được cập nhật realtime</p>","displayLevel":0.0,"locale":"VN"},{"id":"603","refGroup":"TOOLTIP","refType":"HTML","refCode":"pb","description":"<p>Vốn hóa / Tổng Giá trị sổ sách</p><p>Dữ liệu được cập nhật realtime</p>","displayLevel":0.0,"locale":"VN"},{"id":"604","refGroup":"TOOLTIP","refType":"HTML","refCode":"roa","description":"<p>Lợi nhuận sau thuế / Tổng tài sản</p><p>Dữ liệu được cập nhật hàng ngày.</p>","displayLevel":0.0,"locale":"VN"},{"id":"605","refGroup":"TOOLTIP","refType":"HTML","refCode":"roe","description":"<p>Lợi nhuận sau thuế / Vốn chủ sở hữu</p><p>Dữ liệu được cập nhật hàng ngày.</p>","displayLevel":0.0,"locale":"VN"},{"id":"606","refGroup":"TOOLTIP","refType":"HTML","refCode":"totalDebt","description":"<p>Dữ liệu được cập nhật hàng ngày.</p>","displayLevel":0.0,"locale":"VN"},{"id":"607","refGroup":"TOOLTIP","refType":"HTML","refCode":"netSalesGrowth","description":"<p>Dữ liệu được cập nhật hàng ngày.</p>","displayLevel":0.0,"locale":"VN"},{"id":"608","refGroup":"TOOLTIP","refType":"HTML","refCode":"epsGrowth","description":"<p>Dữ liệu được cập nhật hàng ngày.</p>","displayLevel":0.0,"locale":"VN"},{"id":"609","refGroup":"TOOLTIP","refType":"HTML","refCode":"netProfitGrowth","description":"<p>Dữ liệu được cập nhật hàng ngày.</p>","displayLevel":0.0,"locale":"VN"},{"id":"610","refGroup":"TOOLTIP","refType":"HTML","refCode":"bvps","description":"<p>Tổng giá trị sổ sách / Số lượng cổ phiếu lưu hành mới nhất</p><p>Dữ liệu được cập nhật realtime</p>","displayLevel":0.0,"locale":"VN"},{"id":"611","refGroup":"TOOLTIP","refType":"HTML","refCode":"ebit","description":"<p>Lợi nhuận trước thuế, lãi vay</p><p>Dữ liệu được cập nhật hàng ngày.</p>","displayLevel":0.0,"locale":"VN"},{"id":"612","refGroup":"TOOLTIP","refType":"HTML","refCode":"ebitda","description":"<p>Lợi nhuận trước thuế, lãi vay và khấu hao</p><p>Dữ liệu được cập nhật hàng ngày.</p>","displayLevel":0.0,"locale":"VN"},{"id":"613","refGroup":"TOOLTIP","refType":"HTML","refCode":"dividendYield","description":"<p>Số tiền NĐT nhận được / Thị giá cổ phiếu</p><p>Dữ liệu được cập nhật realtime</p>","displayLevel":0.0,"locale":"VN"},{"id":"615","refGroup":"TOOLTIP","refType":"HTML","refCode":"nmVal","description":"<p>Dữ liệu được cập nhật realtime</p>","displayLevel":0.0,"locale":"VN"},{"id":"616","refGroup":"TOOLTIP","refType":"HTML","refCode":"price","description":"<p>Dữ liệu được cập nhật realtime</p>","displayLevel":0.0,"locale":"VN"},{"id":"617","refGroup":"TOOLTIP","refType":"HTML","refCode":"priceChgPct","description":"<p>Dữ liệu được cập nhật realtime</p>","displayLevel":0.0,"locale":"VN"},{"id":"618","refGroup":"TOOLTIP","refType":"HTML","refCode":"bollingerband","description":"<p>Dữ liệu được cập nhật realtime</p>","displayLevel":0.0,"locale":"VN"},{"id":"619","refGroup":"TOOLTIP","refType":"HTML","refCode":"nmVolVsSma20","description":"<p>Dữ liệu được cập nhật realtime</p>","displayLevel":0.0,"locale":"VN"},{"id":"620","refGroup":"TOOLTIP","refType":"HTML","refCode":"nmVolVsSma50","description":"<p>Dữ liệu được cập nhật realtime</p>","displayLevel":0.0,"locale":"VN"},{"id":"621","refGroup":"TOOLTIP","refType":"HTML","refCode":"macdHist","description":"<p>Dữ liệu được cập nhật realtime</p>","displayLevel":0.0,"locale":"VN"},{"id":"622","refGroup":"TOOLTIP","refType":"HTML","refCode":"rsi","description":"<p>Dữ liệu được cập nhật realtime</p>","displayLevel":0.0,"locale":"VN"},{"id":"623","refGroup":"TOOLTIP","refType":"HTML","refCode":"priceVsSma","description":"<p>Dữ liệu được cập nhật realtime</p>","displayLevel":0.0,"locale":"VN"},{"id":"624","refGroup":"TOOLTIP","refType":"HTML","refCode":"netForeignVal","description":"<p>Dữ liệu được cập nhật realtime</p>","displayLevel":0.0,"locale":"VN"},{"id":"625","refGroup":"TOOLTIP","refType":"HTML","refCode":"netForeValAvgCr20d","description":"<p>Dữ liệu được cập nhật realtime</p>","displayLevel":0.0,"locale":"VN"},{"id":"626","refGroup":"TOOLTIP","refType":"HTML","refCode":"continuousAdvSes","description":"<p>Dữ liệu được cập nhật hàng ngày.</p>","displayLevel":0.0,"locale":"VN"},{"id":"627","refGroup":"TOOLTIP","refType":"HTML","refCode":"continuousDeclineSes","description":"<p>Dữ liệu được cập nhật hàng ngày.</p>","displayLevel":0.0,"locale":"VN"},{"id":"628","refGroup":"TOOLTIP","refType":"HTML","refCode":"totalScore","description":"<p>Bộ chỉ số độc quyền đánh giá cổ phiếu chuyên sâu được phát triển bởi VNDIRECT</p><p>Dữ liệu được cập nhật hàng ngày.</p>","displayLevel":0.0,"locale":"VN"},{"id":"629","refGroup":"TOOLTIP","refType":"HTML","refCode":"profitabilityScore","description":"<p>Dữ liệu được cập nhật hàng ngày.</p>","displayLevel":0.0,"locale":"VN"},{"id":"630","refGroup":"TOOLTIP","refType":"HTML","refCode":"financialHealth","description":"<p>Dữ liệu được cập nhật hàng ngày.</p>","displayLevel":0.0,"locale":"VN"},{"id":"631","refGroup":"TOOLTIP","refType":"HTML","refCode":"growthScore","description":"<p>Dữ liệu được cập nhật hàng ngày.</p>","displayLevel":0.0,"locale":"VN"},{"id":"632","refGroup":"TOOLTIP","refType":"HTML","refCode":"bargainingScore","description":"<p>Dữ liệu được cập nhật hàng ngày.</p>","displayLevel":0.0,"locale":"VN"},{"id":"633","refGroup":"TOOLTIP","refType":"HTML","refCode":"commitmentScore","description":"<p>Dữ liệu được cập nhật hàng ngày.</p>","displayLevel":0.0,"locale":"VN"},{"id":"634","refGroup":"TOOLTIP","refType":"HTML","refCode":"governanceScore","description":"<p>Dữ liệu được cập nhật hàng ngày.</p>","displayLevel":0.0,"locale":"VN"},{"id":"635","refGroup":"TOOLTIP","refType":"HTML","refCode":"floor","description":"<p>The data is updated daily</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"636","refGroup":"TOOLTIP","refType":"HTML","refCode":"industrylv2","description":"<p>The data is updated daily</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"637","refGroup":"TOOLTIP","refType":"HTML","refCode":"marketCap","description":"<p>The data is updated realtime</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"638","refGroup":"TOOLTIP","refType":"HTML","refCode":"beta","description":"<p>The data is updated realtime</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"647","refGroup":"TOOLTIP","refType":"HTML","refCode":"grossMargin","description":"<p>Gross profit / Net revenue</p><p>The data is updated daily</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"648","refGroup":"TOOLTIP","refType":"HTML","refCode":"netMargin","description":"<p>Net profit / Net revenue</p><p>The data is updated daily</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"649","refGroup":"TOOLTIP","refType":"HTML","refCode":"eps","description":"<p>Net profit after tax / Outstanding shares</p><p>The data is updated daily</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"650","refGroup":"TOOLTIP","refType":"HTML","refCode":"liabilityStructure","description":"<p>Total liabilities / Total shareholders' equity</p><p>The data is updated daily</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"651","refGroup":"TOOLTIP","refType":"HTML","refCode":"pe","description":"<p>Market capitalization / Total net profit after tax</p><p>The data is updated realtime</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"652","refGroup":"TOOLTIP","refType":"HTML","refCode":"pb","description":"<p>Market capitalization / Total book value</p><p>The data is updated realtime</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"653","refGroup":"TOOLTIP","refType":"HTML","refCode":"roa","description":"<p>Net profit / Total assets</p><p>The data is updated daily</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"654","refGroup":"TOOLTIP","refType":"HTML","refCode":"roe","description":"<p>Net profit / Total equity</p><p>The data is updated daily</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"655","refGroup":"TOOLTIP","refType":"HTML","refCode":"totalDebt","description":"<p>The data is updated daily</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"656","refGroup":"TOOLTIP","refType":"HTML","refCode":"netSalesGrowth","description":"<p>The data is updated daily</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"657","refGroup":"TOOLTIP","refType":"HTML","refCode":"epsGrowth","description":"<p>The data is updated daily</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"658","refGroup":"TOOLTIP","refType":"HTML","refCode":"netProfitGrowth","description":"<p>The data is updated daily</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"659","refGroup":"TOOLTIP","refType":"HTML","refCode":"bvps","description":"<p>Total book value / Outstanding shares</p><p>The data is updated realtime</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"660","refGroup":"TOOLTIP","refType":"HTML","refCode":"ebit","description":"<p>Earnings before tax, interest</p><p>The data is updated daily</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"661","refGroup":"TOOLTIP","refType":"HTML","refCode":"ebitda","description":"<p>Earnings before tax, interest and depreciation</p><p>The data is updated daily</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"662","refGroup":"TOOLTIP","refType":"HTML","refCode":"dividendYield","description":"<p>Dividend / Stock price</p><p>The data is updated realtime</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"664","refGroup":"TOOLTIP","refType":"HTML","refCode":"nmVal","description":"<p>The data is updated realtime</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"665","refGroup":"TOOLTIP","refType":"HTML","refCode":"price","description":"<p>The data is updated realtime</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"666","refGroup":"TOOLTIP","refType":"HTML","refCode":"priceChgPct","description":"<p>The data is updated realtime</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"667","refGroup":"TOOLTIP","refType":"HTML","refCode":"bollingerband","description":"<p>The data is updated realtime</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"668","refGroup":"TOOLTIP","refType":"HTML","refCode":"nmVolVsSma20","description":"<p>The data is updated realtime</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"669","refGroup":"TOOLTIP","refType":"HTML","refCode":"nmVolVsSma50","description":"<p>The data is updated realtime</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"670","refGroup":"TOOLTIP","refType":"HTML","refCode":"macdHist","description":"<p>The data is updated realtime</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"671","refGroup":"TOOLTIP","refType":"HTML","refCode":"rsi","description":"<p>The data is updated realtime</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"672","refGroup":"TOOLTIP","refType":"HTML","refCode":"priceVsSma","description":"<p>The data is updated realtime</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"673","refGroup":"TOOLTIP","refType":"HTML","refCode":"netForeignVal","description":"<p>The data is updated realtime</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"674","refGroup":"TOOLTIP","refType":"HTML","refCode":"netForeValAvgCr20d","description":"<p>The data is updated realtime</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"675","refGroup":"TOOLTIP","refType":"HTML","refCode":"continuousAdvSes","description":"<p>The data is updated daily</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"676","refGroup":"TOOLTIP","refType":"HTML","refCode":"continuousDeclineSes","description":"<p>The data is updated daily</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"677","refGroup":"TOOLTIP","refType":"HTML","refCode":"totalScore","description":"<p>The comprehensive stock evaluation index developed by VNDIRECT</p><p>The data is updated daily</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"678","refGroup":"TOOLTIP","refType":"HTML","refCode":"profitabilityScore","description":"<p>The data is updated daily</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"679","refGroup":"TOOLTIP","refType":"HTML","refCode":"financialHealth","description":"<p>The data is updated daily</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"680","refGroup":"TOOLTIP","refType":"HTML","refCode":"growthScore","description":"<p>The data is updated daily</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"681","refGroup":"TOOLTIP","refType":"HTML","refCode":"bargainingScore","description":"<p>The data is updated daily</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"682","refGroup":"TOOLTIP","refType":"HTML","refCode":"commitmentScore","description":"<p>The data is updated daily</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"683","refGroup":"TOOLTIP","refType":"HTML","refCode":"governanceScore","description":"<p>The data is updated daily</p>","displayLevel":0.0,"locale":"EN_GB"},{"id":"684","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"companyNameVi","description":"Tên tiếng việt","displayLevel":0.0,"locale":"VN"},{"id":"685","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"companyNameEn","description":"Tên tiếng anh","displayLevel":0.0,"locale":"VN"},{"id":"686","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"floor","description":"Sàn giao dịch","displayLevel":0.0,"locale":"VN"},{"id":"687","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"industrylv2","description":"Ngành","displayLevel":0.0,"locale":"VN"},{"id":"688","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"marketCapCr","description":"Vốn hóa","displayLevel":0.0,"locale":"VN"},{"id":"689","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"betaCr","description":"Beta","displayLevel":0.0,"locale":"VN"},{"id":"702","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"epsQr","description":"EPS quý gần nhất","displayLevel":0.0,"locale":"VN"},{"id":"703","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"epsYr","description":"EPS năm gần nhất","displayLevel":0.0,"locale":"VN"},{"id":"704","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"liabilityStructureQr","description":"Nợ/VCSH quý gần nhất","displayLevel":0.0,"locale":"VN"},{"id":"705","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"liabilityStructureYr","description":"Nợ/VCSH năm gần nhất","displayLevel":0.0,"locale":"VN"},{"id":"706","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"peCr","description":"P/E","displayLevel":0.0,"locale":"VN"},{"id":"707","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"pbCr","description":"P/B","displayLevel":0.0,"locale":"VN"},{"id":"709","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"roaYr","description":"ROA năm gần nhất","displayLevel":0.0,"locale":"VN"},{"id":"711","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"roeYr","description":"ROE năm gần nhất","displayLevel":0.0,"locale":"VN"},{"id":"712","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"totalDebtQr","description":"Tổng nợ vay quý gần nhất","displayLevel":0.0,"locale":"VN"},{"id":"713","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"totalDebtYr","description":"Tổng nợ vay năm gần nhất","displayLevel":0.0,"locale":"VN"},{"id":"714","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netSalesQrGrqoq","description":"Tăng trưởng doanh thu quý so với quý trước đó","displayLevel":0.0,"locale":"VN"},{"id":"715","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netSalesQrGryoy","description":"Tăng trưởng doanh thu quý so với cùng kỳ năm trước","displayLevel":0.0,"locale":"VN"},{"id":"716","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netSalesTrGryoy","description":"Tăng trưởng doanh thu 4 quý liền kề so với cùng kỳ năm trước","displayLevel":0.0,"locale":"VN"},{"id":"717","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netSalesYrGryoy","description":"Tăng trưởng doanh thu năm gần nhất","displayLevel":0.0,"locale":"VN"},{"id":"718","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netSalesYrGr2yr","description":"Tăng trưởng doanh thu bình quân 2 năm","displayLevel":0.0,"locale":"VN"},{"id":"719","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netSalesYrGr3yr","description":"Tăng trưởng doanh thu bình quân 3 năm","displayLevel":0.0,"locale":"VN"},{"id":"720","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"epsQrGrqoq","description":"Tăng trưởng EPS quý so với quý trước đó","displayLevel":0.0,"locale":"VN"},{"id":"721","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"epsQrGryoy","description":"Tăng trưởng EPS quý so với cùng kỳ năm trước","displayLevel":0.0,"locale":"VN"},{"id":"722","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"epsTrGryoy","description":"Tăng trưởng EPS 4 quý liền kề so với cùng kỳ năm trước","displayLevel":0.0,"locale":"VN"},{"id":"723","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"epsYrGryoy","description":"Tăng trưởng EPS năm gần nhất","displayLevel":0.0,"locale":"VN"},{"id":"724","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"epsYrGr2yr","description":"Tăng trưởng EPS bình quân 2 năm","displayLevel":0.0,"locale":"VN"},{"id":"725","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"epsYrGr3yr","description":"Tăng trưởng EPS bình quân 3 năm","displayLevel":0.0,"locale":"VN"},{"id":"726","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netProfitQrGrqoq","description":"Tăng trưởng lợi nhuận sau thuế quý so với quý trước đó","displayLevel":0.0,"locale":"VN"},{"id":"727","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netProfitQrGryoy","description":"Tăng trưởng lợi nhuận sau thuế quý so với cùng kỳ năm trước","displayLevel":0.0,"locale":"VN"},{"id":"728","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netProfitTrGryoy","description":"Tăng trưởng lợi nhuận sau thuế 4 quý liền kề so với cùng kỳ năm trước","displayLevel":0.0,"locale":"VN"},{"id":"729","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netProfitYrGryoy","description":"Tăng trưởng lợi nhuận sau thuế năm gần nhất","displayLevel":0.0,"locale":"VN"},{"id":"730","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netProfitYrGr2yr","description":"Tăng trưởng lợi nhuận sau thuế bình quân 2 năm","displayLevel":0.0,"locale":"VN"},{"id":"731","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netProfitYrGr3yr","description":"Tăng trưởng lợi nhuận sau thuế bình quân 3 năm","displayLevel":0.0,"locale":"VN"},{"id":"732","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"bvpsQr","description":"BVPS quý gần nhất","displayLevel":0.0,"locale":"VN"},{"id":"733","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"bvpsYr","description":"BVPS năm gần nhất","displayLevel":0.0,"locale":"VN"},{"id":"734","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"ebitQr","description":"EBIT quý gần nhất","displayLevel":0.0,"locale":"VN"},{"id":"735","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"ebitYr","description":"EBIT năm gần nhất","displayLevel":0.0,"locale":"VN"},{"id":"736","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"ebitdaQr","description":"EBITDA quý gần nhất","displayLevel":0.0,"locale":"VN"},{"id":"737","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"ebitdaYr","description":"EBITDA năm gần nhất","displayLevel":0.0,"locale":"VN"},{"id":"741","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"nmValCr","description":"Giá trị GD phiên hiện tại","displayLevel":0.0,"locale":"VN"},{"id":"742","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceCr","description":"Giá ","displayLevel":0.0,"locale":"VN"},{"id":"744","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceChgPctCr1m","description":"Thay đổi giá 1 tháng ","displayLevel":0.0,"locale":"VN"},{"id":"745","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceChgPctCr3m","description":"Thay đổi giá 3 tháng ","displayLevel":0.0,"locale":"VN"},{"id":"746","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceChgPctCr1y","description":"Thay đổi giá 1 năm ","displayLevel":0.0,"locale":"VN"},{"id":"747","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceChgPctCrHC1y","description":"Thay đổi giá so với đỉnh 1 năm","displayLevel":0.0,"locale":"VN"},{"id":"748","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceChgPctCrLC1y","description":"Thay đổi giá so với đáy 1 năm","displayLevel":0.0,"locale":"VN"},{"id":"749","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceChgPctCrHC5y","description":"Thay đổi giá so với đỉnh 5 năm","displayLevel":0.0,"locale":"VN"},{"id":"750","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceChgPctCrLC5y","description":"Thay đổi giá so với đáy 5 năm","displayLevel":0.0,"locale":"VN"},{"id":"751","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"bbUpperBand","description":"Biên trên Bollinger Band","displayLevel":0.0,"locale":"VN"},{"id":"752","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"bbLowerBand","description":"Biên dưới Bollinger Band","displayLevel":0.0,"locale":"VN"},{"id":"753","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"nmVolCrtoNmVolAvgCr20dCr","description":"KLGD so với TB 20 phiên","displayLevel":0.0,"locale":"VN"},{"id":"754","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"nmVolCrtoNmVolAvgCr50dCr","description":"KLGD so với TB 50 phiên","displayLevel":0.0,"locale":"VN"},{"id":"755","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"macdHistCr12n26d","description":"MACD Histogram","displayLevel":0.0,"locale":"VN"},{"id":"756","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"rsiCr14d","description":"RSI (14)","displayLevel":0.0,"locale":"VN"},{"id":"761","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netForBoughtValCr","description":"Giá trị mua ròng của NĐTNN","displayLevel":0.0,"locale":"VN"},{"id":"762","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netForSoldValCr","description":"Giá trị bán ròng của NĐTNN","displayLevel":0.0,"locale":"VN"},{"id":"763","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netForBoughtValAvgCr20d","description":"Giá trị mua ròng của NĐTNN 20 phiên","displayLevel":0.0,"locale":"VN"},{"id":"764","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netForSoldValAvgCr20d","description":"Giá trị bán ròng của NĐTNN 20 phiên","displayLevel":0.0,"locale":"VN"},{"id":"765","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"continuousAdvSesCr","description":"Số phiên tăng liên tiếp","displayLevel":0.0,"locale":"VN"},{"id":"766","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"continuousDeclineSesCr","description":"Số phiên giảm liên tiếp","displayLevel":0.0,"locale":"VN"},{"id":"1107","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceChgPctCr5d","description":"Thay đổi giá 5 ngày","displayLevel":0.0,"locale":"VN"},{"id":"1108","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"priceChgPctCr5d","description":"Price change (5 days)","displayLevel":0.0,"locale":"EN_GB"},{"id":"1109","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"grossMarginQr","description":"Biên LN gộp quý gần nhất","displayLevel":0.0,"locale":"VN"},{"id":"1110","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"grossMarginYr","description":"Biên LN gộp năm gần nhất","displayLevel":0.0,"locale":"VN"},{"id":"1111","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netMarginQr","description":"Biên LN ròng quý gần nhất","displayLevel":0.0,"locale":"VN"},{"id":"1112","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netMarginYr","description":"Biên LN ròng năm gần nhất","displayLevel":0.0,"locale":"VN"},{"id":"1113","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"grossMarginQr","description":"Gross profit Margin (MRQ)","displayLevel":0.0,"locale":"EN_GB"},{"id":"774","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"companyNameVi","description":"Vietnamese name","displayLevel":0.0,"locale":"EN_GB"},{"id":"775","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"companyNameEn","description":"English name","displayLevel":0.0,"locale":"EN_GB"},{"id":"776","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"floor","description":"Floor","displayLevel":0.0,"locale":"EN_GB"},{"id":"777","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"industrylv2","description":"Industry","displayLevel":0.0,"locale":"EN_GB"},{"id":"778","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"marketCapCr","description":"Market capitalization","displayLevel":0.0,"locale":"EN_GB"},{"id":"779","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"betaCr","description":"Beta","displayLevel":0.0,"locale":"EN_GB"},{"id":"792","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"epsQr","description":"EPS (MRQ)","displayLevel":0.0,"locale":"EN_GB"},{"id":"793","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"epsYr","description":"EPS (FY)","displayLevel":0.0,"locale":"EN_GB"},{"id":"794","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"liabilityStructureQr","description":"D/E (MRQ)","displayLevel":0.0,"locale":"EN_GB"},{"id":"795","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"liabilityStructureYr","description":"D/E (FY)","displayLevel":0.0,"locale":"EN_GB"},{"id":"796","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"peCr","description":"P/E","displayLevel":0.0,"locale":"EN_GB"},{"id":"797","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"pbCr","description":"P/B","displayLevel":0.0,"locale":"EN_GB"},{"id":"799","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"roaYr","description":"ROA (FY)","displayLevel":0.0,"locale":"EN_GB"},{"id":"1114","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"grossMarginYr","description":"Gross profit Margin (FY)","displayLevel":0.0,"locale":"EN_GB"},{"id":"1115","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netMarginQr","description":"Net profit Margin (MRQ)","displayLevel":0.0,"locale":"EN_GB"},{"id":"1116","refGroup":"FILTER_NAME","refType":"FILTER_NAME","refCode":"netMarginYr","description":"Net profit Margin (FY)","displayLevel":0.0,"locale":"EN_GB"},{"id":"509","refGroup":"MENU","refType":"CATEGORIES","refCode":"PROFILE","description":"Thông tin doanh nghiệp","displayLevel":1000.0,"locale":"VN"},{"id":"1137","refGroup":"MENU","refType":"CATEGORIES","refCode":"PROFILE","description":"Corporate Profile","displayLevel":1000.0,"locale":"EN_GB"},{"id":"1117","refGroup":"MENU","refType":"PROFILE","refCode":"floor","description":"Floor","displayLevel":1010.0,"locale":"EN_GB"},{"id":"513","refGroup":"MENU","refType":"PROFILE","refCode":"floor","description":"Sàn giao dịch","displayLevel":1010.0,"locale":"VN"},{"id":"1118","refGroup":"MENU","refType":"PROFILE","refCode":"industrylv2","description":"Industry","displayLevel":1020.0,"locale":"EN_GB"},{"id":"514","refGroup":"MENU","refType":"PROFILE","refCode":"industrylv2","description":"Ngành","displayLevel":1020.0,"locale":"VN"},{"id":"1083","refGroup":"MENU","refType":"PROFILE","refCode":"marketCap","description":"Market Capitalization","displayLevel":1030.0,"locale":"EN_GB"},{"id":"515","refGroup":"MENU","refType":"PROFILE","refCode":"marketCap","description":"Vốn hóa","displayLevel":1030.0,"locale":"VN"},{"id":"1071","refGroup":"MENU","refType":"PROFILE","refCode":"beta","description":"Beta","displayLevel":1040.0,"locale":"EN_GB"},{"id":"516","refGroup":"MENU","refType":"PROFILE","refCode":"beta","description":"Beta","displayLevel":1040.0,"locale":"VN"},{"id":"510","refGroup":"MENU","refType":"CATEGORIES","refCode":"FUNDAMENTAL","description":"Phân tích cơ bản","displayLevel":2000.0,"locale":"VN"},{"id":"1138","refGroup":"MENU","refType":"CATEGORIES","refCode":"FUNDAMENTAL","description":"Fundamental Analysis","displayLevel":2000.0,"locale":"EN_GB"},{"id":"1058","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"grossMargin","description":"Gross Profit Margin","displayLevel":2010.0,"locale":"EN_GB"},{"id":"525","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"grossMargin","description":"Biên lợi nhuận gộp","displayLevel":2010.0,"locale":"VN"},{"id":"1084","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"netMargin","description":"Net Profit Margin","displayLevel":2020.0,"locale":"EN_GB"},{"id":"526","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"netMargin","description":"Biên lợi nhuận ròng","displayLevel":2020.0,"locale":"VN"},{"id":"1076","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"eps","description":"EPS","displayLevel":2030.0,"locale":"EN_GB"},{"id":"527","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"eps","description":"EPS","displayLevel":2030.0,"locale":"VN"},{"id":"1081","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"liabilityStructure","description":"Debt/Equity","displayLevel":2040.0,"locale":"EN_GB"},{"id":"528","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"liabilityStructure","description":"Nợ/VCSH","displayLevel":2040.0,"locale":"VN"},{"id":"1087","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"pe","description":"P/E","displayLevel":2050.0,"locale":"EN_GB"},{"id":"529","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"pe","description":"P/E","displayLevel":2050.0,"locale":"VN"},{"id":"1088","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"pb","description":"P/B","displayLevel":2060.0,"locale":"EN_GB"},{"id":"530","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"pb","description":"P/B","displayLevel":2060.0,"locale":"VN"},{"id":"1089","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"roa","description":"ROA","displayLevel":2070.0,"locale":"EN_GB"},{"id":"531","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"roa","description":"ROA","displayLevel":2070.0,"locale":"VN"},{"id":"1090","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"roe","description":"ROE","displayLevel":2080.0,"locale":"EN_GB"},{"id":"532","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"roe","description":"ROE","displayLevel":2080.0,"locale":"VN"},{"id":"1092","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"totalDebt","description":"Total Debt","displayLevel":2090.0,"locale":"EN_GB"},{"id":"533","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"totalDebt","description":"Tổng nợ vay","displayLevel":2090.0,"locale":"VN"},{"id":"1086","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"netSalesGrowth","description":"Revenue Growth","displayLevel":2100.0,"locale":"EN_GB"},{"id":"534","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"netSalesGrowth","description":"Tăng trưởng doanh thu","displayLevel":2100.0,"locale":"VN"},{"id":"1077","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"epsGrowth","description":"EPS Growth","displayLevel":2110.0,"locale":"EN_GB"},{"id":"535","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"epsGrowth","description":"Tăng trưởng EPS","displayLevel":2110.0,"locale":"VN"},{"id":"1085","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"netProfitGrowth","description":"Net Profit Growth","displayLevel":2120.0,"locale":"EN_GB"},{"id":"536","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"netProfitGrowth","description":"Tăng trưởng lợi nhuận sau thuế","displayLevel":2120.0,"locale":"VN"},{"id":"537","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"bvps","description":"BVPS","displayLevel":2130.0,"locale":"VN"},{"id":"561","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"bvps","description":"BVPS","displayLevel":2130.0,"locale":"EN_GB"},{"id":"538","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"ebit","description":"EBIT","displayLevel":2140.0,"locale":"VN"},{"id":"562","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"ebit","description":"EBIT","displayLevel":2140.0,"locale":"EN_GB"},{"id":"539","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"ebitda","description":"EBITDA","displayLevel":2150.0,"locale":"VN"},{"id":"563","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"ebitda","description":"EBITDA","displayLevel":2150.0,"locale":"EN_GB"},{"id":"540","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"dividendYield","description":"Tỷ suất cổ tức","displayLevel":2160.0,"locale":"VN"},{"id":"564","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"dividendYield","description":"Dividend Yield","displayLevel":2160.0,"locale":"EN_GB"},{"id":"1059","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"cashConversionCycle","description":"Vòng quay tiền mặt","displayLevel":2165.0,"locale":"VN"},{"id":"1060","refGroup":"MENU","refType":"FUNDAMENTAL","refCode":"cashConversionCycle","description":"Cash Conversion Cycle","displayLevel":2165.0,"locale":"EN_GB"},{"id":"511","refGroup":"MENU","refType":"CATEGORIES","refCode":"TECHNICAL","description":"Phân tích kỹ thuật","displayLevel":3000.0,"locale":"VN"},{"id":"1139","refGroup":"MENU","refType":"CATEGORIES","refCode":"TECHNICAL","description":"Technical Analysis","displayLevel":3000.0,"locale":"EN_GB"},{"id":"542","refGroup":"MENU","refType":"TECHNICAL","refCode":"nmVal","description":"Giá trị GD phiên hiện tại","displayLevel":3010.0,"locale":"VN"},{"id":"566","refGroup":"MENU","refType":"TECHNICAL","refCode":"nmVal","description":"Current Trading Value","displayLevel":3010.0,"locale":"EN_GB"},{"id":"543","refGroup":"MENU","refType":"TECHNICAL","refCode":"price","description":"Giá cổ phiếu","displayLevel":3020.0,"locale":"VN"},{"id":"567","refGroup":"MENU","refType":"TECHNICAL","refCode":"price","description":"Price","displayLevel":3020.0,"locale":"EN_GB"},{"id":"544","refGroup":"MENU","refType":"TECHNICAL","refCode":"priceChgPct","description":"Thay đổi giá","displayLevel":3030.0,"locale":"VN"},{"id":"568","refGroup":"MENU","refType":"TECHNICAL","refCode":"priceChgPct","description":"Price Change","displayLevel":3030.0,"locale":"EN_GB"},{"id":"508","refGroup":"MENU","refType":"TECHNICAL","refCode":"bollingerband","description":"Đường Bollinger Band 20","displayLevel":3040.0,"locale":"VN"},{"id":"569","refGroup":"MENU","refType":"TECHNICAL","refCode":"bollingerband","description":"Bollinger Band 20","displayLevel":3040.0,"locale":"EN_GB"},{"id":"545","refGroup":"MENU","refType":"TECHNICAL","refCode":"nmVolVsSma20","description":"KLGD so với TB 20 phiên","displayLevel":3050.0,"locale":"VN"},{"id":"570","refGroup":"MENU","refType":"TECHNICAL","refCode":"nmVolVsSma20","description":"Current Volume vs. 20-day average","displayLevel":3050.0,"locale":"EN_GB"},{"id":"546","refGroup":"MENU","refType":"TECHNICAL","refCode":"nmVolVsSma50","description":"KLGD so với TB 50 phiên","displayLevel":3060.0,"locale":"VN"},{"id":"571","refGroup":"MENU","refType":"TECHNICAL","refCode":"nmVolVsSma50","description":"Current Volume vs. 50-day average","displayLevel":3060.0,"locale":"EN_GB"},{"id":"547","refGroup":"MENU","refType":"TECHNICAL","refCode":"macdHist","description":"MACD Histogram","displayLevel":3070.0,"locale":"VN"},{"id":"572","refGroup":"MENU","refType":"TECHNICAL","refCode":"macdHist","description":"MACD Histogram","displayLevel":3070.0,"locale":"EN_GB"},{"id":"548","refGroup":"MENU","refType":"TECHNICAL","refCode":"rsi","description":"RSI (14)","displayLevel":3080.0,"locale":"VN"},{"id":"573","refGroup":"MENU","refType":"TECHNICAL","refCode":"rsi","description":"RSI (14)","displayLevel":3080.0,"locale":"EN_GB"},{"id":"549","refGroup":"MENU","refType":"TECHNICAL","refCode":"priceVsSma","description":"Giá so với đường SMA","displayLevel":3090.0,"locale":"VN"},{"id":"574","refGroup":"MENU","refType":"TECHNICAL","refCode":"priceVsSma","description":"Price compared to SMA","displayLevel":3090.0,"locale":"EN_GB"},{"id":"550","refGroup":"MENU","refType":"TECHNICAL","refCode":"netForeignVal","description":"GTGD khối ngoại trong phiên","displayLevel":3100.0,"locale":"VN"},{"id":"575","refGroup":"MENU","refType":"TECHNICAL","refCode":"netForeignVal","description":"Foreign Trading Value","displayLevel":3100.0,"locale":"EN_GB"},{"id":"551","refGroup":"MENU","refType":"TECHNICAL","refCode":"netForeValAvgCr20d","description":"GTGD khối ngoại TB 20 phiên","displayLevel":3110.0,"locale":"VN"},{"id":"576","refGroup":"MENU","refType":"TECHNICAL","refCode":"netForeValAvgCr20d","description":"20-day average Foreign Trading Value","displayLevel":3110.0,"locale":"EN_GB"},{"id":"552","refGroup":"MENU","refType":"TECHNICAL","refCode":"continuousAdvSes","description":"Số phiên tăng liên tiếp","displayLevel":3120.0,"locale":"VN"},{"id":"577","refGroup":"MENU","refType":"TECHNICAL","refCode":"continuousAdvSes","description":"Continuous Advance Sessions","displayLevel":3120.0,"locale":"EN_GB"},{"id":"553","refGroup":"MENU","refType":"TECHNICAL","refCode":"continuousDeclineSes","description":"Số phiên giảm liên tiếp","displayLevel":3130.0,"locale":"VN"},{"id":"578","refGroup":"MENU","refType":"TECHNICAL","refCode":"continuousDeclineSes","description":"Continuous Decline Sessions","displayLevel":3130.0,"locale":"EN_GB"},{"id":"512","refGroup":"MENU","refType":"CATEGORIES","refCode":"DRATING","description":"Bộ chỉ số D-Rating","displayLevel":4000.0,"locale":"VN"},{"id":"1140","refGroup":"MENU","refType":"CATEGORIES","refCode":"DRATING","description":"D-Rating Ratios","displayLevel":4000.0,"locale":"EN_GB"},{"id":"554","refGroup":"MENU","refType":"DRATING","refCode":"totalScore","description":"D-Rating","displayLevel":4010.0,"locale":"VN"},{"id":"579","refGroup":"MENU","refType":"DRATING","refCode":"totalScore","description":"D-Rating","displayLevel":4010.0,"locale":"EN_GB"},{"id":"555","refGroup":"MENU","refType":"DRATING","refCode":"profitabilityScore","description":"Khả năng sinh lời","displayLevel":4020.0,"locale":"VN"},{"id":"580","refGroup":"MENU","refType":"DRATING","refCode":"profitabilityScore","description":"Profitability ","displayLevel":4020.0,"locale":"EN_GB"},{"id":"556","refGroup":"MENU","refType":"DRATING","refCode":"financialHealth","description":"Sức khỏe tài chính","displayLevel":4030.0,"locale":"VN"},{"id":"581","refGroup":"MENU","refType":"DRATING","refCode":"financialHealth","description":"Financial Health ","displayLevel":4030.0,"locale":"EN_GB"},{"id":"557","refGroup":"MENU","refType":"DRATING","refCode":"growthScore","description":"Tốc độ tăng trưởng","displayLevel":4040.0,"locale":"VN"},{"id":"582","refGroup":"MENU","refType":"DRATING","refCode":"growthScore","description":"Growth","displayLevel":4040.0,"locale":"EN_GB"},{"id":"558","refGroup":"MENU","refType":"DRATING","refCode":"bargainingScore","description":"Vị thế doanh nghiệp","displayLevel":4050.0,"locale":"VN"},{"id":"583","refGroup":"MENU","refType":"DRATING","refCode":"bargainingScore","description":"Bargaining Power","displayLevel":4050.0,"locale":"EN_GB"},{"id":"559","refGroup":"MENU","refType":"DRATING","refCode":"commitmentScore","description":"Cam kết với cổ đông","displayLevel":4060.0,"locale":"VN"},{"id":"584","refGroup":"MENU","refType":"DRATING","refCode":"commitmentScore","description":"Commitment with Shareholders","displayLevel":4060.0,"locale":"EN_GB"},{"id":"560","refGroup":"MENU","refType":"DRATING","refCode":"governanceScore","description":"Quản trị bền vững","displayLevel":4070.0,"locale":"VN"},{"id":"585","refGroup":"MENU","refType":"DRATING","refCode":"governanceScore","description":"Corporate Governance","displayLevel":4070.0,"locale":"EN_GB"}],"size":356}
+{
+    "data": [
+        {
+            "id": "801",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "roeYr",
+            "description": "ROE (FY)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "802",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "totalDebtQr",
+            "description": "Total debt (MRQ)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "803",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "totalDebtYr",
+            "description": "Total debt (FY)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "804",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netSalesQrGrqoq",
+            "description": "Revenue growth (QoQ)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "805",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netSalesQrGryoy",
+            "description": "Revenue growth (Quarterly QoQ)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "806",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netSalesTrGryoy",
+            "description": "Revenue growth (TTM YoY)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "807",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netSalesYrGryoy",
+            "description": "Revenue growth (YoY)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "808",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netSalesYrGr2yr",
+            "description": "2-year average revenue growth ",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "809",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netSalesYrGr3yr",
+            "description": "3-year average revenue growth ",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "810",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "epsQrGrqoq",
+            "description": "EPS growth (QoQ)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "811",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "epsQrGryoy",
+            "description": "EPS growth (Quarterly QoQ)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "812",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "epsTrGryoy",
+            "description": "EPS growth (TTM YoY)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "813",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "epsYrGryoy",
+            "description": "EPS growth (YoY)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "814",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "epsYrGr2yr",
+            "description": "2-year average EPS growth ",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "815",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "epsYrGr3yr",
+            "description": "3-year average EPS growth ",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "816",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netProfitQrGrqoq",
+            "description": "Net profit growth (QoQ)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "817",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netProfitQrGryoy",
+            "description": "Net profit growth (Quarterly QoQ)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "818",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netProfitTrGryoy",
+            "description": "Net profit growth (TTM YoY)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "819",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netProfitYrGryoy",
+            "description": "Net profit growth (YoY)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "820",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netProfitYrGr2yr",
+            "description": "2-year average net profit growth",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "821",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netProfitYrGr3yr",
+            "description": "3-year average net profit growth",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "822",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "bvpsQr",
+            "description": "BVPS (MRQ)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "823",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "bvpsYr",
+            "description": "BVPS (FY)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "824",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "ebitQr",
+            "description": "EBIT (MRQ)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "825",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "ebitYr",
+            "description": "EBIT (FY)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "826",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "ebitdaQr",
+            "description": "EBITDA (MRQ)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "827",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "ebitdaYr",
+            "description": "EBITDA (FY)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "831",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "nmValCr",
+            "description": "Current Trading Value",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "832",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceCr",
+            "description": "Price",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "834",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceChgPctCr1m",
+            "description": "Price change (1 months)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "835",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceChgPctCr3m",
+            "description": "Price change (3 months)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "836",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceChgPctCr1y",
+            "description": "Price change (1 year)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "837",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceChgPctCrHC1y",
+            "description": "Price change compared to 1-year high",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "838",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceChgPctCrLC1y",
+            "description": "Price change compared to 1-year low",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "839",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceChgPctCrHC5y",
+            "description": "Price change compared to 5-year high",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "840",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceChgPctCrLC5y",
+            "description": "Price change compared to 5-year low",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "841",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "bbUpperBand",
+            "description": "Bollinger upper band (20)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "842",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "bbLowerBand",
+            "description": "Bollinger lower band (20)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "843",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "nmVolCrtoNmVolAvgCr20dCr",
+            "description": "Current volume vs. 20-day average",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "844",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "nmVolCrtoNmVolAvgCr50dCr",
+            "description": "Current volume vs. 50-day average",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "845",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "macdHistCr12n26d",
+            "description": "MACD Histogram",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "846",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "rsiCr14d",
+            "description": "RSI (14)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "851",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netForBoughtValCr",
+            "description": "Net foreign bought value",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "852",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netForSoldValCr",
+            "description": "Net foreign sold value",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "853",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netForBoughtValAvgCr20d",
+            "description": "Net foreign bought value in 20 sessions",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "854",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netForSoldValAvgCr20d",
+            "description": "Net foreign sold value in 20 sessions",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "855",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "continuousAdvSesCr",
+            "description": "Continuous advance sessions",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "856",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "continuousDeclineSesCr",
+            "description": "Continuous decline sessions",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1038",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "dividendYieldCr",
+            "description": "Tỷ suất cổ tức",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1039",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "dividendYieldCr",
+            "description": "Dividend Yield",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1066",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "cashConversionCycleYr",
+            "description": "Vòng quay tiền mặt năm gần nhất",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1067",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "cashConversionCycleTr",
+            "description": "Cash Conversion Cycle (TTM)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1063",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "cashConversionCycle",
+            "description": "<p>Dữ liệu được cập nhật hàng ngày.</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1064",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "cashConversionCycle",
+            "description": "<p>The data is updated daily</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1065",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "cashConversionCycleTr",
+            "description": "Vòng quay tiền mặt trượt 12 tháng",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1068",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "cashConversionCycleYr",
+            "description": "Cash Conversion Cycle (FY)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1093",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "totalScoreQr",
+            "description": "D-Rating",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1094",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "growthScoreQr",
+            "description": "Tốc độ tăng trưởng",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1095",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "profitabilityScoreQr",
+            "description": "Khả năng sinh lời",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1096",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "bargainingScoreQr",
+            "description": "Vị thế doanh nghiệp",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1097",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "financialHealthQr",
+            "description": "Sức khỏe tài chính",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1098",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "commitmentScoreQr",
+            "description": "Cam kết với cổ đông",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1099",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "governanceScoreQr",
+            "description": "Quản trị bền vững",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1100",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "totalScoreQr",
+            "description": "D-Rating",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1101",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "growthScoreQr",
+            "description": "Growth",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1102",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "profitabilityScoreQr",
+            "description": "Profitability ",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1103",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "bargainingScoreQr",
+            "description": "Bargaining power",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1104",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "financialHealthQr",
+            "description": "Financial health ",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1105",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "commitmentScoreQr",
+            "description": "Commitment with shareholders",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1106",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "governanceScoreQr",
+            "description": "Corporate governance",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1040",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceCrBtwBBand",
+            "description": "Nằm trong biên Bollinger Band",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1041",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceCrBtwBBand",
+            "description": "Between Bollinger Band",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1042",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceCrCrossupSmaCr5d",
+            "description": "Giá cắt lên đường SMA (5)",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1043",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceCrCrossdownSmaCr5d",
+            "description": "Giá cắt xuống đường SMA (5)",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1044",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceCrCrossupSmaCr20d",
+            "description": "Giá cắt lên đường SMA (20)",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1045",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceCrCrossdownSmaCr20d",
+            "description": "Giá cắt xuống đường SMA (20)",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1046",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceCrCrossupSmaCr50d",
+            "description": "Giá cắt lên đường SMA (50)",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1047",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceCrCrossdownSmaCr50d",
+            "description": "Giá cắt xuống đường SMA (50)",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1048",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceCrCrossupSmaCr200d",
+            "description": "Giá cắt lên đường SMA (200)",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1049",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceCrCrossdownSmaCr200d",
+            "description": "Giá cắt xuống đường SMA (200)",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1050",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceCrCrossupSmaCr5d",
+            "description": "Price cross up SMA (5)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1051",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceCrCrossdownSmaCr5d",
+            "description": "Price cross down SMA (5)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1052",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceCrCrossupSmaCr20d",
+            "description": "Price cross up SMA (20)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1053",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceCrCrossdownSmaCr20d",
+            "description": "Price cross down SMA (20)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1054",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceCrCrossupSmaCr50d",
+            "description": "Price cross up SMA (50)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1055",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceCrCrossdownSmaCr50d",
+            "description": "Price cross down SMA (50)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1056",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceCrCrossupSmaCr200d",
+            "description": "Price cross up SMA (200)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1057",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceCrCrossdownSmaCr200d",
+            "description": "Price cross down SMA (200)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1129",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "grossMarginTr",
+            "description": "Biên LN gộp trượt 12 tháng",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1130",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "grossMarginTr",
+            "description": "Gross margin (TTM)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1131",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netMarginTr",
+            "description": "Biên LN ròng trượt 12 tháng",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1132",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netMarginTr",
+            "description": "Net profit (TTM)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1133",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "ebitTr",
+            "description": "EBIT trượt 12 tháng",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1134",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "ebitTr",
+            "description": "EBIT (TTM)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1135",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "ebitdaTr",
+            "description": "EBITDA trượt 12 tháng",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1136",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "ebitdaTr",
+            "description": "EBITDA (TTM)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1119",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "epsTr",
+            "description": "EPS trượt 12 tháng",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1120",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "epsTr",
+            "description": "EPS (TTM)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1121",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "roaTr",
+            "description": "ROA trượt 12 tháng",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1122",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "roeTr",
+            "description": "ROE trượt 12 tháng",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1123",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "roaTr",
+            "description": "ROA (TTM)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1124",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "roeTr",
+            "description": "ROE (TTM)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "586",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "floor",
+            "description": "<p>Dữ liệu được cập nhật hàng ngày.</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "587",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "industrylv2",
+            "description": "<p>Dữ liệu được cập nhật hàng ngày.</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "588",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "marketCap",
+            "description": "<p>Dữ liệu được cập nhật realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "589",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "beta",
+            "description": "<p>Dữ liệu được cập nhật realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "598",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "grossMargin",
+            "description": "<p>Lợi nhuận gộp / Doanh thu thuần</p><p>Dữ liệu được cập nhật hàng ngày.</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "599",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "netMargin",
+            "description": "<p>Lợi nhuận ròng / Doanh thu thuần</p><p>Dữ liệu được cập nhật hàng ngày.</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "600",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "eps",
+            "description": "<p>Lợi nhuận sau thuế / Số lượng cổ phiếu lưu hành mới nhất</p><p>Dữ liệu được cập nhật hàng ngày.</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "601",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "liabilityStructure",
+            "description": "<p>Tổng nợ phải trả / Tổng vốn chủ sở hữu</p><p>Dữ liệu được cập nhật hàng ngày.</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "602",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "pe",
+            "description": "<p>Vốn hóa / Tổng Lợi nhuận sau thuế</p><p>Dữ liệu được cập nhật realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "603",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "pb",
+            "description": "<p>Vốn hóa / Tổng Giá trị sổ sách</p><p>Dữ liệu được cập nhật realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "604",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "roa",
+            "description": "<p>Lợi nhuận sau thuế / Tổng tài sản</p><p>Dữ liệu được cập nhật hàng ngày.</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "605",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "roe",
+            "description": "<p>Lợi nhuận sau thuế / Vốn chủ sở hữu</p><p>Dữ liệu được cập nhật hàng ngày.</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "606",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "totalDebt",
+            "description": "<p>Dữ liệu được cập nhật hàng ngày.</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "607",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "netSalesGrowth",
+            "description": "<p>Dữ liệu được cập nhật hàng ngày.</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "608",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "epsGrowth",
+            "description": "<p>Dữ liệu được cập nhật hàng ngày.</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "609",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "netProfitGrowth",
+            "description": "<p>Dữ liệu được cập nhật hàng ngày.</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "610",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "bvps",
+            "description": "<p>Tổng giá trị sổ sách / Số lượng cổ phiếu lưu hành mới nhất</p><p>Dữ liệu được cập nhật realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "611",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "ebit",
+            "description": "<p>Lợi nhuận trước thuế, lãi vay</p><p>Dữ liệu được cập nhật hàng ngày.</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "612",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "ebitda",
+            "description": "<p>Lợi nhuận trước thuế, lãi vay và khấu hao</p><p>Dữ liệu được cập nhật hàng ngày.</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "613",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "dividendYield",
+            "description": "<p>Số tiền NĐT nhận được / Thị giá cổ phiếu</p><p>Dữ liệu được cập nhật realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "615",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "nmVal",
+            "description": "<p>Dữ liệu được cập nhật realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "616",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "price",
+            "description": "<p>Dữ liệu được cập nhật realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "617",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "priceChgPct",
+            "description": "<p>Dữ liệu được cập nhật realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "618",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "bollingerband",
+            "description": "<p>Dữ liệu được cập nhật realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "619",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "nmVolVsSma20",
+            "description": "<p>Dữ liệu được cập nhật realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "620",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "nmVolVsSma50",
+            "description": "<p>Dữ liệu được cập nhật realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "621",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "macdHist",
+            "description": "<p>Dữ liệu được cập nhật realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "622",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "rsi",
+            "description": "<p>Dữ liệu được cập nhật realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "623",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "priceVsSma",
+            "description": "<p>Dữ liệu được cập nhật realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "624",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "netForeignVal",
+            "description": "<p>Dữ liệu được cập nhật realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "625",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "netForeValAvgCr20d",
+            "description": "<p>Dữ liệu được cập nhật realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "626",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "continuousAdvSes",
+            "description": "<p>Dữ liệu được cập nhật hàng ngày.</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "627",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "continuousDeclineSes",
+            "description": "<p>Dữ liệu được cập nhật hàng ngày.</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "628",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "totalScore",
+            "description": "<p>Bộ chỉ số độc quyền đánh giá cổ phiếu chuyên sâu được phát triển bởi VNDIRECT</p><p>Dữ liệu được cập nhật hàng ngày.</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "629",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "profitabilityScore",
+            "description": "<p>Dữ liệu được cập nhật hàng ngày.</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "630",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "financialHealth",
+            "description": "<p>Dữ liệu được cập nhật hàng ngày.</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "631",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "growthScore",
+            "description": "<p>Dữ liệu được cập nhật hàng ngày.</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "632",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "bargainingScore",
+            "description": "<p>Dữ liệu được cập nhật hàng ngày.</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "633",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "commitmentScore",
+            "description": "<p>Dữ liệu được cập nhật hàng ngày.</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "634",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "governanceScore",
+            "description": "<p>Dữ liệu được cập nhật hàng ngày.</p>",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "635",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "floor",
+            "description": "<p>The data is updated daily</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "636",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "industrylv2",
+            "description": "<p>The data is updated daily</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "637",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "marketCap",
+            "description": "<p>The data is updated realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "638",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "beta",
+            "description": "<p>The data is updated realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "647",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "grossMargin",
+            "description": "<p>Gross profit / Net revenue</p><p>The data is updated daily</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "648",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "netMargin",
+            "description": "<p>Net profit / Net revenue</p><p>The data is updated daily</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "649",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "eps",
+            "description": "<p>Net profit after tax / Outstanding shares</p><p>The data is updated daily</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "650",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "liabilityStructure",
+            "description": "<p>Total liabilities / Total shareholders' equity</p><p>The data is updated daily</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "651",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "pe",
+            "description": "<p>Market capitalization / Total net profit after tax</p><p>The data is updated realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "652",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "pb",
+            "description": "<p>Market capitalization / Total book value</p><p>The data is updated realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "653",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "roa",
+            "description": "<p>Net profit / Total assets</p><p>The data is updated daily</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "654",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "roe",
+            "description": "<p>Net profit / Total equity</p><p>The data is updated daily</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "655",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "totalDebt",
+            "description": "<p>The data is updated daily</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "656",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "netSalesGrowth",
+            "description": "<p>The data is updated daily</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "657",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "epsGrowth",
+            "description": "<p>The data is updated daily</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "658",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "netProfitGrowth",
+            "description": "<p>The data is updated daily</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "659",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "bvps",
+            "description": "<p>Total book value / Outstanding shares</p><p>The data is updated realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "660",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "ebit",
+            "description": "<p>Earnings before tax, interest</p><p>The data is updated daily</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "661",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "ebitda",
+            "description": "<p>Earnings before tax, interest and depreciation</p><p>The data is updated daily</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "662",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "dividendYield",
+            "description": "<p>Dividend / Stock price</p><p>The data is updated realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "664",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "nmVal",
+            "description": "<p>The data is updated realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "665",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "price",
+            "description": "<p>The data is updated realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "666",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "priceChgPct",
+            "description": "<p>The data is updated realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "667",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "bollingerband",
+            "description": "<p>The data is updated realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "668",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "nmVolVsSma20",
+            "description": "<p>The data is updated realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "669",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "nmVolVsSma50",
+            "description": "<p>The data is updated realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "670",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "macdHist",
+            "description": "<p>The data is updated realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "671",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "rsi",
+            "description": "<p>The data is updated realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "672",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "priceVsSma",
+            "description": "<p>The data is updated realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "673",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "netForeignVal",
+            "description": "<p>The data is updated realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "674",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "netForeValAvgCr20d",
+            "description": "<p>The data is updated realtime</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "675",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "continuousAdvSes",
+            "description": "<p>The data is updated daily</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "676",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "continuousDeclineSes",
+            "description": "<p>The data is updated daily</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "677",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "totalScore",
+            "description": "<p>The comprehensive stock evaluation index developed by VNDIRECT</p><p>The data is updated daily</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "678",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "profitabilityScore",
+            "description": "<p>The data is updated daily</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "679",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "financialHealth",
+            "description": "<p>The data is updated daily</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "680",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "growthScore",
+            "description": "<p>The data is updated daily</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "681",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "bargainingScore",
+            "description": "<p>The data is updated daily</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "682",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "commitmentScore",
+            "description": "<p>The data is updated daily</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "683",
+            "refGroup": "TOOLTIP",
+            "refType": "HTML",
+            "refCode": "governanceScore",
+            "description": "<p>The data is updated daily</p>",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "684",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "companyNameVi",
+            "description": "Tên tiếng việt",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "685",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "companyNameEn",
+            "description": "Tên tiếng anh",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "686",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "floor",
+            "description": "Sàn giao dịch",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "687",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "industrylv2",
+            "description": "Ngành",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "688",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "marketCapCr",
+            "description": "Vốn hóa",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "689",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "betaCr",
+            "description": "Beta",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "702",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "epsQr",
+            "description": "EPS quý gần nhất",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "703",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "epsYr",
+            "description": "EPS năm gần nhất",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "704",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "liabilityStructureQr",
+            "description": "Nợ/VCSH quý gần nhất",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "705",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "liabilityStructureYr",
+            "description": "Nợ/VCSH năm gần nhất",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "706",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "peCr",
+            "description": "P/E",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "707",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "pbCr",
+            "description": "P/B",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "709",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "roaYr",
+            "description": "ROA năm gần nhất",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "711",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "roeYr",
+            "description": "ROE năm gần nhất",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "712",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "totalDebtQr",
+            "description": "Tổng nợ vay quý gần nhất",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "713",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "totalDebtYr",
+            "description": "Tổng nợ vay năm gần nhất",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "714",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netSalesQrGrqoq",
+            "description": "Tăng trưởng doanh thu quý so với quý trước đó",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "715",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netSalesQrGryoy",
+            "description": "Tăng trưởng doanh thu quý so với cùng kỳ năm trước",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "716",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netSalesTrGryoy",
+            "description": "Tăng trưởng doanh thu 4 quý liền kề so với cùng kỳ năm trước",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "717",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netSalesYrGryoy",
+            "description": "Tăng trưởng doanh thu năm gần nhất",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "718",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netSalesYrGr2yr",
+            "description": "Tăng trưởng doanh thu bình quân 2 năm",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "719",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netSalesYrGr3yr",
+            "description": "Tăng trưởng doanh thu bình quân 3 năm",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "720",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "epsQrGrqoq",
+            "description": "Tăng trưởng EPS quý so với quý trước đó",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "721",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "epsQrGryoy",
+            "description": "Tăng trưởng EPS quý so với cùng kỳ năm trước",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "722",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "epsTrGryoy",
+            "description": "Tăng trưởng EPS 4 quý liền kề so với cùng kỳ năm trước",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "723",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "epsYrGryoy",
+            "description": "Tăng trưởng EPS năm gần nhất",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "724",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "epsYrGr2yr",
+            "description": "Tăng trưởng EPS bình quân 2 năm",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "725",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "epsYrGr3yr",
+            "description": "Tăng trưởng EPS bình quân 3 năm",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "726",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netProfitQrGrqoq",
+            "description": "Tăng trưởng lợi nhuận sau thuế quý so với quý trước đó",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "727",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netProfitQrGryoy",
+            "description": "Tăng trưởng lợi nhuận sau thuế quý so với cùng kỳ năm trước",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "728",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netProfitTrGryoy",
+            "description": "Tăng trưởng lợi nhuận sau thuế 4 quý liền kề so với cùng kỳ năm trước",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "729",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netProfitYrGryoy",
+            "description": "Tăng trưởng lợi nhuận sau thuế năm gần nhất",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "730",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netProfitYrGr2yr",
+            "description": "Tăng trưởng lợi nhuận sau thuế bình quân 2 năm",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "731",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netProfitYrGr3yr",
+            "description": "Tăng trưởng lợi nhuận sau thuế bình quân 3 năm",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "732",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "bvpsQr",
+            "description": "BVPS quý gần nhất",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "733",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "bvpsYr",
+            "description": "BVPS năm gần nhất",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "734",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "ebitQr",
+            "description": "EBIT quý gần nhất",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "735",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "ebitYr",
+            "description": "EBIT năm gần nhất",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "736",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "ebitdaQr",
+            "description": "EBITDA quý gần nhất",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "737",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "ebitdaYr",
+            "description": "EBITDA năm gần nhất",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "741",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "nmValCr",
+            "description": "Giá trị GD phiên hiện tại",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "742",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceCr",
+            "description": "Giá ",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "744",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceChgPctCr1m",
+            "description": "Thay đổi giá 1 tháng ",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "745",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceChgPctCr3m",
+            "description": "Thay đổi giá 3 tháng ",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "746",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceChgPctCr1y",
+            "description": "Thay đổi giá 1 năm ",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "747",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceChgPctCrHC1y",
+            "description": "Thay đổi giá so với đỉnh 1 năm",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "748",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceChgPctCrLC1y",
+            "description": "Thay đổi giá so với đáy 1 năm",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "749",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceChgPctCrHC5y",
+            "description": "Thay đổi giá so với đỉnh 5 năm",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "750",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceChgPctCrLC5y",
+            "description": "Thay đổi giá so với đáy 5 năm",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "751",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "bbUpperBand",
+            "description": "Biên trên Bollinger Band",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "752",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "bbLowerBand",
+            "description": "Biên dưới Bollinger Band",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "753",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "nmVolCrtoNmVolAvgCr20dCr",
+            "description": "KLGD so với TB 20 phiên",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "754",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "nmVolCrtoNmVolAvgCr50dCr",
+            "description": "KLGD so với TB 50 phiên",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "755",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "macdHistCr12n26d",
+            "description": "MACD Histogram",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "756",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "rsiCr14d",
+            "description": "RSI (14)",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "761",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netForBoughtValCr",
+            "description": "Giá trị mua ròng của NĐTNN",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "762",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netForSoldValCr",
+            "description": "Giá trị bán ròng của NĐTNN",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "763",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netForBoughtValAvgCr20d",
+            "description": "Giá trị mua ròng của NĐTNN 20 phiên",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "764",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netForSoldValAvgCr20d",
+            "description": "Giá trị bán ròng của NĐTNN 20 phiên",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "765",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "continuousAdvSesCr",
+            "description": "Số phiên tăng liên tiếp",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "766",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "continuousDeclineSesCr",
+            "description": "Số phiên giảm liên tiếp",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1107",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceChgPctCr5d",
+            "description": "Thay đổi giá 5 ngày",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1108",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "priceChgPctCr5d",
+            "description": "Price change (5 days)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1109",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "grossMarginQr",
+            "description": "Biên LN gộp quý gần nhất",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1110",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "grossMarginYr",
+            "description": "Biên LN gộp năm gần nhất",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1111",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netMarginQr",
+            "description": "Biên LN ròng quý gần nhất",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1112",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netMarginYr",
+            "description": "Biên LN ròng năm gần nhất",
+            "displayLevel": 0.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1113",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "grossMarginQr",
+            "description": "Gross profit Margin (MRQ)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "774",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "companyNameVi",
+            "description": "Vietnamese name",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "775",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "companyNameEn",
+            "description": "English name",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "776",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "floor",
+            "description": "Floor",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "777",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "industrylv2",
+            "description": "Industry",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "778",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "marketCapCr",
+            "description": "Market capitalization",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "779",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "betaCr",
+            "description": "Beta",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "792",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "epsQr",
+            "description": "EPS (MRQ)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "793",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "epsYr",
+            "description": "EPS (FY)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "794",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "liabilityStructureQr",
+            "description": "D/E (MRQ)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "795",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "liabilityStructureYr",
+            "description": "D/E (FY)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "796",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "peCr",
+            "description": "P/E",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "797",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "pbCr",
+            "description": "P/B",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "799",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "roaYr",
+            "description": "ROA (FY)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1114",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "grossMarginYr",
+            "description": "Gross profit Margin (FY)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1115",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netMarginQr",
+            "description": "Net profit Margin (MRQ)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1116",
+            "refGroup": "FILTER_NAME",
+            "refType": "FILTER_NAME",
+            "refCode": "netMarginYr",
+            "description": "Net profit Margin (FY)",
+            "displayLevel": 0.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "509",
+            "refGroup": "MENU",
+            "refType": "CATEGORIES",
+            "refCode": "PROFILE",
+            "description": "Thông tin doanh nghiệp",
+            "displayLevel": 1000.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1137",
+            "refGroup": "MENU",
+            "refType": "CATEGORIES",
+            "refCode": "PROFILE",
+            "description": "Corporate Profile",
+            "displayLevel": 1000.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1117",
+            "refGroup": "MENU",
+            "refType": "PROFILE",
+            "refCode": "floor",
+            "description": "Floor",
+            "displayLevel": 1010.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "513",
+            "refGroup": "MENU",
+            "refType": "PROFILE",
+            "refCode": "floor",
+            "description": "Sàn giao dịch",
+            "displayLevel": 1010.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1118",
+            "refGroup": "MENU",
+            "refType": "PROFILE",
+            "refCode": "industrylv2",
+            "description": "Industry",
+            "displayLevel": 1020.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "514",
+            "refGroup": "MENU",
+            "refType": "PROFILE",
+            "refCode": "industrylv2",
+            "description": "Ngành",
+            "displayLevel": 1020.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1083",
+            "refGroup": "MENU",
+            "refType": "PROFILE",
+            "refCode": "marketCap",
+            "description": "Market Capitalization",
+            "displayLevel": 1030.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "515",
+            "refGroup": "MENU",
+            "refType": "PROFILE",
+            "refCode": "marketCap",
+            "description": "Vốn hóa",
+            "displayLevel": 1030.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1071",
+            "refGroup": "MENU",
+            "refType": "PROFILE",
+            "refCode": "beta",
+            "description": "Beta",
+            "displayLevel": 1040.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "516",
+            "refGroup": "MENU",
+            "refType": "PROFILE",
+            "refCode": "beta",
+            "description": "Beta",
+            "displayLevel": 1040.0,
+            "locale": "VN"
+        },
+        {
+            "id": "510",
+            "refGroup": "MENU",
+            "refType": "CATEGORIES",
+            "refCode": "FUNDAMENTAL",
+            "description": "Phân tích cơ bản",
+            "displayLevel": 2000.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1138",
+            "refGroup": "MENU",
+            "refType": "CATEGORIES",
+            "refCode": "FUNDAMENTAL",
+            "description": "Fundamental Analysis",
+            "displayLevel": 2000.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1058",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "grossMargin",
+            "description": "Gross Profit Margin",
+            "displayLevel": 2010.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "525",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "grossMargin",
+            "description": "Biên lợi nhuận gộp",
+            "displayLevel": 2010.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1084",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "netMargin",
+            "description": "Net Profit Margin",
+            "displayLevel": 2020.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "526",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "netMargin",
+            "description": "Biên lợi nhuận ròng",
+            "displayLevel": 2020.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1076",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "eps",
+            "description": "EPS",
+            "displayLevel": 2030.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "527",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "eps",
+            "description": "EPS",
+            "displayLevel": 2030.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1081",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "liabilityStructure",
+            "description": "Debt/Equity",
+            "displayLevel": 2040.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "528",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "liabilityStructure",
+            "description": "Nợ/VCSH",
+            "displayLevel": 2040.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1087",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "pe",
+            "description": "P/E",
+            "displayLevel": 2050.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "529",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "pe",
+            "description": "P/E",
+            "displayLevel": 2050.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1088",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "pb",
+            "description": "P/B",
+            "displayLevel": 2060.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "530",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "pb",
+            "description": "P/B",
+            "displayLevel": 2060.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1089",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "roa",
+            "description": "ROA",
+            "displayLevel": 2070.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "531",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "roa",
+            "description": "ROA",
+            "displayLevel": 2070.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1090",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "roe",
+            "description": "ROE",
+            "displayLevel": 2080.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "532",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "roe",
+            "description": "ROE",
+            "displayLevel": 2080.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1092",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "totalDebt",
+            "description": "Total Debt",
+            "displayLevel": 2090.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "533",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "totalDebt",
+            "description": "Tổng nợ vay",
+            "displayLevel": 2090.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1086",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "netSalesGrowth",
+            "description": "Revenue Growth",
+            "displayLevel": 2100.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "534",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "netSalesGrowth",
+            "description": "Tăng trưởng doanh thu",
+            "displayLevel": 2100.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1077",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "epsGrowth",
+            "description": "EPS Growth",
+            "displayLevel": 2110.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "535",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "epsGrowth",
+            "description": "Tăng trưởng EPS",
+            "displayLevel": 2110.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1085",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "netProfitGrowth",
+            "description": "Net Profit Growth",
+            "displayLevel": 2120.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "536",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "netProfitGrowth",
+            "description": "Tăng trưởng lợi nhuận sau thuế",
+            "displayLevel": 2120.0,
+            "locale": "VN"
+        },
+        {
+            "id": "537",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "bvps",
+            "description": "BVPS",
+            "displayLevel": 2130.0,
+            "locale": "VN"
+        },
+        {
+            "id": "561",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "bvps",
+            "description": "BVPS",
+            "displayLevel": 2130.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "538",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "ebit",
+            "description": "EBIT",
+            "displayLevel": 2140.0,
+            "locale": "VN"
+        },
+        {
+            "id": "562",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "ebit",
+            "description": "EBIT",
+            "displayLevel": 2140.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "539",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "ebitda",
+            "description": "EBITDA",
+            "displayLevel": 2150.0,
+            "locale": "VN"
+        },
+        {
+            "id": "563",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "ebitda",
+            "description": "EBITDA",
+            "displayLevel": 2150.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "540",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "dividendYield",
+            "description": "Tỷ suất cổ tức",
+            "displayLevel": 2160.0,
+            "locale": "VN"
+        },
+        {
+            "id": "564",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "dividendYield",
+            "description": "Dividend Yield",
+            "displayLevel": 2160.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "1059",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "cashConversionCycle",
+            "description": "Vòng quay tiền mặt",
+            "displayLevel": 2165.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1060",
+            "refGroup": "MENU",
+            "refType": "FUNDAMENTAL",
+            "refCode": "cashConversionCycle",
+            "description": "Cash Conversion Cycle",
+            "displayLevel": 2165.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "511",
+            "refGroup": "MENU",
+            "refType": "CATEGORIES",
+            "refCode": "TECHNICAL",
+            "description": "Phân tích kỹ thuật",
+            "displayLevel": 3000.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1139",
+            "refGroup": "MENU",
+            "refType": "CATEGORIES",
+            "refCode": "TECHNICAL",
+            "description": "Technical Analysis",
+            "displayLevel": 3000.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "542",
+            "refGroup": "MENU",
+            "refType": "TECHNICAL",
+            "refCode": "nmVal",
+            "description": "Giá trị GD phiên hiện tại",
+            "displayLevel": 3010.0,
+            "locale": "VN"
+        },
+        {
+            "id": "566",
+            "refGroup": "MENU",
+            "refType": "TECHNICAL",
+            "refCode": "nmVal",
+            "description": "Current Trading Value",
+            "displayLevel": 3010.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "543",
+            "refGroup": "MENU",
+            "refType": "TECHNICAL",
+            "refCode": "price",
+            "description": "Giá cổ phiếu",
+            "displayLevel": 3020.0,
+            "locale": "VN"
+        },
+        {
+            "id": "567",
+            "refGroup": "MENU",
+            "refType": "TECHNICAL",
+            "refCode": "price",
+            "description": "Price",
+            "displayLevel": 3020.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "544",
+            "refGroup": "MENU",
+            "refType": "TECHNICAL",
+            "refCode": "priceChgPct",
+            "description": "Thay đổi giá",
+            "displayLevel": 3030.0,
+            "locale": "VN"
+        },
+        {
+            "id": "568",
+            "refGroup": "MENU",
+            "refType": "TECHNICAL",
+            "refCode": "priceChgPct",
+            "description": "Price Change",
+            "displayLevel": 3030.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "508",
+            "refGroup": "MENU",
+            "refType": "TECHNICAL",
+            "refCode": "bollingerband",
+            "description": "Đường Bollinger Band 20",
+            "displayLevel": 3040.0,
+            "locale": "VN"
+        },
+        {
+            "id": "569",
+            "refGroup": "MENU",
+            "refType": "TECHNICAL",
+            "refCode": "bollingerband",
+            "description": "Bollinger Band 20",
+            "displayLevel": 3040.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "545",
+            "refGroup": "MENU",
+            "refType": "TECHNICAL",
+            "refCode": "nmVolVsSma20",
+            "description": "KLGD so với TB 20 phiên",
+            "displayLevel": 3050.0,
+            "locale": "VN"
+        },
+        {
+            "id": "570",
+            "refGroup": "MENU",
+            "refType": "TECHNICAL",
+            "refCode": "nmVolVsSma20",
+            "description": "Current Volume vs. 20-day average",
+            "displayLevel": 3050.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "546",
+            "refGroup": "MENU",
+            "refType": "TECHNICAL",
+            "refCode": "nmVolVsSma50",
+            "description": "KLGD so với TB 50 phiên",
+            "displayLevel": 3060.0,
+            "locale": "VN"
+        },
+        {
+            "id": "571",
+            "refGroup": "MENU",
+            "refType": "TECHNICAL",
+            "refCode": "nmVolVsSma50",
+            "description": "Current Volume vs. 50-day average",
+            "displayLevel": 3060.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "547",
+            "refGroup": "MENU",
+            "refType": "TECHNICAL",
+            "refCode": "macdHist",
+            "description": "MACD Histogram",
+            "displayLevel": 3070.0,
+            "locale": "VN"
+        },
+        {
+            "id": "572",
+            "refGroup": "MENU",
+            "refType": "TECHNICAL",
+            "refCode": "macdHist",
+            "description": "MACD Histogram",
+            "displayLevel": 3070.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "548",
+            "refGroup": "MENU",
+            "refType": "TECHNICAL",
+            "refCode": "rsi",
+            "description": "RSI (14)",
+            "displayLevel": 3080.0,
+            "locale": "VN"
+        },
+        {
+            "id": "573",
+            "refGroup": "MENU",
+            "refType": "TECHNICAL",
+            "refCode": "rsi",
+            "description": "RSI (14)",
+            "displayLevel": 3080.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "549",
+            "refGroup": "MENU",
+            "refType": "TECHNICAL",
+            "refCode": "priceVsSma",
+            "description": "Giá so với đường SMA",
+            "displayLevel": 3090.0,
+            "locale": "VN"
+        },
+        {
+            "id": "574",
+            "refGroup": "MENU",
+            "refType": "TECHNICAL",
+            "refCode": "priceVsSma",
+            "description": "Price compared to SMA",
+            "displayLevel": 3090.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "550",
+            "refGroup": "MENU",
+            "refType": "TECHNICAL",
+            "refCode": "netForeignVal",
+            "description": "GTGD khối ngoại trong phiên",
+            "displayLevel": 3100.0,
+            "locale": "VN"
+        },
+        {
+            "id": "575",
+            "refGroup": "MENU",
+            "refType": "TECHNICAL",
+            "refCode": "netForeignVal",
+            "description": "Foreign Trading Value",
+            "displayLevel": 3100.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "551",
+            "refGroup": "MENU",
+            "refType": "TECHNICAL",
+            "refCode": "netForeValAvgCr20d",
+            "description": "GTGD khối ngoại TB 20 phiên",
+            "displayLevel": 3110.0,
+            "locale": "VN"
+        },
+        {
+            "id": "576",
+            "refGroup": "MENU",
+            "refType": "TECHNICAL",
+            "refCode": "netForeValAvgCr20d",
+            "description": "20-day average Foreign Trading Value",
+            "displayLevel": 3110.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "552",
+            "refGroup": "MENU",
+            "refType": "TECHNICAL",
+            "refCode": "continuousAdvSes",
+            "description": "Số phiên tăng liên tiếp",
+            "displayLevel": 3120.0,
+            "locale": "VN"
+        },
+        {
+            "id": "577",
+            "refGroup": "MENU",
+            "refType": "TECHNICAL",
+            "refCode": "continuousAdvSes",
+            "description": "Continuous Advance Sessions",
+            "displayLevel": 3120.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "553",
+            "refGroup": "MENU",
+            "refType": "TECHNICAL",
+            "refCode": "continuousDeclineSes",
+            "description": "Số phiên giảm liên tiếp",
+            "displayLevel": 3130.0,
+            "locale": "VN"
+        },
+        {
+            "id": "578",
+            "refGroup": "MENU",
+            "refType": "TECHNICAL",
+            "refCode": "continuousDeclineSes",
+            "description": "Continuous Decline Sessions",
+            "displayLevel": 3130.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "512",
+            "refGroup": "MENU",
+            "refType": "CATEGORIES",
+            "refCode": "DRATING",
+            "description": "Bộ chỉ số D-Rating",
+            "displayLevel": 4000.0,
+            "locale": "VN"
+        },
+        {
+            "id": "1140",
+            "refGroup": "MENU",
+            "refType": "CATEGORIES",
+            "refCode": "DRATING",
+            "description": "D-Rating Ratios",
+            "displayLevel": 4000.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "554",
+            "refGroup": "MENU",
+            "refType": "DRATING",
+            "refCode": "totalScore",
+            "description": "D-Rating",
+            "displayLevel": 4010.0,
+            "locale": "VN"
+        },
+        {
+            "id": "579",
+            "refGroup": "MENU",
+            "refType": "DRATING",
+            "refCode": "totalScore",
+            "description": "D-Rating",
+            "displayLevel": 4010.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "555",
+            "refGroup": "MENU",
+            "refType": "DRATING",
+            "refCode": "profitabilityScore",
+            "description": "Khả năng sinh lời",
+            "displayLevel": 4020.0,
+            "locale": "VN"
+        },
+        {
+            "id": "580",
+            "refGroup": "MENU",
+            "refType": "DRATING",
+            "refCode": "profitabilityScore",
+            "description": "Profitability ",
+            "displayLevel": 4020.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "556",
+            "refGroup": "MENU",
+            "refType": "DRATING",
+            "refCode": "financialHealth",
+            "description": "Sức khỏe tài chính",
+            "displayLevel": 4030.0,
+            "locale": "VN"
+        },
+        {
+            "id": "581",
+            "refGroup": "MENU",
+            "refType": "DRATING",
+            "refCode": "financialHealth",
+            "description": "Financial Health ",
+            "displayLevel": 4030.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "557",
+            "refGroup": "MENU",
+            "refType": "DRATING",
+            "refCode": "growthScore",
+            "description": "Tốc độ tăng trưởng",
+            "displayLevel": 4040.0,
+            "locale": "VN"
+        },
+        {
+            "id": "582",
+            "refGroup": "MENU",
+            "refType": "DRATING",
+            "refCode": "growthScore",
+            "description": "Growth",
+            "displayLevel": 4040.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "558",
+            "refGroup": "MENU",
+            "refType": "DRATING",
+            "refCode": "bargainingScore",
+            "description": "Vị thế doanh nghiệp",
+            "displayLevel": 4050.0,
+            "locale": "VN"
+        },
+        {
+            "id": "583",
+            "refGroup": "MENU",
+            "refType": "DRATING",
+            "refCode": "bargainingScore",
+            "description": "Bargaining Power",
+            "displayLevel": 4050.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "559",
+            "refGroup": "MENU",
+            "refType": "DRATING",
+            "refCode": "commitmentScore",
+            "description": "Cam kết với cổ đông",
+            "displayLevel": 4060.0,
+            "locale": "VN"
+        },
+        {
+            "id": "584",
+            "refGroup": "MENU",
+            "refType": "DRATING",
+            "refCode": "commitmentScore",
+            "description": "Commitment with Shareholders",
+            "displayLevel": 4060.0,
+            "locale": "EN_GB"
+        },
+        {
+            "id": "560",
+            "refGroup": "MENU",
+            "refType": "DRATING",
+            "refCode": "governanceScore",
+            "description": "Quản trị bền vững",
+            "displayLevel": 4070.0,
+            "locale": "VN"
+        },
+        {
+            "id": "585",
+            "refGroup": "MENU",
+            "refType": "DRATING",
+            "refCode": "governanceScore",
+            "description": "Corporate Governance",
+            "displayLevel": 4070.0,
+            "locale": "EN_GB"
+        }
+    ],
+    "size": 356
+}
