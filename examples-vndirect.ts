@@ -9,6 +9,13 @@ async function main() {
 
   const screener = new VNDirectScreenerProvider({ showLog: true });
 
+  console.log('1. Testing Metadata...');
+  const metadata = screener.getScreenerFieldMetadata();
+  console.log(`Total fields: ${Object.keys(metadata).length}`);
+  console.log('Sample field (roeYr):', metadata['roeYr']);
+  console.log('Sample field (marketCap):', metadata['marketCap']);
+  console.log();
+
   try {
     console.log('2. Testing Top Gainers (Sort by priceChgPctCr)...');
     try {

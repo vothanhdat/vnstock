@@ -46,4 +46,40 @@ describe('VNDirectScreenerProvider', () => {
       expect(stock.peCr).toBeLessThanOrEqual(10);
     }
   });
+
+  it('should return correct metadata structure with merged languages and tooltips', () => {
+    const metadata = screener.getScreenerFieldMetadata();
+    expect(metadata).toBeDefined();
+    
+    const keys = Object.keys(metadata);
+    expect(keys.length).toBeGreaterThan(0);
+    
+    // Find a field that likely has both languages (e.g. roeYr from info.json snippet)
+    const roeField = metadata['roeYr'];
+    if (roeField) {
+        expect(roeField).toHaveProperty('key', 'roeYr');
+        expect(roeField).toHaveProperty('label');
+        expect(roeField).toHaveProperty('label_vi');
+        expect(roeField).toHaveProperty('label_en');
+        expect(roeField.label_en).toBe('ROE (FY)');
+    }
+
+    // Find a field that has tooltip (e.g. marketCap)
+    const marketCap = metadata['marketCap'];
+    if (marketCap) {
+        expect(marketCap).toHaveProperty('tooltip');
+        // Tooltip might be HTML
+        if (marketCap.tooltip_vi) {
+            expect(typeof marketCap.tooltip_vi).toBe('string');
+        }
+    }
+
+    const firstField = metadata[keys[0]];
+    expect(firstField).toHaveProperty('key');
+    expect(firstField).toHaveProperty('label');
+    expect(firstField).toHaveProperty('tooltip');
+    expect(firstField).toHaveProperty('unit');
+    expect(firstField).toHaveProperty('type');
+    expect(firstField).toHaveProperty('values');
+  });
 });

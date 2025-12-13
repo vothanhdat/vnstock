@@ -49,13 +49,38 @@ export class VNDirectScreenerProvider {
     if ((screenerMetadata as any).data) {
       for (const item of (screenerMetadata as any).data) {
         if (item.refCode) {
-          fields.set(item.refCode, {
+          const existing = fields.get(item.refCode) || {
             key: item.refCode,
-            label: item.description,
-            group: item.refGroup,
-            type: item.refType,
-            locale: item.locale
-          });
+            tooltip: null,
+            unit: null,
+            type: null,
+            values: null,
+            group: null,
+          };
+
+          if (item.refGroup === 'TOOLTIP') {
+            if (item.locale === 'VN') {
+              existing.tooltip_vi = item.description;
+              existing.tooltip = item.description; // Default to VI
+            } else if (item.locale === 'EN_GB') {
+              existing.tooltip_en = item.description;
+              if (!existing.tooltip) existing.tooltip = item.description; // Fallback to EN
+            }
+          } else {
+            // Label / Definition
+            existing.group = item.refGroup;
+            existing.type = item.refType;
+
+            if (item.locale === 'VN') {
+              existing.label_vi = item.description;
+              existing.label = item.description; // Default to VI
+            } else if (item.locale === 'EN_GB') {
+              existing.label_en = item.description;
+              if (!existing.label) existing.label = item.description; // Fallback to EN
+            }
+          }
+
+          fields.set(item.refCode, existing);
         }
       }
     }
