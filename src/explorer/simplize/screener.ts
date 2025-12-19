@@ -111,7 +111,7 @@ export class SimplizeScreenerProvider {
                 vi: item.tooltip,
                 en: item.tooltip // Tooltips might need translation too, but skipping for now
             } : null,
-            unit: item.suffix || null,
+            // unit: item.suffix || null,
             type: item.type,
             values: item.options ? item.options.map((opt: any) => ({
               value: opt.value,

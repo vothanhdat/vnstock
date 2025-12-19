@@ -125,6 +125,8 @@ export class VNDirectScreenerProvider {
       // Ensure 'code' and 'nmVolCr' are included and remove duplicates
       const defaultFields = [...new Set(['code', 'nmVolCr', ...metaFields])];
 
+      // console.log({defaultFields})
+
       // Construct filters
       const filters: VNDirectScreenerFilter[] = [];
       
