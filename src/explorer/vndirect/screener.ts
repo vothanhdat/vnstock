@@ -44,7 +44,18 @@ export class VNDirectScreenerProvider {
   private inferUnit(code: string): string | null {
     const key = code.toLowerCase();
 
-    if (key.includes('pct') || key.includes('growth') || key.includes('margin') || key.includes('yield') || key.includes('rate')) {
+    if (
+      key.includes('pct') ||
+      key.includes('growth') ||
+      key.includes('margin') ||
+      key.includes('yield') ||
+      key.includes('rate') ||
+      key.includes('gryoy') ||
+      key.includes('grqoq') ||
+      key.includes('gr') ||
+      key.includes('roa') ||
+      key.includes('roe')
+    ) {
       return '%';
     }
 
@@ -52,7 +63,25 @@ export class VNDirectScreenerProvider {
       return 'shares';
     }
 
-    const monetaryHints = ['price', 'val', 'cap', 'revenue', 'sales', 'income', 'profit', 'cash', 'debt', 'equity', 'asset', 'eps', 'bvps', 'div'];
+    const monetaryHints = [
+      'price',
+      'val',
+      'cap',
+      'revenue',
+      'sales',
+      'income',
+      'profit',
+      'cash',
+      'debt',
+      'equity',
+      'asset',
+      'eps',
+      'bvps',
+      'div',
+      'band',
+      'macd'
+    ];
+
     if (monetaryHints.some(hint => key.includes(hint))) {
       return 'VND';
     }
