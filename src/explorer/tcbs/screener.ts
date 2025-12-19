@@ -26,6 +26,7 @@ export class TCBSScreenerProvider {
         : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
       'Accept': 'application/json',
       'Content-Type': 'application/json',
+      // 'Authorization':`Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoZW5fc2VydmljZSIsImV4cCI6MTc2NjE2ODgxMCwianRpIjoiIiwiaWF0IjoxNzY2MTI1NjEwLCJzdWIiOiIxMDAwMDg2MTc0NSIsImN1c3RvZHlJRCI6IjEwNUNUREFUVk8iLCJ0Y2JzSWQiOiIxMDAwMDg2MTc0NSIsImVtYWlsIjoidGhhbmhkYXQxNzEwQGdtYWlsLmNvbSIsInJvbGVzIjpbImN1c3RvbWVyIl0sInNjb3BlcyI6WyJhbGw6YWxsIiwic29ja2V0OmFsbCJdLCJzdGVwdXBfZXhwIjowLCJzb3RwX3NpZ24iOiIiLCJjbGllbnRfa2V5IjoiMTAwMDA4NjE3NDUuSlRFTzAwdXhZc2NIZHNhOU5MN1EiLCJzZXNzaW9uSUQiOiJkMTI5ZDViYy0yYjY4LTQ2YzctODhjZC04NTdlZWFhMDRiOTQiLCJhY2NvdW50X3N0YXR1cyI6IjEiLCJvdHAiOiIiLCJvdHBUeXBlIjoiIiwib3RwU291cmNlIjoiVENJTlZFU1QiLCJvdHBTZXNzaW9uSWQiOiIiLCJhY2NvdW50VHlwZSI6IlBSSU1BUlkiLCJwcmltYXJ5U3ViIjoiIiwicHJpbWFyeUN1c3RvZHlJRCI6IiIsImVub3RwX3NpZ24iOiIiLCJzcWFfc2lnbiI6IiIsImVuX290cCI6IiIsImVuT1RQVHlwZSI6IiIsImNhU3RhdHVzIjoiSUdOT1JFIiwiY3VzVHlwZSI6IklORElWSURVQUwiLCJ0ZW5hbnQiOiJ0Y2JzIn0.VNKbSVjZY4DSPWlyr4QvNGuub_OF_MXPoxtFFr_RReY`
     };
   }
 
@@ -115,7 +116,7 @@ export class TCBSScreenerProvider {
    */
   async screen(params: Record<string, any> = { exchangeName: 'HOSE,HNX,UPCOM' }, limit: number = 50, id?: string): Promise<TCBSScreenerResult[]> {
     try {
-      const url = `${BASE_URL}/ligo/v1/watchlist/preview`;
+      const url = `${BASE_URL}/ligo/v2/watchlist/preview`;
       
       // Create filters from params
       const filters: any[] = [];

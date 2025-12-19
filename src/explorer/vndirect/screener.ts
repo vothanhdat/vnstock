@@ -8,6 +8,7 @@ import axios from 'axios';
 import { getLogger } from '../../core/logger';
 import { VNDirectScreenerResult, VNDirectScreenerPayload, VNDirectScreenerFilter } from './types';
 import screenerMetadata from './info.json';
+import unitOverrides from './units.json';
 
 const logger = getLogger('VNDirect.Screener');
 
@@ -40,67 +41,116 @@ export class VNDirectScreenerProvider {
     return agents[Math.floor(Math.random() * agents.length)];
   }
 
+  private inferUnit(code: string): string | null {
+    const key = code.toLowerCase();
+
+    if (key.includes('pct') || key.includes('growth') || key.includes('margin') || key.includes('yield') || key.includes('rate')) {
+      return '%';
+    }
+
+    if (key.includes('vol') || key.includes('volume') || key.includes('share')) {
+      return 'shares';
+    }
+
+    const monetaryHints = ['price', 'val', 'cap', 'revenue', 'sales', 'income', 'profit', 'cash', 'debt', 'equity', 'asset', 'eps', 'bvps', 'div'];
+    if (monetaryHints.some(hint => key.includes(hint))) {
+      return 'VND';
+    }
+
+    return null;
+  }
+
   /**
    * Get metadata for all available screener fields
    */
   getScreenerFieldMetadata(): Record<string, any> {
     const fields = new Map<string, any>();
+
+    const ensureField = (code: string) => {
+      if (!fields.has(code)) {
+        fields.set(code, {
+          key: code,
+          label: { vi: '', en: '' },
+          tooltip: { vi: '', en: '' },
+          unit: null,
+          type: null,
+          values: null,
+          group: null,
+        });
+      }
+      return fields.get(code)!;
+    };
     
     if ((screenerMetadata as any).data) {
       for (const item of (screenerMetadata as any).data) {
-        if (item.refCode) {
-          const existing = fields.get(item.refCode) || {
-            key: item.refCode,
-            label: { vi: '', en: '' },
-            tooltip: { vi: '', en: '' },
-            unit: null,
-            type: null,
-            values: null,
-            group: null,
-          };
+        if (!item.refCode) continue;
+        const existing = ensureField(item.refCode);
 
-          if (item.refGroup === 'TOOLTIP') {
-            if (item.locale === 'VN') {
-              existing.tooltip.vi = item.description;
-            } else if (item.locale === 'EN_GB') {
-              existing.tooltip.en = item.description;
-            }
-          } else {
-            // Label / Definition
-            existing.group = item.refGroup;
-            existing.type = item.refType;
-
-            if (item.locale === 'VN') {
-              existing.label.vi = item.description;
-            } else if (item.locale === 'EN_GB') {
-              existing.label.en = item.description;
-            }
+        if (item.refGroup === 'TOOLTIP') {
+          if (item.locale === 'VN') {
+            existing.tooltip.vi = item.description;
+          } else if (item.locale === 'EN_GB') {
+            existing.tooltip.en = item.description;
           }
+        } else {
+          existing.group = existing.group || item.refGroup;
+          existing.type = existing.type || item.refType;
 
-          // If one language is missing, fallback to the other
-          if (!existing.label.vi && existing.label.en) existing.label.vi = existing.label.en;
-          if (!existing.label.en && existing.label.vi) existing.label.en = existing.label.vi;
-          
-          if (!existing.tooltip.vi && existing.tooltip.en) existing.tooltip.vi = existing.tooltip.en;
-          if (!existing.tooltip.en && existing.tooltip.vi) existing.tooltip.en = existing.tooltip.vi;
-
-          // If tooltip is empty object (no tooltip found), set to null to match TCBS style if they use null for missing
-          // But TCBS sample showed tooltip object. If completely missing, maybe null?
-          // Let's keep it as object but if both empty, maybe null? 
-          // TCBS sample: "tooltip": { "vi": "...", "en": "..." }
-          // If I have no tooltip data, I'll have { vi: '', en: '' } which is fine, or I can set to null.
-          // Let's check if I should set to null if empty.
-          
-          fields.set(item.refCode, existing);
+          if (item.locale === 'VN') {
+            existing.label.vi = item.description;
+          } else if (item.locale === 'EN_GB') {
+            existing.label.en = item.description;
+          }
         }
       }
     }
     
-    // Cleanup empty tooltips
-    for (const [key, val] of fields) {
-        if (!val.tooltip.vi && !val.tooltip.en) {
-            val.tooltip = null;
-        }
+    const applyOverrides = (code: string) => {
+      const target = ensureField(code);
+      const override = (unitOverrides as Record<string, any>)[code];
+
+      if (override?.label) {
+        target.label = {
+          vi: override.label.vi || target.label.vi,
+          en: override.label.en || target.label.en,
+        };
+      }
+
+      if (override?.tooltip) {
+        target.tooltip = {
+          vi: override.tooltip.vi || target.tooltip.vi,
+          en: override.tooltip.en || target.tooltip.en,
+        };
+      }
+
+      if (override?.group && !target.group) target.group = override.group;
+      if (override?.type && !target.type) target.type = override.type;
+      if (override?.values) target.values = override.values;
+      if (override && Object.prototype.hasOwnProperty.call(override, 'unit')) {
+        target.unit = override.unit;
+      }
+
+      if (target.unit === null || target.unit === undefined) {
+        target.unit = this.inferUnit(code);
+      }
+
+      if (!target.label.vi && target.label.en) target.label.vi = target.label.en;
+      if (!target.label.en && target.label.vi) target.label.en = target.label.vi;
+      if (!target.label.vi && !target.label.en) {
+        target.label = { vi: code, en: code };
+      }
+
+      if (!target.tooltip.vi && !target.tooltip.en) {
+        target.tooltip = null;
+      } else {
+        if (!target.tooltip.vi && target.tooltip.en) target.tooltip.vi = target.tooltip.en;
+        if (!target.tooltip.en && target.tooltip.vi) target.tooltip.en = target.tooltip.vi;
+      }
+    };
+
+    const codes = new Set<string>([...fields.keys(), ...Object.keys(unitOverrides as Record<string, any>)]);
+    for (const code of codes) {
+      applyOverrides(code);
     }
 
     return Object.fromEntries(fields);
@@ -125,7 +175,7 @@ export class VNDirectScreenerProvider {
       // Ensure 'code' and 'nmVolCr' are included and remove duplicates
       const defaultFields = [...new Set(['code', 'nmVolCr', ...metaFields])];
 
-      // console.log({defaultFields})
+      
 
       // Construct filters
       const filters: VNDirectScreenerFilter[] = [];
