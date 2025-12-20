@@ -1,0 +1,362 @@
+[
+  {
+    "field": "bbLowerBand",
+    "value": 56361.0149,
+    "unit": "₫"
+  },
+  {
+    "field": "bbUpperBand",
+    "value": 59118.9851,
+    "unit": "₫"
+  },
+  {
+    "field": "betaCr",
+    "value": 0.8411409841322095,
+    "unit": null
+  },
+  {
+    "field": "bvpsQr",
+    "value": 26650.010979950628,
+    "unit": "₫"
+  },
+  {
+    "field": "bvpsYr",
+    "value": 35088.51400107984,
+    "unit": "₫"
+  },
+  {
+    "field": "code",
+    "value": "VCB",
+    "unit": null
+  },
+  {
+    "field": "companyNameEn",
+    "value": "Joint Stock Commercial Bank For Foreign Trade Of Vietnam",
+    "unit": null
+  },
+  {
+    "field": "companyNameVi",
+    "value": "Ngân hàng Thương mại Cổ phần Ngoại thương Việt Nam ",
+    "unit": null
+  },
+  {
+    "field": "continuousAdvSesCr",
+    "value": 2,
+    "unit": null
+  },
+  {
+    "field": "continuousDeclineSesCr",
+    "value": 0,
+    "unit": null
+  },
+  {
+    "field": "dividendYieldCr",
+    "value": 0,
+    "unit": "%"
+  },
+  {
+    "field": "epsQr",
+    "value": 1079.5655525760442,
+    "unit": "₫"
+  },
+  {
+    "field": "epsQrGrqoq",
+    "value": 0.021356029884899996,
+    "unit": "%"
+  },
+  {
+    "field": "epsQrGryoy",
+    "value": -0.2956608449866598,
+    "unit": "%"
+  },
+  {
+    "field": "epsTr",
+    "value": 4202.412205473915,
+    "unit": "₫"
+  },
+  {
+    "field": "epsTrGryoy",
+    "value": -0.3215781672801452,
+    "unit": "%"
+  },
+  {
+    "field": "epsYr",
+    "value": 6053.1103204591045,
+    "unit": "₫"
+  },
+  {
+    "field": "epsYrGr2yr",
+    "value": -0.020256294493606705,
+    "unit": "%"
+  },
+  {
+    "field": "epsYrGr3yr",
+    "value": 0.10624783566290193,
+    "unit": "%"
+  },
+  {
+    "field": "epsYrGryoy",
+    "value": 0.022064541985358944,
+    "unit": "%"
+  },
+  {
+    "field": "floor",
+    "value": "HOSE",
+    "unit": null
+  },
+  {
+    "field": "id",
+    "value": "VCB",
+    "unit": null
+  },
+  {
+    "field": "industrylv2",
+    "value": "8300",
+    "unit": null
+  },
+  {
+    "field": "macdHistCr12n26d",
+    "value": 7.2176,
+    "unit": "₫"
+  },
+  {
+    "field": "marketCapCr",
+    "value": 480451317905000,
+    "unit": "₫"
+  },
+  {
+    "field": "netForBoughtValAvgCr20d",
+    "value": 44951128000,
+    "unit": "₫"
+  },
+  {
+    "field": "netForBoughtValCr",
+    "value": 86506880000,
+    "unit": "₫"
+  },
+  {
+    "field": "netForSoldValAvgCr20d",
+    "value": -78678377857.89473,
+    "unit": "₫"
+  },
+  {
+    "field": "netMarginQr",
+    "value": 0.6154295761002754,
+    "unit": "%"
+  },
+  {
+    "field": "netMarginTr",
+    "value": 0.6231750177210228,
+    "unit": "%"
+  },
+  {
+    "field": "netMarginYr",
+    "value": 0.6106116271176621,
+    "unit": "%"
+  },
+  {
+    "field": "netProfitQrGrqoq",
+    "value": 0.021356029884899996,
+    "unit": "%"
+  },
+  {
+    "field": "netProfitQrGryoy",
+    "value": 0.052984977233669656,
+    "unit": "%"
+  },
+  {
+    "field": "netProfitTrGryoy",
+    "value": 0.014238656188027197,
+    "unit": "%"
+  },
+  {
+    "field": "netProfitYrGr2yr",
+    "value": 0.06457940468745617,
+    "unit": "%"
+  },
+  {
+    "field": "netProfitYrGr3yr",
+    "value": 0.16280496845027717,
+    "unit": "%"
+  },
+  {
+    "field": "netProfitYrGryoy",
+    "value": 0.022064541985358944,
+    "unit": "%"
+  },
+  {
+    "field": "netSalesQrGrqoq",
+    "value": 0.03510178393061337,
+    "unit": "%"
+  },
+  {
+    "field": "netSalesQrGryoy",
+    "value": 0.07951339982895403,
+    "unit": "%"
+  },
+  {
+    "field": "netSalesTrGryoy",
+    "value": 0.036462863986908255,
+    "unit": "%"
+  },
+  {
+    "field": "netSalesYrGr2yr",
+    "value": 0.020160613961483602,
+    "unit": "%"
+  },
+  {
+    "field": "netSalesYrGr3yr",
+    "value": 0.09997331926796443,
+    "unit": "%"
+  },
+  {
+    "field": "netSalesYrGryoy",
+    "value": 0.03341085537212919,
+    "unit": "%"
+  },
+  {
+    "field": "nmValCr",
+    "value": 244160190000,
+    "unit": "₫"
+  },
+  {
+    "field": "nmVolCr",
+    "value": 4265500,
+    "unit": "shares"
+  },
+  {
+    "field": "nmVolCrtoNmVolAvgCr20dCr",
+    "value": 1.2005465857389532,
+    "unit": null
+  },
+  {
+    "field": "nmVolCrtoNmVolAvgCr50dCr",
+    "value": 1.131467775383951,
+    "unit": null
+  },
+  {
+    "field": "pbCr",
+    "value": 2.194655642526951,
+    "unit": null
+  },
+  {
+    "field": "peCr",
+    "value": 13.682617789159883,
+    "unit": null
+  },
+  {
+    "field": "priceChgPctCr1m",
+    "value": -0.03198653198653201,
+    "unit": "%"
+  },
+  {
+    "field": "priceChgPctCr1y",
+    "value": -0.06292270334577332,
+    "unit": "%"
+  },
+  {
+    "field": "priceChgPctCr3m",
+    "value": -0.0806766220062034,
+    "unit": "%"
+  },
+  {
+    "field": "priceChgPctCr5d",
+    "value": 0.012323943661971759,
+    "unit": "%"
+  },
+  {
+    "field": "priceChgPctCrHC1y",
+    "value": -0.16183201655928403,
+    "unit": "%"
+  },
+  {
+    "field": "priceChgPctCrHC5y",
+    "value": -0.16183201655928403,
+    "unit": "%"
+  },
+  {
+    "field": "priceChgPctCrLC1y",
+    "value": 0.10318099842676798,
+    "unit": "%"
+  },
+  {
+    "field": "priceChgPctCrLC5y",
+    "value": 0.6494076475144144,
+    "unit": "%"
+  },
+  {
+    "field": "priceCr",
+    "value": 57500,
+    "unit": "₫"
+  },
+  {
+    "field": "priceCrBtwBBand",
+    "value": "Y",
+    "unit": null
+  },
+  {
+    "field": "priceCrCrossdownSmaCr200d",
+    "value": "U",
+    "unit": null
+  },
+  {
+    "field": "priceCrCrossdownSmaCr20d",
+    "value": "U",
+    "unit": null
+  },
+  {
+    "field": "priceCrCrossdownSmaCr50d",
+    "value": "U",
+    "unit": null
+  },
+  {
+    "field": "priceCrCrossdownSmaCr5d",
+    "value": "U",
+    "unit": null
+  },
+  {
+    "field": "priceCrCrossupSmaCr200d",
+    "value": "U",
+    "unit": null
+  },
+  {
+    "field": "priceCrCrossupSmaCr20d",
+    "value": "U",
+    "unit": null
+  },
+  {
+    "field": "priceCrCrossupSmaCr50d",
+    "value": "U",
+    "unit": null
+  },
+  {
+    "field": "priceCrCrossupSmaCr5d",
+    "value": "U",
+    "unit": null
+  },
+  {
+    "field": "roaTr",
+    "value": 0.016372726288064292,
+    "unit": "%"
+  },
+  {
+    "field": "roaYr",
+    "value": 0.01773633101833713,
+    "unit": "%"
+  },
+  {
+    "field": "roeTr",
+    "value": 0.17078972646953594,
+    "unit": "%"
+  },
+  {
+    "field": "roeYr",
+    "value": 0.1865214071215973,
+    "unit": "%"
+  },
+  {
+    "field": "rsiCr14d",
+    "value": 43.2623,
+    "unit": "%"
+  }
+]

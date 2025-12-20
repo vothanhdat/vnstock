@@ -1,0 +1,442 @@
+[
+  {
+    "field": "bargainingScoreQr",
+    "value": 7,
+    "unit": null
+  },
+  {
+    "field": "bbLowerBand",
+    "value": 117290.3255,
+    "unit": "₫"
+  },
+  {
+    "field": "bbUpperBand",
+    "value": 159989.6745,
+    "unit": "₫"
+  },
+  {
+    "field": "betaCr",
+    "value": 1.131458440329506,
+    "unit": null
+  },
+  {
+    "field": "bvpsQr",
+    "value": 37817.14206605042,
+    "unit": "₫"
+  },
+  {
+    "field": "bvpsYr",
+    "value": 35933.31465352459,
+    "unit": "₫"
+  },
+  {
+    "field": "cashConversionCycleTr",
+    "value": 222.66387312348976,
+    "unit": "₫"
+  },
+  {
+    "field": "cashConversionCycleYr",
+    "value": 221.2085472008641,
+    "unit": "₫"
+  },
+  {
+    "field": "code",
+    "value": "VIC",
+    "unit": null
+  },
+  {
+    "field": "commitmentScoreQr",
+    "value": 8,
+    "unit": null
+  },
+  {
+    "field": "companyNameEn",
+    "value": "VINGROUP Joint Stock Company",
+    "unit": null
+  },
+  {
+    "field": "companyNameVi",
+    "value": "Tập đoàn VINGROUP - CTCP",
+    "unit": null
+  },
+  {
+    "field": "continuousAdvSesCr",
+    "value": 1,
+    "unit": null
+  },
+  {
+    "field": "continuousDeclineSesCr",
+    "value": 0,
+    "unit": null
+  },
+  {
+    "field": "dividendYieldCr",
+    "value": 0.000053261881396457566,
+    "unit": "%"
+  },
+  {
+    "field": "ebitQr",
+    "value": -17106224000000,
+    "unit": "₫"
+  },
+  {
+    "field": "ebitTr",
+    "value": -14900934000000,
+    "unit": "₫"
+  },
+  {
+    "field": "ebitYr",
+    "value": -5901408000000,
+    "unit": "₫"
+  },
+  {
+    "field": "ebitdaQr",
+    "value": -8097613000000,
+    "unit": "₫"
+  },
+  {
+    "field": "ebitdaTr",
+    "value": 12687946000000,
+    "unit": "₫"
+  },
+  {
+    "field": "ebitdaYr",
+    "value": 16725716000000,
+    "unit": "₫"
+  },
+  {
+    "field": "epsQr",
+    "value": 166.15142036313713,
+    "unit": "₫"
+  },
+  {
+    "field": "epsTr",
+    "value": 2302.2149722401637,
+    "unit": "₫"
+  },
+  {
+    "field": "epsYr",
+    "value": 3112.9920392031268,
+    "unit": "₫"
+  },
+  {
+    "field": "epsYrGr2yr",
+    "value": 1.881751984027422,
+    "unit": "%"
+  },
+  {
+    "field": "epsYrGryoy",
+    "value": 4.5185173337042315,
+    "unit": "%"
+  },
+  {
+    "field": "financialHealthQr",
+    "value": 3,
+    "unit": null
+  },
+  {
+    "field": "floor",
+    "value": "HOSE",
+    "unit": null
+  },
+  {
+    "field": "governanceScoreQr",
+    "value": 3,
+    "unit": null
+  },
+  {
+    "field": "grossMarginQr",
+    "value": -0.18627713845546798,
+    "unit": "%"
+  },
+  {
+    "field": "grossMarginTr",
+    "value": 0.10579097692358155,
+    "unit": "%"
+  },
+  {
+    "field": "grossMarginYr",
+    "value": 0.1443967896425012,
+    "unit": "%"
+  },
+  {
+    "field": "growthScoreQr",
+    "value": 4,
+    "unit": null
+  },
+  {
+    "field": "id",
+    "value": "VIC",
+    "unit": null
+  },
+  {
+    "field": "industrylv2",
+    "value": "8600",
+    "unit": null
+  },
+  {
+    "field": "liabilityStructureQr",
+    "value": 5.719234877722124,
+    "unit": null
+  },
+  {
+    "field": "liabilityStructureYr",
+    "value": 4.438337995237882,
+    "unit": null
+  },
+  {
+    "field": "macdHistCr12n26d",
+    "value": -967.5241,
+    "unit": "₫"
+  },
+  {
+    "field": "marketCapCr",
+    "value": 1144345607064000,
+    "unit": "₫"
+  },
+  {
+    "field": "netForBoughtValAvgCr20d",
+    "value": 135183437366.66667,
+    "unit": "₫"
+  },
+  {
+    "field": "netForSoldValAvgCr20d",
+    "value": -231713669411.1111,
+    "unit": "₫"
+  },
+  {
+    "field": "netForSoldValCr",
+    "value": -620654190000,
+    "unit": "₫"
+  },
+  {
+    "field": "netMarginQr",
+    "value": 0.016358306250018047,
+    "unit": "%"
+  },
+  {
+    "field": "netMarginTr",
+    "value": 0.03827382576471928,
+    "unit": "%"
+  },
+  {
+    "field": "netMarginYr",
+    "value": 0.06295631985183747,
+    "unit": "%"
+  },
+  {
+    "field": "netProfitQrGryoy",
+    "value": -0.8790947479311786,
+    "unit": "%"
+  },
+  {
+    "field": "netProfitTrGryoy",
+    "value": -0.07033813689074872,
+    "unit": "%"
+  },
+  {
+    "field": "netProfitYrGr2yr",
+    "value": 1.8820643568989066,
+    "unit": "%"
+  },
+  {
+    "field": "netProfitYrGryoy",
+    "value": 4.5185173337042315,
+    "unit": "%"
+  },
+  {
+    "field": "netSalesQrGrqoq",
+    "value": -0.15697964837688905,
+    "unit": "%"
+  },
+  {
+    "field": "netSalesQrGryoy",
+    "value": -0.3773254985754419,
+    "unit": "%"
+  },
+  {
+    "field": "netSalesTrGryoy",
+    "value": 0.5016083648018521,
+    "unit": "%"
+  },
+  {
+    "field": "netSalesYrGr2yr",
+    "value": 0.3785288506742365,
+    "unit": "%"
+  },
+  {
+    "field": "netSalesYrGr3yr",
+    "value": 0.18898318495806501,
+    "unit": "%"
+  },
+  {
+    "field": "netSalesYrGryoy",
+    "value": 0.17122522715574826,
+    "unit": "%"
+  },
+  {
+    "field": "nmValCr",
+    "value": 1900487780000,
+    "unit": "₫"
+  },
+  {
+    "field": "nmVolCr",
+    "value": 12784300,
+    "unit": "shares"
+  },
+  {
+    "field": "nmVolCrtoNmVolAvgCr20dCr",
+    "value": 2.365507039087125,
+    "unit": null
+  },
+  {
+    "field": "nmVolCrtoNmVolAvgCr50dCr",
+    "value": 2.776696625211223,
+    "unit": null
+  },
+  {
+    "field": "pbCr",
+    "value": 7.853581306627234,
+    "unit": null
+  },
+  {
+    "field": "peCr",
+    "value": 129.0061977622381,
+    "unit": null
+  },
+  {
+    "field": "priceChgPctCr1m",
+    "value": 0.346938775510204,
+    "unit": "%"
+  },
+  {
+    "field": "priceChgPctCr1y",
+    "value": 6.369727047146402,
+    "unit": "%"
+  },
+  {
+    "field": "priceChgPctCr3m",
+    "value": 0.9386422976501305,
+    "unit": "%"
+  },
+  {
+    "field": "priceChgPctCr5d",
+    "value": 0.03125,
+    "unit": "%"
+  },
+  {
+    "field": "priceChgPctCrHC1y",
+    "value": -0.07187500000000002,
+    "unit": "%"
+  },
+  {
+    "field": "priceChgPctCrHC5y",
+    "value": -0.07187500000000002,
+    "unit": "%"
+  },
+  {
+    "field": "priceChgPctCrLC1y",
+    "value": 6.443609022556391,
+    "unit": "%"
+  },
+  {
+    "field": "priceChgPctCrLC5y",
+    "value": 6.443609022556391,
+    "unit": "%"
+  },
+  {
+    "field": "priceCr",
+    "value": 148500,
+    "unit": "₫"
+  },
+  {
+    "field": "priceCrBtwBBand",
+    "value": "Y",
+    "unit": null
+  },
+  {
+    "field": "priceCrCrossdownSmaCr200d",
+    "value": "U",
+    "unit": null
+  },
+  {
+    "field": "priceCrCrossdownSmaCr20d",
+    "value": "U",
+    "unit": null
+  },
+  {
+    "field": "priceCrCrossdownSmaCr50d",
+    "value": "U",
+    "unit": null
+  },
+  {
+    "field": "priceCrCrossdownSmaCr5d",
+    "value": "U",
+    "unit": null
+  },
+  {
+    "field": "priceCrCrossupSmaCr200d",
+    "value": "U",
+    "unit": null
+  },
+  {
+    "field": "priceCrCrossupSmaCr20d",
+    "value": "U",
+    "unit": null
+  },
+  {
+    "field": "priceCrCrossupSmaCr50d",
+    "value": "U",
+    "unit": null
+  },
+  {
+    "field": "priceCrCrossupSmaCr5d",
+    "value": "Y",
+    "unit": null
+  },
+  {
+    "field": "profitabilityScoreQr",
+    "value": 0,
+    "unit": null
+  },
+  {
+    "field": "roaTr",
+    "value": 0.009861657589109394,
+    "unit": "%"
+  },
+  {
+    "field": "roaYr",
+    "value": 0.01603398298722568,
+    "unit": "%"
+  },
+  {
+    "field": "roeTr",
+    "value": 0.05570925302992288,
+    "unit": "%"
+  },
+  {
+    "field": "roeYr",
+    "value": 0.07568385566020008,
+    "unit": "%"
+  },
+  {
+    "field": "rsiCr14d",
+    "value": 68.1705,
+    "unit": "%"
+  },
+  {
+    "field": "totalDebtQr",
+    "value": 325339729000000,
+    "unit": "₫"
+  },
+  {
+    "field": "totalDebtYr",
+    "value": 227920057000000,
+    "unit": "₫"
+  },
+  {
+    "field": "totalScoreQr",
+    "value": 4.85,
+    "unit": null
+  }
+]

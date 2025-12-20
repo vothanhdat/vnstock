@@ -83,5 +83,10 @@ describe('VNDirectScreenerProvider', () => {
     expect(firstField).toHaveProperty('unit');
     expect(firstField).toHaveProperty('type');
     expect(firstField).toHaveProperty('values');
+
+    // Base-unit checks
+    expect(metadata['priceCr']?.unit).toBe('₫');
+    expect(metadata['nmVolCr']?.unit).toBe('shares');
+    expect(metadata['priceChgPctCr1m']?.unit || metadata['priceChgPctCr']?.unit).toBe('%');
   });
 });

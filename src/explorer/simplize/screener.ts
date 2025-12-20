@@ -4,6 +4,63 @@ import metadata from './info.json';
 
 const logger = getLogger('Simplize.Screener');
 
+// Display-unit overrides: Simplize returns raw VND/share values but metadata suffixes
+// sometimes say "K" or "Tỷ". We normalize key fields to base units for display only.
+const UNIT_OVERRIDES: Record<string, string | null> = {
+  // Prices and targets
+  priceClose: '₫',
+  priceCloseIntraDay: '₫',
+  priceOpen: '₫',
+  priceOpenIntraDay: '₫',
+  priceFloor: '₫',
+  priceCeiling: '₫',
+  priceReferrance: '₫',
+  priceChgIntraDay: '₫',
+  consensusTargetPriceMean: '₫',
+  peak1week: '₫',
+  peak4week: '₫',
+  peak1year: '₫',
+  peak3year: '₫',
+  peak5year: '₫',
+  peakAllTime: '₫',
+  trough1week: '₫',
+  trough4week: '₫',
+  trough1year: '₫',
+  trough3year: '₫',
+  trough5year: '₫',
+  troughAllTime: '₫',
+
+  // Market cap and cash flows
+  marketCapVnd: '₫',
+  foreignBuyingValue1d: '₫',
+  foreignBuyingValue7d: '₫',
+  foreignBuyingValue30d: '₫',
+  foreignBuyingValue90d: '₫',
+
+  // Volumes
+  volume: 'shares',
+  volume5dAvg: 'shares',
+  volume10dAvg: 'shares',
+  volume20dAvg: 'shares',
+  volume50dAvg: 'shares',
+
+  // Longer-term price changes treated as percent
+  pricePctChg1y: '%',
+  pricePctChg3y: '%',
+  pricePctChg5y: '%',
+  pricePctChgYtd: '%',
+  pctChgShortTerm: '%',
+  pctChgMidTerm: '%',
+  pctChgLongTerm: '%',
+
+  // Growth deltas that lacked units
+  netIncomeGrowthPrevQoq: '%',
+  revenueGrowthPrevQoq: '%',
+  netMarginLtmYoy: '%',
+  returnOnAssetsYoy: '%',
+  returnOnEquityYoy: '%'
+};
+
 const TRANSLATION_MAP: Record<string, string> = {
   // Basic Info
   'stockExchange': 'Exchange',
@@ -111,7 +168,9 @@ export class SimplizeScreenerProvider {
                 vi: item.tooltip,
                 en: item.tooltip // Tooltips might need translation too, but skipping for now
             } : null,
-            // unit: item.suffix || null,
+            unit: UNIT_OVERRIDES.hasOwnProperty(item.id)
+              ? UNIT_OVERRIDES[item.id]
+              : (item.suffix || null),
             type: item.type,
             values: item.options ? item.options.map((opt: any) => ({
               value: opt.value,
@@ -123,6 +182,23 @@ export class SimplizeScreenerProvider {
             group: group.name
           };
         }
+      }
+    }
+
+    // Apply overrides even if a field is missing from metadata, and ensure unit override wins
+    for (const [id, unit] of Object.entries(UNIT_OVERRIDES)) {
+      if (!fields[id]) {
+        fields[id] = {
+          key: id,
+          label: { vi: id, en: id },
+          tooltip: null,
+          unit,
+          type: null,
+          values: null,
+          group: 'Overrides'
+        };
+      } else {
+        fields[id].unit = unit;
       }
     }
 

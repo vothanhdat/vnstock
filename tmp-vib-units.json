@@ -1,0 +1,347 @@
+[
+  {
+    "field": "bbLowerBand",
+    "value": 17139.8426,
+    "unit": "₫"
+  },
+  {
+    "field": "bbUpperBand",
+    "value": 19165.1574,
+    "unit": "₫"
+  },
+  {
+    "field": "betaCr",
+    "value": 0.9720649309327065,
+    "unit": null
+  },
+  {
+    "field": "bvpsQr",
+    "value": 13296.030869466433,
+    "unit": "₫"
+  },
+  {
+    "field": "bvpsYr",
+    "value": 14051.69955757672,
+    "unit": "₫"
+  },
+  {
+    "field": "code",
+    "value": "VIB",
+    "unit": null
+  },
+  {
+    "field": "companyNameEn",
+    "value": "Vietnam International Commercial Joint Stock Bank",
+    "unit": null
+  },
+  {
+    "field": "companyNameVi",
+    "value": "Ngân hàng Thương mại Cổ phần Quốc tế Việt Nam",
+    "unit": null
+  },
+  {
+    "field": "continuousAdvSesCr",
+    "value": 1,
+    "unit": null
+  },
+  {
+    "field": "continuousDeclineSesCr",
+    "value": 0,
+    "unit": null
+  },
+  {
+    "field": "dividendYieldCr",
+    "value": 0.03480840558391318,
+    "unit": "%"
+  },
+  {
+    "field": "epsQr",
+    "value": 477.235685953065,
+    "unit": "₫"
+  },
+  {
+    "field": "epsTr",
+    "value": 2220.512726460732,
+    "unit": "₫"
+  },
+  {
+    "field": "epsYr",
+    "value": 2418.315173899311,
+    "unit": "₫"
+  },
+  {
+    "field": "epsYrGr2yr",
+    "value": -0.2217432403880304,
+    "unit": "%"
+  },
+  {
+    "field": "epsYrGr3yr",
+    "value": -0.1566237835702119,
+    "unit": "%"
+  },
+  {
+    "field": "epsYrGryoy",
+    "value": -0.283573259124486,
+    "unit": "%"
+  },
+  {
+    "field": "floor",
+    "value": "HOSE",
+    "unit": null
+  },
+  {
+    "field": "id",
+    "value": "VIB",
+    "unit": null
+  },
+  {
+    "field": "industrylv2",
+    "value": "8300",
+    "unit": null
+  },
+  {
+    "field": "macdHistCr12n26d",
+    "value": -60.3887,
+    "unit": "₫"
+  },
+  {
+    "field": "marketCapCr",
+    "value": 59910500496000,
+    "unit": "₫"
+  },
+  {
+    "field": "netForBoughtValAvgCr20d",
+    "value": 3508483425,
+    "unit": "₫"
+  },
+  {
+    "field": "netForBoughtValCr",
+    "value": 2435830000,
+    "unit": "₫"
+  },
+  {
+    "field": "netForSoldValAvgCr20d",
+    "value": -4772649077.777778,
+    "unit": "₫"
+  },
+  {
+    "field": "netMarginQr",
+    "value": 0.3893169597045193,
+    "unit": "%"
+  },
+  {
+    "field": "netMarginTr",
+    "value": 0.478549460350921,
+    "unit": "%"
+  },
+  {
+    "field": "netMarginYr",
+    "value": 0.43010703259119837,
+    "unit": "%"
+  },
+  {
+    "field": "netProfitQrGrqoq",
+    "value": -0.2176560305017797,
+    "unit": "%"
+  },
+  {
+    "field": "netProfitQrGryoy",
+    "value": 0.015845690241143393,
+    "unit": "%"
+  },
+  {
+    "field": "netProfitTrGryoy",
+    "value": 0.05196092457862487,
+    "unit": "%"
+  },
+  {
+    "field": "netProfitYrGr2yr",
+    "value": -0.07376150060883889,
+    "unit": "%"
+  },
+  {
+    "field": "netProfitYrGr3yr",
+    "value": 0.05790300937087977,
+    "unit": "%"
+  },
+  {
+    "field": "netProfitYrGryoy",
+    "value": -0.15865638108277502,
+    "unit": "%"
+  },
+  {
+    "field": "netSalesQrGrqoq",
+    "value": 0.05141036320764463,
+    "unit": "%"
+  },
+  {
+    "field": "netSalesQrGryoy",
+    "value": 0.0032182990570619376,
+    "unit": "%"
+  },
+  {
+    "field": "netSalesTrGryoy",
+    "value": -0.07994496059260446,
+    "unit": "%"
+  },
+  {
+    "field": "netSalesYrGr2yr",
+    "value": 0.07078160185946743,
+    "unit": "%"
+  },
+  {
+    "field": "netSalesYrGr3yr",
+    "value": 0.1359478580435704,
+    "unit": "%"
+  },
+  {
+    "field": "netSalesYrGryoy",
+    "value": -0.09379205479139309,
+    "unit": "%"
+  },
+  {
+    "field": "nmValCr",
+    "value": 54239095000,
+    "unit": "₫"
+  },
+  {
+    "field": "nmVolCr",
+    "value": 3079700,
+    "unit": "shares"
+  },
+  {
+    "field": "nmVolCrtoNmVolAvgCr20dCr",
+    "value": 0.6278004052560983,
+    "unit": null
+  },
+  {
+    "field": "nmVolCrtoNmVolAvgCr50dCr",
+    "value": 0.5157247744154159,
+    "unit": null
+  },
+  {
+    "field": "pbCr",
+    "value": 1.3237033046017803,
+    "unit": null
+  },
+  {
+    "field": "peCr",
+    "value": 7.926097333408479,
+    "unit": null
+  },
+  {
+    "field": "priceChgPctCr1m",
+    "value": -0.05882352941176472,
+    "unit": "%"
+  },
+  {
+    "field": "priceChgPctCr1y",
+    "value": 0.1036558600363704,
+    "unit": "%"
+  },
+  {
+    "field": "priceChgPctCr3m",
+    "value": -0.13300492610837433,
+    "unit": "%"
+  },
+  {
+    "field": "priceChgPctCr5d",
+    "value": 0.01734104046242768,
+    "unit": "%"
+  },
+  {
+    "field": "priceChgPctCrHC1y",
+    "value": -0.2542372881355932,
+    "unit": "%"
+  },
+  {
+    "field": "priceChgPctCrHC5y",
+    "value": -0.2542372881355932,
+    "unit": "%"
+  },
+  {
+    "field": "priceChgPctCrLC1y",
+    "value": 0.23059711928401616,
+    "unit": "%"
+  },
+  {
+    "field": "priceChgPctCrLC5y",
+    "value": 1.024384633080285,
+    "unit": "%"
+  },
+  {
+    "field": "priceCr",
+    "value": 17600,
+    "unit": "₫"
+  },
+  {
+    "field": "priceCrBtwBBand",
+    "value": "Y",
+    "unit": null
+  },
+  {
+    "field": "priceCrCrossdownSmaCr200d",
+    "value": "U",
+    "unit": null
+  },
+  {
+    "field": "priceCrCrossdownSmaCr20d",
+    "value": "U",
+    "unit": null
+  },
+  {
+    "field": "priceCrCrossdownSmaCr50d",
+    "value": "U",
+    "unit": null
+  },
+  {
+    "field": "priceCrCrossdownSmaCr5d",
+    "value": "U",
+    "unit": null
+  },
+  {
+    "field": "priceCrCrossupSmaCr200d",
+    "value": "U",
+    "unit": null
+  },
+  {
+    "field": "priceCrCrossupSmaCr20d",
+    "value": "U",
+    "unit": null
+  },
+  {
+    "field": "priceCrCrossupSmaCr50d",
+    "value": "U",
+    "unit": null
+  },
+  {
+    "field": "priceCrCrossupSmaCr5d",
+    "value": "U",
+    "unit": null
+  },
+  {
+    "field": "roaTr",
+    "value": 0.01506465795180074,
+    "unit": "%"
+  },
+  {
+    "field": "roaYr",
+    "value": 0.016424058807987515,
+    "unit": "%"
+  },
+  {
+    "field": "roeTr",
+    "value": 0.17632793858774137,
+    "unit": "%"
+  },
+  {
+    "field": "roeYr",
+    "value": 0.18331085903243372,
+    "unit": "%"
+  },
+  {
+    "field": "rsiCr14d",
+    "value": 38.8671,
+    "unit": "%"
+  }
+]

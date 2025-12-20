@@ -41,6 +41,7 @@ export class VNDirectScreenerProvider {
     return agents[Math.floor(Math.random() * agents.length)];
   }
 
+  // Base-unit inference (display-only): prices/values in ₫, volumes in shares, pct fields in %
   private inferUnit(code: string): string | null {
     const key = code.toLowerCase();
 
@@ -83,7 +84,7 @@ export class VNDirectScreenerProvider {
     ];
 
     if (monetaryHints.some(hint => key.includes(hint))) {
-      return 'VND';
+      return '₫';
     }
 
     return null;
@@ -94,6 +95,7 @@ export class VNDirectScreenerProvider {
    */
   getScreenerFieldMetadata(): Record<string, any> {
     const fields = new Map<string, any>();
+    const bannedCodes = new Set(['PROFILE', 'FUNDAMENTAL', 'TECHNICAL', 'DRATING']);
 
     const ensureField = (code: string) => {
       if (!fields.has(code)) {
@@ -112,7 +114,7 @@ export class VNDirectScreenerProvider {
     
     if ((screenerMetadata as any).data) {
       for (const item of (screenerMetadata as any).data) {
-        if (!item.refCode) continue;
+        if (!item.refCode || item.refType === 'CATEGORIES' || bannedCodes.has(item.refCode)) continue;
         const existing = ensureField(item.refCode);
 
         if (item.refGroup === 'TOOLTIP') {
@@ -155,11 +157,12 @@ export class VNDirectScreenerProvider {
       if (override?.group && !target.group) target.group = override.group;
       if (override?.type && !target.type) target.type = override.type;
       if (override?.values) target.values = override.values;
-      if (override && Object.prototype.hasOwnProperty.call(override, 'unit')) {
+      const hasOverrideUnit = override && Object.prototype.hasOwnProperty.call(override, 'unit');
+      if (hasOverrideUnit) {
         target.unit = override.unit;
       }
 
-      if (target.unit === null || target.unit === undefined) {
+      if ((target.unit === null || target.unit === undefined) && !hasOverrideUnit) {
         target.unit = this.inferUnit(code);
       }
 
@@ -197,12 +200,25 @@ export class VNDirectScreenerProvider {
       const url = `${BASE_URL}/search_data`;
       
       // Get all available fields from metadata
+      const bannedCodes = new Set(['PROFILE', 'FUNDAMENTAL', 'TECHNICAL', 'DRATING']);
       const metaFields = (screenerMetadata as any).data
+        .filter((item: any) => item.refType !== 'CATEGORIES' && !bannedCodes.has(item.refCode))
         .map((item: any) => item.refCode)
         .filter((code: any) => typeof code === 'string' && code.length > 0);
-        
-      // Ensure 'code' and 'nmVolCr' are included and remove duplicates
-      const defaultFields = [...new Set(['code', 'nmVolCr', ...metaFields])];
+
+      // Ensure common fields are included and remove duplicates
+      const defaultFields = [...new Set([
+        'code',
+        'companyNameVi',
+        'companyNameEn',
+        'floor',
+        'industrylv2',
+        'priceCr',
+        'nmVolCr',
+        'nmValCr',
+        'marketCapCr',
+        ...metaFields,
+      ])];
 
       
 

@@ -1,0 +1,602 @@
+[
+  {
+    "field": "advancesCustomerGrowthPreQ",
+    "value": 110.33,
+    "unit": "%"
+  },
+  {
+    "field": "advancesCustomerPct",
+    "value": 13.13,
+    "unit": "%"
+  },
+  {
+    "field": "assetsToEquity",
+    "value": 2.87,
+    "unit": null
+  },
+  {
+    "field": "beta5y",
+    "value": 1.14,
+    "unit": null
+  },
+  {
+    "field": "buyForeignQuantity1d",
+    "value": 1507166,
+    "unit": null
+  },
+  {
+    "field": "casaRatio",
+    "value": 0,
+    "unit": null
+  },
+  {
+    "field": "companyNameVi",
+    "value": "Công ty Cổ phần Vinhomes",
+    "unit": null
+  },
+  {
+    "field": "consensusTargetPriceMean",
+    "value": 110766.66666666667,
+    "unit": "₫"
+  },
+  {
+    "field": "constructionInProgressGrowthPreQ",
+    "value": 9.37,
+    "unit": "%"
+  },
+  {
+    "field": "constructionInProgressPct",
+    "value": 11.06,
+    "unit": "%"
+  },
+  {
+    "field": "countCashDiv",
+    "value": 0,
+    "unit": null
+  },
+  {
+    "field": "debtToEquity",
+    "value": 60.23,
+    "unit": "%"
+  },
+  {
+    "field": "dividendPoint",
+    "value": 0,
+    "unit": null
+  },
+  {
+    "field": "economicSectorName",
+    "value": "Bất động sản",
+    "unit": null
+  },
+  {
+    "field": "economicSectorSlug",
+    "value": "bat-dong-san",
+    "unit": null
+  },
+  {
+    "field": "eps",
+    "value": 6461.58,
+    "unit": null
+  },
+  {
+    "field": "epsGrowthPreQ",
+    "value": -44.27,
+    "unit": "%"
+  },
+  {
+    "field": "epsGrowthQoq",
+    "value": -46.81,
+    "unit": "%"
+  },
+  {
+    "field": "epsLtmGrowthPreQ",
+    "value": -12.18,
+    "unit": "%"
+  },
+  {
+    "field": "epsLtmGrowthQoq",
+    "value": 29.67,
+    "unit": "%"
+  },
+  {
+    "field": "evEbitdaRatio",
+    "value": 10.5,
+    "unit": null
+  },
+  {
+    "field": "financialHealthPoint",
+    "value": 2,
+    "unit": null
+  },
+  {
+    "field": "financialReportPeriod",
+    "value": "30/09/2025 07:00:00",
+    "unit": null
+  },
+  {
+    "field": "fixedAssetGrossRatio",
+    "value": 84.66,
+    "unit": "%"
+  },
+  {
+    "field": "fixedAssetGrowthPreQ",
+    "value": 4.17,
+    "unit": "%"
+  },
+  {
+    "field": "fixedAssetPct",
+    "value": 2.36,
+    "unit": "%"
+  },
+  {
+    "field": "foreignBuyingValue1d",
+    "value": 81308783900.8,
+    "unit": "₫"
+  },
+  {
+    "field": "foreignBuyingValue30d",
+    "value": -785013226394.79,
+    "unit": "₫"
+  },
+  {
+    "field": "foreignBuyingValue7d",
+    "value": 95697826751.2,
+    "unit": "₫"
+  },
+  {
+    "field": "foreignBuyingValue90d",
+    "value": -3741059363968.9,
+    "unit": "₫"
+  },
+  {
+    "field": "fundVolumeBuy3m",
+    "value": 85000,
+    "unit": null
+  },
+  {
+    "field": "fundVolumeBuy6m",
+    "value": 101700,
+    "unit": null
+  },
+  {
+    "field": "grossMarginLtm",
+    "value": 29.41,
+    "unit": "%"
+  },
+  {
+    "field": "grossMarginLtmYoy",
+    "value": 26.84,
+    "unit": null
+  },
+  {
+    "field": "growthPoint",
+    "value": 2,
+    "unit": null
+  },
+  {
+    "field": "imageUrl",
+    "value": "https://cdn.simplize.vn/simplizevn/logo/VHM.jpeg",
+    "unit": null
+  },
+  {
+    "field": "industryName",
+    "value": "Quản lý và phát triển bất động sản",
+    "unit": null
+  },
+  {
+    "field": "industrySlug",
+    "value": "quan-ly-va-phat-trien-bat-dong-san",
+    "unit": null
+  },
+  {
+    "field": "insiderBuying",
+    "value": 0,
+    "unit": null
+  },
+  {
+    "field": "insiderBuying3m",
+    "value": 0,
+    "unit": null
+  },
+  {
+    "field": "insiderBuying6m",
+    "value": 0,
+    "unit": null
+  },
+  {
+    "field": "lastestFinancialReportPeriod",
+    "value": "30/09/2025 07:00:00",
+    "unit": null
+  },
+  {
+    "field": "marginOfSafety",
+    "value": 1.52,
+    "unit": "%"
+  },
+  {
+    "field": "marketCapVnd",
+    "value": 416902318000000,
+    "unit": "₫"
+  },
+  {
+    "field": "netCashToMarketCap",
+    "value": -21.73,
+    "unit": "%"
+  },
+  {
+    "field": "netIncome5yGrowth",
+    "value": 2.52,
+    "unit": "%"
+  },
+  {
+    "field": "netIncomeEstGrowth",
+    "value": 2.08,
+    "unit": "%"
+  },
+  {
+    "field": "netIncomeGrowthPreQ",
+    "value": -46.07,
+    "unit": "%"
+  },
+  {
+    "field": "netIncomeGrowthPrevQoq",
+    "value": -33.13,
+    "unit": "%"
+  },
+  {
+    "field": "netIncomeGrowthQoq",
+    "value": -50.61,
+    "unit": "%"
+  },
+  {
+    "field": "netIncomeLtmGrowth",
+    "value": 38.59,
+    "unit": "%"
+  },
+  {
+    "field": "netInventoriesGrowthPreQ",
+    "value": 55.93,
+    "unit": "%"
+  },
+  {
+    "field": "netInventoriesPct",
+    "value": 16.35,
+    "unit": "%"
+  },
+  {
+    "field": "netMarginLtmYoy",
+    "value": 27.34,
+    "unit": "%"
+  },
+  {
+    "field": "nonPerformingLoanRatioLtm",
+    "value": 0,
+    "unit": "%"
+  },
+  {
+    "field": "overallRiskLevel",
+    "value": "high",
+    "unit": null
+  },
+  {
+    "field": "passPerformancePoint",
+    "value": 3,
+    "unit": null
+  },
+  {
+    "field": "pbRatio",
+    "value": 1.92,
+    "unit": null
+  },
+  {
+    "field": "pbRatioAverage",
+    "value": 1.28,
+    "unit": null
+  },
+  {
+    "field": "pctChgLongTerm",
+    "value": 29.62,
+    "unit": "%"
+  },
+  {
+    "field": "pctChgMidTerm",
+    "value": -3.71,
+    "unit": "%"
+  },
+  {
+    "field": "pctChgShortTerm",
+    "value": 2.01,
+    "unit": "%"
+  },
+  {
+    "field": "peRatio",
+    "value": 15.71,
+    "unit": null
+  },
+  {
+    "field": "peRatioAverage",
+    "value": 7.13,
+    "unit": null
+  },
+  {
+    "field": "peak1week",
+    "value": 101000,
+    "unit": "₫"
+  },
+  {
+    "field": "peak1year",
+    "value": 131500,
+    "unit": "₫"
+  },
+  {
+    "field": "peak3year",
+    "value": 131500,
+    "unit": "₫"
+  },
+  {
+    "field": "peak4week",
+    "value": 111400,
+    "unit": "₫"
+  },
+  {
+    "field": "peak5year",
+    "value": 131500,
+    "unit": "₫"
+  },
+  {
+    "field": "peakAllTime",
+    "value": 131500,
+    "unit": "₫"
+  },
+  {
+    "field": "pegRatioEstNtm",
+    "value": 1.82,
+    "unit": null
+  },
+  {
+    "field": "priceCeiling",
+    "value": 101500,
+    "unit": "₫"
+  },
+  {
+    "field": "priceChgIntraDay",
+    "value": 6600,
+    "unit": "₫"
+  },
+  {
+    "field": "priceClose",
+    "value": 101500,
+    "unit": "₫"
+  },
+  {
+    "field": "priceCloseIntraDay",
+    "value": 101500,
+    "unit": "₫"
+  },
+  {
+    "field": "priceDownStreak",
+    "value": 0,
+    "unit": null
+  },
+  {
+    "field": "priceFloor",
+    "value": 88300,
+    "unit": "₫"
+  },
+  {
+    "field": "priceOpen",
+    "value": 94900,
+    "unit": "₫"
+  },
+  {
+    "field": "priceOpenIntraDay",
+    "value": 94900,
+    "unit": "₫"
+  },
+  {
+    "field": "pricePctChg1y",
+    "value": 152.49,
+    "unit": "%"
+  },
+  {
+    "field": "pricePctChg30d",
+    "value": 4.75,
+    "unit": "%"
+  },
+  {
+    "field": "pricePctChg3y",
+    "value": 110.58,
+    "unit": "%"
+  },
+  {
+    "field": "pricePctChg5y",
+    "value": 61.38,
+    "unit": "%"
+  },
+  {
+    "field": "pricePctChg7d",
+    "value": 7.86,
+    "unit": "%"
+  },
+  {
+    "field": "pricePctChgIntraDay",
+    "value": 6.95,
+    "unit": "%"
+  },
+  {
+    "field": "pricePctChgYtd",
+    "value": 153.75,
+    "unit": "%"
+  },
+  {
+    "field": "priceReferrance",
+    "value": 94900,
+    "unit": "₫"
+  },
+  {
+    "field": "priceTimeStamp",
+    "value": "02/05/2024 14:45:01",
+    "unit": null
+  },
+  {
+    "field": "priceType",
+    "value": 2,
+    "unit": null
+  },
+  {
+    "field": "priceUpStreak",
+    "value": 1,
+    "unit": null
+  },
+  {
+    "field": "profitMarginLtm",
+    "value": 35.67,
+    "unit": "%"
+  },
+  {
+    "field": "provisionLoanRatioLtm",
+    "value": 0,
+    "unit": "%"
+  },
+  {
+    "field": "returnOnAssets",
+    "value": 4.61,
+    "unit": "%"
+  },
+  {
+    "field": "returnOnAssetsYoy",
+    "value": 4.56,
+    "unit": "%"
+  },
+  {
+    "field": "returnOnEquity",
+    "value": 13.21,
+    "unit": "%"
+  },
+  {
+    "field": "returnOnEquityYoy",
+    "value": 10.83,
+    "unit": "%"
+  },
+  {
+    "field": "revenue5yGrowth",
+    "value": 9.43,
+    "unit": "%"
+  },
+  {
+    "field": "revenueEstGrowth",
+    "value": 8.16,
+    "unit": "%"
+  },
+  {
+    "field": "revenueGrowthPreQ",
+    "value": -13.47,
+    "unit": "%"
+  },
+  {
+    "field": "revenueGrowthPrevQoq",
+    "value": -33.13,
+    "unit": "%"
+  },
+  {
+    "field": "revenueGrowthQoq",
+    "value": -50.73,
+    "unit": "%"
+  },
+  {
+    "field": "revenueLtmGrowth",
+    "value": 6.23,
+    "unit": "%"
+  },
+  {
+    "field": "sellForeignQuantity1d",
+    "value": 688505,
+    "unit": null
+  },
+  {
+    "field": "stockExchange",
+    "value": "HOSE",
+    "unit": null
+  },
+  {
+    "field": "taSignal1d",
+    "value": "bullish",
+    "unit": null
+  },
+  {
+    "field": "ticker",
+    "value": "VHM",
+    "unit": null
+  },
+  {
+    "field": "trough1week",
+    "value": 90500,
+    "unit": "₫"
+  },
+  {
+    "field": "trough1year",
+    "value": 37600,
+    "unit": "₫"
+  },
+  {
+    "field": "trough3year",
+    "value": 34000,
+    "unit": "₫"
+  },
+  {
+    "field": "trough4week",
+    "value": 90500,
+    "unit": "₫"
+  },
+  {
+    "field": "trough5year",
+    "value": 34000,
+    "unit": "₫"
+  },
+  {
+    "field": "troughAllTime",
+    "value": 34000,
+    "unit": "₫"
+  },
+  {
+    "field": "valuationPoint",
+    "value": 2,
+    "unit": null
+  },
+  {
+    "field": "volume",
+    "value": 5348700,
+    "unit": "shares"
+  },
+  {
+    "field": "volume10dAvg",
+    "value": 5276550,
+    "unit": "shares"
+  },
+  {
+    "field": "volume20dAvg",
+    "value": 4882920,
+    "unit": "shares"
+  },
+  {
+    "field": "volume50dAvg",
+    "value": 5725670.21,
+    "unit": "shares"
+  },
+  {
+    "field": "volume5dAvg",
+    "value": 4878760,
+    "unit": "shares"
+  },
+  {
+    "field": "volumeDownStreak",
+    "value": 0,
+    "unit": null
+  },
+  {
+    "field": "volumeUpStreak",
+    "value": 2,
+    "unit": null
+  }
+]
