@@ -9,6 +9,7 @@ import { getLogger } from '../../core/logger';
 import { VNDirectScreenerResult, VNDirectScreenerPayload, VNDirectScreenerFilter } from './types';
 import screenerMetadata from './info.json';
 import unitOverrides from './units.json';
+import industries from './industries.json';
 
 const logger = getLogger('VNDirect.Screener');
 
@@ -17,6 +18,7 @@ const BASE_URL = 'https://screener-api.vndirect.com.vn';
 export class VNDirectScreenerProvider {
   private headers: Record<string, string>;
   private showLog: boolean;
+  private industryMap: Record<string, { vi: string; en: string }> | null = null;
 
   constructor(config?: { randomAgent?: boolean; showLog?: boolean }) {
     this.showLog = config?.showLog !== false;
@@ -88,6 +90,23 @@ export class VNDirectScreenerProvider {
     }
 
     return null;
+  }
+
+  // Lazily build industry code -> name map (vi/en)
+  private getIndustryNameMap(): Record<string, { vi: string; en: string }> {
+    if (this.industryMap) return this.industryMap;
+
+    const map: Record<string, { vi: string; en: string }> = {};
+
+    for (const entry of industries as Array<any>) {
+      if (!entry?.industryCode) continue;
+      const en = typeof entry.englishName === 'string' ? entry.englishName.trim() : '';
+      const vi = typeof entry.vietnameseName === 'string' ? entry.vietnameseName.trim() : '';
+      map[entry.industryCode] = { vi, en };
+    }
+
+    this.industryMap = map;
+    return map;
   }
 
   /**
@@ -304,10 +323,34 @@ export class VNDirectScreenerProvider {
       
       if (data && data.data) {
         const results = data.data;
+        const industryNames = this.getIndustryNameMap();
+
+        const mapped = results.map((item: any) => {
+          const level2Code = item.industrylv2;
+          const level1Code = item.industrylv1 || item.industryCode;
+
+          const level2Names = level2Code ? industryNames[level2Code] : null;
+          const level1Names = level1Code ? industryNames[level1Code] : null;
+
+          if (level1Names || level2Names) {
+            return {
+              ...item,
+              industryNameVi: (level2Names || level1Names)?.vi,
+              industryNameEn: (level2Names || level1Names)?.en,
+              industryLv2NameVi: level2Names?.vi || null,
+              industryLv2NameEn: level2Names?.en || null,
+              industryLv1NameVi: level1Names?.vi || null,
+              industryLv1NameEn: level1Names?.en || null,
+            };
+          }
+
+          return item;
+        });
+
         if (limit && limit > 0) {
-          return results.slice(0, limit);
+          return mapped.slice(0, limit);
         }
-        return results;
+        return mapped;
       }
       
       return [];
